@@ -191,10 +191,3 @@ If you can explain:
 * Why you used each annotation
 * How errors are handled
 
-You are **interview ready**.
-
----
-
-✅ Keep this README as your **last-day revision document**.
-
-Good luck 🚀

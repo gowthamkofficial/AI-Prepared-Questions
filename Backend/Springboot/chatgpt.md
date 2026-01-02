@@ -1,12 +1,6 @@
-# 🚀 Spring Boot Interview Questions – Service Company Focus
+# Spring Boot Interview Questions 
 
-This README contains **commonly asked Spring Boot interview questions** for **Infosys, Wipro, Cognizant, Capgemini (Service-Based Companies)**.
-
-The questions are **experience-based**, **concept-driven**, and reflect **real interview patterns**.
-
----
-
-## 🟢 BEGINNER LEVEL (0–2 Years)
+## BEGINNER LEVEL (0–2 Years)
 
 ### Spring Basics
 
@@ -44,7 +38,7 @@ The questions are **experience-based**, **concept-driven**, and reflect **real i
 
 ---
 
-## 🟡 INTERMEDIATE LEVEL (2–4 Years)
+## INTERMEDIATE LEVEL (2–4 Years)
 
 ### REST API
 
@@ -83,7 +77,7 @@ The questions are **experience-based**, **concept-driven**, and reflect **real i
 
 ---
 
-## 🟠 ADVANCED LEVEL (4+ Years)
+## ADVANCED LEVEL (4+ Years)
 
 ### JPA & Hibernate Internals
 
@@ -116,7 +110,7 @@ The questions are **experience-based**, **concept-driven**, and reflect **real i
 
 ---
 
-## 🔴 SPRING SECURITY (Frequently Asked)
+## SPRING SECURITY (Frequently Asked)
 
 * What is Spring Security?
 * Authentication vs Authorization
@@ -131,7 +125,7 @@ The questions are **experience-based**, **concept-driven**, and reflect **real i
 
 ---
 
-## 🔵 SPRING BOOT INTERNALS (Service Company Favorite)
+## SPRING BOOT INTERNALS (Service Company Favorite)
 
 * How does Spring Boot application start?
 * Explain auto-configuration flow
@@ -143,7 +137,7 @@ The questions are **experience-based**, **concept-driven**, and reflect **real i
 
 ---
 
-## 🟣 PROFILES, CONFIG & DEPLOYMENT
+##  PROFILES, CONFIG & DEPLOYMENT
 
 * What are Spring profiles?
 * Why profiles are used?
@@ -166,7 +160,7 @@ The questions are **experience-based**, **concept-driven**, and reflect **real i
 
 ---
 
-## ⭐ VERY IMPORTANT QUESTIONS (Infosys / Wipro / CTS / Capgemini)
+## VERY IMPORTANT QUESTIONS (Infosys / Wipro / CTS / Capgemini)
 
 * Explain your Spring Boot project
 * What annotations did you use and why?
@@ -181,7 +175,7 @@ The questions are **experience-based**, **concept-driven**, and reflect **real i
 
 ---
 
-## 🎯 FINAL INTERVIEW TIP
+## FINAL INTERVIEW TIP
 
 > Service companies focus more on **clarity of concepts**, **project explanation**, and **real-time understanding** rather than deep framework internals.
 
@@ -191,10 +185,3 @@ If you can explain:
 * Why you used each annotation
 * How errors are handled
 
-You are **interview ready**.
-
----
-
-✅ Keep this README as your **last-day revision document**.
-
-Good luck 🚀

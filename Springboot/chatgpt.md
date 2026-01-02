@@ -1,10 +1,4 @@
-# Spring Boot Interview Questions – Service Company Focus
-
-This README contains **commonly asked Spring Boot interview questions** for **Infosys, Wipro, Cognizant, Capgemini (Service-Based Companies)**.
-
-The questions are **experience-based**, **concept-driven**, and reflect **real interview patterns**.
-
----
+# Spring Boot Interview Questions 
 
 ## BEGINNER LEVEL (0–2 Years)
 

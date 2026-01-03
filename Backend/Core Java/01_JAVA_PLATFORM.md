@@ -1,12 +1,12 @@
-# Java Interview Questions & Answers Guide
+
 ## Topic: JAVA PLATFORM (Questions 1-6)
-### For 2-Year Experienced Java Backend Developers
+
 
 ---
 
 ### 1. Why is Java so Popular?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Java remains popular because it's platform-independent (runs on any OS with JVM), has strong backward compatibility, and has a mature ecosystem with extensive libraries. It's widely used in enterprise applications and has good performance for most use cases. The strong typing and OOP features help catch errors at compile time.
 
 **Key Theoretical Concepts:**
@@ -31,7 +31,7 @@ A 2-year developer should know the basic reasons and mention platform independen
 
 ### 2. What is Platform Independence?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Platform independence means you write code once and can run it on any operating system without modification. Java achieves this through the JVM - Java code is compiled to bytecode which runs on the JVM, and the JVM is available for Windows, Linux, macOS, etc. So the same .jar file works everywhere.
 
 **Key Theoretical Concepts:**
@@ -54,7 +54,7 @@ A solid understanding of the compilation-to-bytecode model and JVM's role. Shoul
 
 ### 3. What is ByteCode?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Bytecode is the intermediate compiled format that Java source files (.java) are compiled into (.class files). It's not machine code specific to any OS, but rather a platform-independent binary format. The JVM interprets and executes this bytecode on whatever platform it's running on.
 
 **Key Theoretical Concepts:**
@@ -77,7 +77,7 @@ Should understand that bytecode is the compilation target and that JVM executes 
 
 ### 4. Compare JDK vs JVM vs JRE
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 - **JVM**: The Java Virtual Machine that executes bytecode. It's the runtime environment.
 - **JRE**: Java Runtime Environment - includes the JVM plus necessary libraries and tools to run Java applications (but not compile).
 - **JDK**: Java Development Kit - includes the JRE plus tools for development like javac compiler, debugger, and other utilities needed to write and compile Java code.
@@ -104,7 +104,7 @@ A 2-year developer should clearly distinguish all three and explain the containm
 
 ### 5. What are the Important Differences between C++ and Java?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 - **Memory Management**: Java has automatic garbage collection; C++ requires manual memory management with pointers
 - **Platform Independence**: Java is platform-independent; C++ code must be recompiled for each OS
 - **Speed**: C++ is typically faster; Java has JVM startup overhead but good performance after warmup
@@ -134,7 +134,7 @@ Should mention at least 3-4 key differences, particularly memory management, pla
 
 ### 6. What is the Role of a ClassLoader in Java?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 The ClassLoader is responsible for loading Java classes into memory at runtime. When the JVM needs a class, the ClassLoader locates the .class file, reads it, and loads the bytecode into memory. Java has three types of ClassLoaders:
 
 1. **Bootstrap ClassLoader**: Loads core Java classes from JDK (java.lang, java.util, etc.)

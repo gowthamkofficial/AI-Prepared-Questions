@@ -1,12 +1,12 @@
-# Java Interview Questions & Answers Guide
+
 ## Topic: ADVANCED OBJECT ORIENTED CONCEPTS (Questions 55-63)
-### For 2-Year Experienced Java Backend Developers
+
 
 ---
 
 ### 55. WHAT IS POLYMORPHISM?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Polymorphism allows objects to be treated as instances of their parent type and the correct overridden method is invoked at runtime. It means many forms — for example, a `Shape` reference can point to `Circle` or `Rectangle` and calling `draw()` will execute the specific implementation.
 
 **Key Theoretical Concepts:**
@@ -26,7 +26,7 @@ Should give a clear example and explain runtime dispatch.
 
 ### 56. WHAT IS THE USE OF INSTANCEOF OPERATOR IN JAVA?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `instanceof` checks if an object is an instance of a given class or interface (including subclasses). Useful before downcasting to avoid `ClassCastException`.
 
 **Example:**
@@ -52,7 +52,7 @@ Should know syntax and typical usage.
 
 ### 57. WHAT IS COUPLING?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Coupling describes how interdependent modules/components are. Low coupling is desirable — components interact through well-defined interfaces.
 
 **Key Theoretical Concepts:**
@@ -71,7 +71,7 @@ Should explain why low coupling improves maintainability and give small examples
 
 ### 58. WHAT IS COHESION?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Cohesion describes how closely related responsibilities within a single module/class are. High cohesion (a class doing one thing) is preferred.
 
 **Key Theoretical Concepts:**
@@ -90,7 +90,7 @@ Should explain benefits of high cohesion.
 
 ### 59. WHAT IS ENCAPSULATION?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Encapsulation hides internal details and exposes behavior via well-defined APIs. Achieved via access modifiers and getters/setters to protect internal state.
 
 **Key Theoretical Concepts:**
@@ -109,7 +109,7 @@ Should provide example using `private` fields and public accessors.
 
 ### 60. WHAT IS AN INNER CLASS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 An inner class is a class defined within another class. Types include member inner classes, static nested classes, local classes (inside methods), and anonymous classes.
 
 **Key Theoretical Concepts:**
@@ -128,7 +128,7 @@ Should identify types and provide short examples for each.
 
 ### 61. WHAT IS A STATIC INNER CLASS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 A static nested class is declared static and does not have a reference to the outer instance. It behaves like a top-level class nested for packaging reasons and can access only static members of the outer class.
 
 **Key Theoretical Concepts:**
@@ -147,7 +147,7 @@ Should show example and explain memory/visibility implications.
 
 ### 62. CAN YOU CREATE AN INNER CLASS INSIDE A METHOD?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Yes — local classes can be declared inside methods. They can access final or effectively final local variables (Java 8+ allows effectively final). They are useful for short-lived helper logic.
 
 **Key Theoretical Concepts:**
@@ -166,7 +166,7 @@ Should show an example and mention variable capture rules.
 
 ### 63. WHAT IS AN ANONYMOUS CLASS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 An anonymous class is an inline class without a name often used to provide a quick implementation of an interface or extend a class. Example commonly used for event listeners or comparators before lambdas.
 
 **Example:**

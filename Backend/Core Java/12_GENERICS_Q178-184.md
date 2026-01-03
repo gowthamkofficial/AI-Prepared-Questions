@@ -1,12 +1,12 @@
-# Java Interview Questions & Answers Guide
+
 ## Topic: GENERICS (Questions 178-184)
-### For 2-Year Experienced Java Backend Developers
+
 
 ---
 
 ### 178. WHAT ARE GENERICS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Generics enable classes and methods to operate on types specified as parameters, providing compile-time type safety and removing the need for casts (e.g., `List<String>`).
 
 **Key Theoretical Concepts:**
@@ -24,7 +24,7 @@ Should explain benefits and basic syntax.
 
 ### 179. WHY DO WE NEED GENERICS? CAN YOU GIVE AN EXAMPLE OF HOW GENERICS MAKE A PROGRAM MORE FLEXIBLE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Generics provide type safety and reduce casts. Example: `List<String>` prevents adding non-string elements and eliminates casting on retrieval. Generics allow reusable algorithms that work across types.
 
 **Key Theoretical Concepts:**
@@ -39,7 +39,7 @@ Should present a simple before/after example.
 
 ### 180. HOW DO YOU DECLARE A GENERIC CLASS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `class Box<T> { private T value; public T get(){return value;} public void set(T v){value = v;} }`
 
 **Key Theoretical Concepts:**
@@ -54,7 +54,7 @@ Should provide correct syntax and usage example.
 
 ### 181. WHAT ARE THE RESTRICTIONS IN USING GENERIC TYPE THAT IS DECLARED IN A CLASS DECLARATION?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Restrictions include: cannot instantiate `new T()`, cannot create arrays of parameterized types (`new T[10]`), cannot use primitive type parameters, and type parameters are erased at runtime (type erasure).
 
 **Key Theoretical Concepts:**
@@ -69,7 +69,7 @@ Should list common limitations and practical workarounds.
 
 ### 182. HOW CAN WE RESTRICT GENERICS TO A SUBCLASS OF PARTICULAR CLASS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Use bounded type parameters: `class Foo<T extends Number> {}` restricts `T` to `Number` or subclasses.
 
 **Key Theoretical Concepts:**
@@ -84,7 +84,7 @@ Should give syntax examples and explain rationale.
 
 ### 183. HOW CAN WE RESTRICT GENERICS TO A SUPER CLASS OF PARTICULAR CLASS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Use lower-bounded wildcards when consuming: `List<? super Integer>` accepts lists of `Integer` or its supertypes. For methods, use `? super` in parameters.
 
 **Key Theoretical Concepts:**
@@ -99,7 +99,7 @@ Should explain PECS rule and show example.
 
 ### 184. CAN YOU GIVE AN EXAMPLE OF A GENERIC METHOD?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `public static <T> T pickFirst(List<T> list) { return list.get(0); }`
 
 **Key Theoretical Concepts:**

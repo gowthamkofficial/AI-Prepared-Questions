@@ -1,12 +1,12 @@
-# Java Interview Questions & Answers Guide
+
 ## Topic: CONDITIONS & LOOPS (Questions 79-90)
-### For 2-Year Experienced Java Backend Developers
+
 
 ---
 
 ### 79. Why should you always use blocks around an if statement?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Blocks (`{}`) avoid ambiguity and bugs when adding/removing lines. Without braces only the next statement is controlled by the `if`, which often leads to maintenance errors.
 
 **Example:**
@@ -48,7 +48,7 @@ if (x = 5) {
 }
 ```
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 This code will not compile. In Java `if` requires a boolean expression. `x = 5` is an assignment (int), not boolean. Correct would be `if (x == 5)`.
 
 **Key Theoretical Concepts:**
@@ -76,7 +76,7 @@ if (flag = true) {
 }
 ```
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 This compiles and prints `YES`. `flag = true` assigns `true` to `flag` and evaluates to `true`. However, this is almost always a bug; use `==` for comparison.
 
 **Key Theoretical Concepts:**
@@ -110,7 +110,7 @@ switch (x) {
 }
 ```
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Output:
 ```
 Two
@@ -150,7 +150,7 @@ switch (day) {
 }
 ```
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Output:
 ```
 Monday
@@ -173,7 +173,7 @@ Should confirm understanding of String switch and matching.
 
 ### 84. Should default be the last case in a switch statement?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 No, `default` can appear anywhere. However, putting it last is conventional and clearer. If `default` is not last, remember fall-through rules and `break`s.
 
 **Key Theoretical Concepts:**
@@ -191,7 +191,7 @@ Should explain convention vs language rules.
 
 ### 85. Can a Switch statement be used around a String?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Yes. Java supports switching on `String` since Java 7. The switch uses `String.equals()` semantics after computing hash for efficient dispatch.
 
 **Key Theoretical Concepts:**
@@ -214,7 +214,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Output:
 ```
 0 1 2 3 4 
@@ -229,7 +229,7 @@ Simple loop comprehension.
 
 ### 87. What is an Enhanced For Loop?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Also known as the "for-each" loop, introduced in Java 5 to iterate over arrays and `Iterable` types easily:
 ```java
 for (String s : list) {
@@ -261,7 +261,7 @@ for (int x : nums) {
 }
 ```
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Output:
 ```
 10 20 30 
@@ -285,7 +285,7 @@ for (int x : arr) {
 System.out.println(arr[0]);
 ```
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Output: `1`.
 Because `x` is a copy of the array element (primitive), modifying `x` does not change the array contents.
 
@@ -313,7 +313,7 @@ for (System.out.println("Start"); i < 3; i++) {
 }
 ```
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Output:
 ```
 Start

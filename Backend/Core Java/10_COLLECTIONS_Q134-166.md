@@ -1,12 +1,12 @@
-# Java Interview Questions & Answers Guide
+
 ## Topic: COLLECTIONS (Questions 134-166)
-### For 2-Year Experienced Java Backend Developers
+
 
 ---
 
 ### 134. WHY DO WE NEED COLLECTIONS IN JAVA?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Collections provide data structures to store and manipulate groups of objects (lists, sets, maps, queues) with ready-made implementations, freeing developers from implementing common algorithms and allowing code reuse and performance optimizations.
 
 **Key Theoretical Concepts:**
@@ -22,7 +22,7 @@ Should articulate practical needs and examples where arrays aren't sufficient.
 
 ### 135. WHAT ARE THE IMPORTANT INTERFACES IN THE COLLECTION HIERARCHY?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Core interfaces: `Collection`, `List`, `Set`, `Queue`, `Deque`, and `Map` (not extending Collection). `SortedSet` and `NavigableSet` add ordering semantics.
 
 **Key Theoretical Concepts:**
@@ -37,7 +37,7 @@ Should list major interfaces and how they differ.
 
 ### 136. WHAT ARE THE IMPORTANT METHODS THAT ARE DECLARED IN THE COLLECTION INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Common methods: `add()`, `remove()`, `contains()`, `size()`, `isEmpty()`, `iterator()`, `clear()`, `toArray()`.
 
 **Key Theoretical Concepts:**
@@ -53,7 +53,7 @@ Should know typical operations and their complexity expectations.
 
 ### 137. CAN YOU EXPLAIN BRIEFLY ABOUT THE LIST INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `List` is an ordered collection (sequence) that allows duplicates and positional access via index. Implementations include `ArrayList`, `LinkedList`, and `Vector`.
 
 **Key Theoretical Concepts:**
@@ -68,7 +68,7 @@ Should give examples and typical use-cases.
 
 ### 138. EXPLAIN ABOUT ARRAYLIST WITH AN EXAMPLE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `ArrayList` is a resizable array implementation of `List`. It provides fast random access (`O(1)`), while insert/remove in middle is `O(n)`. Default initial capacity grows by ~1.5x or 2x depending on JDK.
 
 **Example:**
@@ -90,7 +90,7 @@ Should know complexity trade-offs and typical operations.
 
 ### 139. CAN AN ARRAYLIST HAVE DUPLICATE ELEMENTS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Yes. `ArrayList` allows duplicates and preserves insertion order.
 
 **Key Theoretical Concepts:**
@@ -105,7 +105,7 @@ Simple correctness check.
 
 ### 140. HOW DO YOU ITERATE AROUND AN ARRAYLIST USING ITERATOR?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Use `Iterator`:
 ```java
 Iterator<String> it = list.iterator();
@@ -127,7 +127,7 @@ Should show safe removal pattern with iterator.
 
 ### 141. HOW DO YOU SORT AN ARRAYLIST?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Use `Collections.sort(list)` for natural order or `list.sort(comparator)` (Java 8+) for custom comparators. For arrays, use `Arrays.sort()`.
 
 **Example:**
@@ -150,7 +150,7 @@ Should know API and simple comparator examples.
 
 ### 142. HOW DO YOU SORT ELEMENTS IN AN ARRAYLIST USING COMPARABLE INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Make class implement `Comparable<T>` and implement `compareTo()`; then `Collections.sort(list)` will use natural ordering.
 
 **Example:**
@@ -175,7 +175,7 @@ Should write a simple compareTo and mention consistency with equals.
 
 ### 143. HOW DO YOU SORT ELEMENTS IN AN ARRAYLIST USING COMPARATOR INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Provide a `Comparator<T>` implementation and pass it to `Collections.sort(list, comparator)` or `list.sort(comparator)`.
 
 **Example:**
@@ -196,7 +196,7 @@ Should show lambda-based comparator familiarity (Java 8+).
 
 ### 144. WHAT IS VECTOR CLASS? HOW IS IT DIFFERENT FROM AN ARRAYLIST?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Vector` is a legacy synchronized list implementation. Differences: `Vector` methods are synchronized (thread-safe) which adds overhead; `ArrayList` is unsynchronized and preferred for single-threaded use.
 
 **Key Theoretical Concepts:**
@@ -211,7 +211,7 @@ Should recommend `ArrayList` or `CopyOnWriteArrayList` instead of `Vector` in mo
 
 ### 145. WHAT IS LINKEDLIST? WHAT INTERFACES DOES IT IMPLEMENT? HOW IS IT DIFFERENT FROM AN ARRAYLIST?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `LinkedList` is a doubly-linked list implementing `List`, `Deque`, and `Queue`. It offers fast insert/remove at ends (`O(1)`), but slower random access (`O(n)`) compared to `ArrayList`'s `O(1)` get.
 
 **Key Theoretical Concepts:**
@@ -226,7 +226,7 @@ Should compare complexities and mention when to prefer one over the other.
 
 ### 146. CAN YOU BRIEFLY EXPLAIN ABOUT THE SET INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Set` is a collection that does not allow duplicate elements. Implementations include `HashSet`, `LinkedHashSet`, and `TreeSet`.
 
 **Key Theoretical Concepts:**
@@ -241,7 +241,7 @@ Should describe primary use-cases of sets.
 
 ### 147. WHAT ARE THE IMPORTANT INTERFACES RELATED TO THE SET INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `SortedSet` and `NavigableSet` add sorted ordering and navigation operations (`lower`, `higher`, `floor`, `ceiling`).
 
 **Key Theoretical Concepts:**
@@ -256,7 +256,7 @@ Should know difference and example implementations.
 
 ### 148. WHAT IS THE DIFFERENCE BETWEEN SET AND SORTEDSET INTERFACES?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Set` has no ordering guarantee. `SortedSet` maintains elements in sorted order (natural or comparator) and provides range-view operations.
 
 **Key Theoretical Concepts:**
@@ -271,7 +271,7 @@ Should know use-cases and performance trade-offs.
 
 ### 149. CAN YOU GIVE EXAMPLE OF CLASSES THAT IMPLEMENT THE SET INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `HashSet`, `LinkedHashSet`, `TreeSet`, and `ConcurrentSkipListSet`.
 
 **Key Theoretical Concepts:**
@@ -286,7 +286,7 @@ Basic familiarity with common implementations.
 
 ### 150. WHAT IS A HASHSET?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `HashSet` is an implementation of `Set` backed by a `HashMap`. It provides constant time `add`, `remove`, and `contains` on average, and does not guarantee order.
 
 **Key Theoretical Concepts:**
@@ -301,7 +301,7 @@ Should know performance characteristics and collision implications.
 
 ### 151. WHAT IS A LINKEDHASHSET? HOW IS DIFFERENT FROM A HASHSET?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `LinkedHashSet` maintains insertion order by maintaining a doubly-linked list of entries in addition to hashing. It has slightly higher memory overhead but predictable iteration order.
 
 **Key Theoretical Concepts:**
@@ -316,7 +316,7 @@ Should know when ordered set iteration is needed.
 
 ### 152. WHAT IS A TREESET? HOW IS DIFFERENT FROM A HASHSET?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `TreeSet` is a sorted set backed by a Red-Black tree. It keeps elements sorted (logarithmic time for add/remove/contains) and implements `NavigableSet`.
 
 **Key Theoretical Concepts:**
@@ -331,7 +331,7 @@ Should know complexity and ordering guarantees.
 
 ### 153. CAN YOU GIVE EXAMPLE OF IMPLEMENTATIONS OF NAVIGABLESET?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `TreeSet` and `ConcurrentSkipListSet` implement `NavigableSet`.
 
 **Key Theoretical Concepts:**
@@ -343,7 +343,7 @@ Should know complexity and ordering guarantees.
 
 ### 154. EXPLAIN BRIEFLY ABOUT QUEUE INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Queue` represents a collection designed for holding elements prior to processing, typically FIFO. Implementations include `LinkedList`, `ArrayDeque`, `PriorityQueue`, and blocking queues.
 
 **Key Theoretical Concepts:**
@@ -358,7 +358,7 @@ Should differentiate queue methods for throwing vs returning null on failure (`a
 
 ### 155. WHAT ARE THE IMPORTANT INTERFACES RELATED TO THE QUEUE INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Deque` (double-ended queue) and `BlockingQueue` (thread-safe blocking operations) are key related interfaces.
 
 **Key Theoretical Concepts:**
@@ -370,7 +370,7 @@ Should differentiate queue methods for throwing vs returning null on failure (`a
 
 ### 156. EXPLAIN ABOUT THE DEQUE INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Deque` supports insertion, removal, and inspection at both ends. Implementations include `ArrayDeque` and `LinkedList`. Use `Deque` for stack (`push`/`pop`) and queue behaviors.
 
 **Key Theoretical Concepts:**
@@ -385,7 +385,7 @@ Should recommend `ArrayDeque` over `Stack` for stack-like behavior.
 
 ### 157. EXPLAIN THE BLOCKINGQUEUE INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `BlockingQueue` adds blocking operations like `put()` and `take()` that wait for space or elements. Useful for producer-consumer concurrency patterns. Implementations include `ArrayBlockingQueue`, `LinkedBlockingQueue`, `SynchronousQueue`.
 
 **Key Theoretical Concepts:**
@@ -401,7 +401,7 @@ Should describe typical usage in thread pools and messaging.
 
 ### 158. WHAT IS A PRIORITYQUEUE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `PriorityQueue` orders elements according to natural order or a provided comparator. It is not FIFO; removal returns the smallest (or highest priority) element. It's backed by a heap and provides `O(log n)` insert and remove.
 
 **Key Theoretical Concepts:**
@@ -416,7 +416,7 @@ Should know semantics and complexity.
 
 ### 159. CAN YOU GIVE EXAMPLE IMPLEMENTATIONS OF THE BLOCKINGQUEUE INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `ArrayBlockingQueue`, `LinkedBlockingQueue`, `PriorityBlockingQueue`, `SynchronousQueue`, `DelayQueue`.
 
 **Key Theoretical Concepts:**
@@ -431,7 +431,7 @@ Should match implementations to use-cases.
 
 ### 160. CAN YOU BRIEFLY EXPLAIN ABOUT THE MAP INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Map` maps keys to values with unique keys. Important implementations: `HashMap`, `LinkedHashMap`, `TreeMap`, `ConcurrentHashMap`. `Map` is not a `Collection`.
 
 **Key Theoretical Concepts:**
@@ -446,7 +446,7 @@ Should know common methods (`put`, `get`, `containsKey`, `entrySet`) and iterati
 
 ### 161. WHAT IS DIFFERENCE BETWEEN MAP AND SORTEDMAP?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Map` has no ordering guarantee. `SortedMap` (e.g., `TreeMap`) maintains keys in sorted order and provides navigation methods.
 
 **Key Theoretical Concepts:**
@@ -458,7 +458,7 @@ Should know common methods (`put`, `get`, `containsKey`, `entrySet`) and iterati
 
 ### 162. WHAT IS A HASHMAP?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `HashMap` is a hash table-based implementation of `Map`. It allows `null` keys/values, offers average `O(1)` get/put, and is not synchronized.
 
 **Key Theoretical Concepts:**
@@ -473,7 +473,7 @@ Should know load factor, initial capacity, and `null` behavior.
 
 ### 163. WHAT ARE THE DIFFERENT METHODS IN A HASH MAP?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Common methods: `put()`, `get()`, `remove()`, `containsKey()`, `containsValue()`, `keySet()`, `values()`, `entrySet()`, `putIfAbsent()`, `computeIfAbsent()`, `compute()`, `merge()` (Java 8+).
 
 **Key Theoretical Concepts:**
@@ -488,7 +488,7 @@ Should be familiar with modern map utilities for concurrency and compute operati
 
 ### 164. WHAT IS A TREEMAP? HOW IS DIFFERENT FROM A HASHMAP?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `TreeMap` is a sorted map backed by a Red-Black tree, with `O(log n)` operations and keys ordered by natural order or a comparator. `HashMap` is unordered and faster for average `O(1)` ops.
 
 **Key Theoretical Concepts:**
@@ -503,7 +503,7 @@ Should choose appropriate implementation based on ordering needs.
 
 ### 165. CAN YOU GIVE AN EXAMPLE OF IMPLEMENTATION OF NAVIGABLEMAP INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `TreeMap` implements `NavigableMap`. `ConcurrentSkipListMap` is a concurrent implementation.
 
 **Key Theoretical Concepts:**
@@ -515,7 +515,7 @@ Should choose appropriate implementation based on ordering needs.
 
 ### 166. WHAT ARE THE STATIC METHODS PRESENT IN THE COLLECTIONS CLASS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Collections` (utility class) has static methods like `sort`, `reverse`, `shuffle`, `binarySearch`, `synchronizedList`, `unmodifiableList`, `emptyList`, `singletonList`, `frequency`, `max`, `min`, `fill`, `copy`.
 
 **Key Theoretical Concepts:**

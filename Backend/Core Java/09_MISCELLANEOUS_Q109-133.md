@@ -1,12 +1,12 @@
-# Java Interview Questions & Answers Guide
+
 ## Topic: MISCELLANEOUS (Questions 109-133)
-### For 2-Year Experienced Java Backend Developers
+
 
 ---
 
 ### 109. WHAT ARE THE DEFAULT VALUES IN AN ARRAY?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Default values depend on element type: numeric primitives → 0 (or 0.0), `char` → '\u0000', `boolean` → `false`, object references → `null`.
 
 **Key Theoretical Concepts:**
@@ -25,7 +25,7 @@ Should list defaults for common types and know that arrays are objects on the he
 
 ### 110. HOW DO YOU LOOP AROUND AN ARRAY USING ENHANCED FOR LOOP?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Use the for-each syntax:
 ```java
 int[] arr = {1,2,3};
@@ -47,7 +47,7 @@ Should demonstrate simple usage and limitations (no index access).
 
 ### 111. HOW DO YOU PRINT THE CONTENT OF AN ARRAY?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Use `Arrays.toString(array)` for one-dimensional arrays and `Arrays.deepToString(array)` for nested arrays. Or iterate and print elements.
 
 **Example:**
@@ -68,7 +68,7 @@ Should mention Arrays utilities, not `System.out.println(arr)` which prints refe
 
 ### 112. HOW DO YOU COMPARE TWO ARRAYS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Use `Arrays.equals(a, b)` for one-dimensional arrays and `Arrays.deepEquals(a, b)` for nested arrays. For sorting-independent comparison, sort or convert to collections if order doesn't matter.
 
 **Key Theoretical Concepts:**
@@ -84,7 +84,7 @@ Should mention `Arrays.equals` and `deepEquals` and order sensitivity.
 
 ### 113. WHAT IS AN ENUM?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `enum` is a special Java type representing a fixed set of constants. Enums are full-featured classes that can have fields, methods, and implement interfaces.
 
 **Example:**
@@ -109,7 +109,7 @@ Should show understanding of using enums for fixed sets and advantages over `int
 
 ### 114. CAN YOU USE A SWITCH STATEMENT AROUND AN ENUM?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Yes. You can switch on enums using `case ENUM_CONSTANT:`.
 
 **Example:**
@@ -132,7 +132,7 @@ Should know syntax and benefits.
 
 ### 115. WHAT ARE VARIABLE ARGUMENTS OR VARARGS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Varargs allow a method to accept a variable number of arguments of the same type, using `...` syntax.
 
 **Example:**
@@ -155,7 +155,7 @@ Should know syntax and that varargs are sugar for arrays.
 
 ### 116. WHAT ARE ASSERTS USED FOR?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `assert` is used for internal sanity checks during development to assert expected conditions. They are typically disabled at runtime and should not replace proper exception handling.
 
 **Key Theoretical Concepts:**
@@ -174,7 +174,7 @@ Should know how to enable and use asserts and limitations.
 
 ### 117. WHEN SHOULD ASSERTS BE USED?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Use asserts for internal consistency checks, invariants, and unreachable code. Do not use for user input validation or error handling.
 
 **Key Theoretical Concepts:**
@@ -189,7 +189,7 @@ Should give appropriate examples.
 
 ### 118. WHAT IS GARBAGE COLLECTION?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Garbage collection (GC) is automatic memory management where the JVM reclaims memory occupied by objects no longer reachable by the application.
 
 **Key Theoretical Concepts:**
@@ -209,7 +209,7 @@ Should understand concept and practical effects (pause times, memory leaks via r
 
 ### 119. CAN YOU EXPLAIN GARBAGE COLLECTION WITH AN EXAMPLE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Example: If you set `obj = null` and there are no other references to the object, it's eligible for GC. In a long-running server, keeping references in static collections prevents GC and leads to memory leaks.
 
 **Key Theoretical Concepts:**
@@ -225,7 +225,7 @@ Should be able to explain reachability and a real-world leak scenario.
 
 ### 120. WHEN IS GARBAGE COLLECTION RUN?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 GC runs when the JVM decides it's necessary (e.g., low free heap), or can be triggered with `System.gc()` (hint only). It's nondeterministic and implementation-specific.
 
 **Key Theoretical Concepts:**
@@ -240,7 +240,7 @@ Should stress nondeterminism and avoidance of relying on GC timing.
 
 ### 121. WHAT ARE BEST PRACTICES ON GARBAGE COLLECTION?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Best practices:
 - Avoid unnecessary object creation (reuse buffers, StringBuilder)
 - Null out long-lived references when no longer needed
@@ -260,7 +260,7 @@ Should know practical techniques and tools, not deep GC internals.
 
 ### 122. WHAT ARE INITIALIZATION BLOCKS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Initialization blocks are code blocks in a class executed when an instance is created. They run before the constructor body and after super() call. There are static and instance initializer blocks.
 
 **Example:**
@@ -285,7 +285,7 @@ Should know when to use and ordering rules.
 
 ### 123. WHAT IS A STATIC INITIALIZER?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 A static initializer (`static { ... }`) executes once when the class is loaded. Used to initialize static fields or perform one-time setup.
 
 **Key Theoretical Concepts:**
@@ -300,7 +300,7 @@ Should understand single-time initialization and exception behavior (ExceptionIn
 
 ### 124. WHAT IS AN INSTANCE INITIALIZER BLOCK?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 An instance initializer (`{ ... }`) runs for each object creation, after `super()` call and before constructor body. Useful when multiple constructors share initialization code.
 
 **Key Theoretical Concepts:**
@@ -315,7 +315,7 @@ Should know use-cases and ordering.
 
 ### 125. WHAT IS TOKENIZING?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Tokenizing is splitting a string into tokens based on delimiters. Historically `StringTokenizer` was used, but `String.split()` and `Scanner` are preferred.
 
 **Key Theoretical Concepts:**
@@ -330,7 +330,7 @@ Should know modern methods and that `StringTokenizer` is legacy.
 
 ### 126. CAN YOU GIVE AN EXAMPLE OF TOKENIZING?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Using `String.split`:
 ```java
 String s = "a,b,c";
@@ -350,7 +350,7 @@ Should show a robust example and mention trimming and empty token handling.
 
 ### 127. WHAT IS SERIALIZATION?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Serialization is converting an object into a byte stream for storage or transmission; deserialization reconstructs the object from the stream.
 
 **Key Theoretical Concepts:**
@@ -367,7 +367,7 @@ Should know primary purpose and dangers (e.g., exposing internals, incompatible 
 
 ### 128. HOW DO YOU SERIALIZE AN OBJECT USING SERIALIZABLE INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Make class implement `Serializable`, optionally define `serialVersionUID`, and use `ObjectOutputStream`:
 ```java
 try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("o.bin"))) {
@@ -388,7 +388,7 @@ Should show code and mention caveats (transient, security).
 
 ### 129. HOW DO YOU DE-SERIALIZE IN JAVA?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Use `ObjectInputStream`:
 ```java
 try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("o.bin"))) {
@@ -409,7 +409,7 @@ Should demonstrate basic code and mention exceptions to handle.
 
 ### 130. WHAT DO YOU DO IF ONLY PARTS OF THE OBJECT HAVE TO BE SERIALIZED?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Mark non-serializable or sensitive fields as `transient`, implement custom `writeObject`/`readObject` to control serialization, or use DTOs to serialize only required data.
 
 **Key Theoretical Concepts:**
@@ -425,7 +425,7 @@ Should suggest secure and maintainable approaches.
 
 ### 131. HOW DO YOU SERIALIZE A HIERARCHY OF OBJECTS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 If all classes in the graph implement `Serializable`, Java serializes the object graph recursively. If a superclass is not serializable, you must provide no-arg constructor for that superclass so deserialization can construct it.
 
 **Key Theoretical Concepts:**
@@ -441,7 +441,7 @@ Should understand graph semantics and references (shared references preserved).
 
 ### 132. ARE THE CONSTRUCTORS IN AN OBJECT INVOKED WHEN IT IS DE-SERIALIZED?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 During deserialization, constructors are not run for serializable classes. For non-serializable superclasses, the first non-serializable superclass constructor is invoked.
 
 **Key Theoretical Concepts:**
@@ -456,7 +456,7 @@ Should know this subtle behavior and potential side-effects.
 
 ### 133. ARE THE VALUES OF STATIC VARIABLES STORED WHEN AN OBJECT IS SERIALIZED?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 No. Static variables belong to the class, not the instance, and are not serialized. You must handle static state separately.
 
 **Key Theoretical Concepts:**

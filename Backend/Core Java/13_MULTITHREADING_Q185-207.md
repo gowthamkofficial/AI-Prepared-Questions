@@ -1,12 +1,12 @@
-# Java Interview Questions & Answers Guide
+
 ## Topic: MULTI THREADING (Questions 185-207)
-### For 2-Year Experienced Java Backend Developers
+
 
 ---
 
 ### 185. WHAT IS THE NEED FOR THREADS IN JAVA?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Threads allow concurrent execution to improve throughput and responsiveness — handling I/O, parallelizing CPU tasks, and keeping servers responsive.
 
 **Key Theoretical Concepts:**
@@ -21,7 +21,7 @@ Should know practical reasons for threads in backend apps.
 
 ### 186. HOW DO YOU CREATE A THREAD?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 By extending `Thread` or implementing `Runnable`/`Callable` and submitting to an `ExecutorService`.
 
 **Key Theoretical Concepts:**
@@ -36,7 +36,7 @@ Should show code for both approaches.
 
 ### 187. HOW DO YOU CREATE A THREAD BY EXTENDING THREAD CLASS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `class MyThread extends Thread { public void run(){ /* work */ } }` then `new MyThread().start();`
 
 **Key Theoretical Concepts:**
@@ -51,7 +51,7 @@ Should warn against calling `run()` directly.
 
 ### 188. HOW DO YOU CREATE A THREAD BY IMPLEMENTING RUNNABLE INTERFACE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Runnable r = () -> { /* work */ }; new Thread(r).start();` Or submit `r` to an `ExecutorService`.
 
 **Key Theoretical Concepts:**
@@ -63,7 +63,7 @@ Should warn against calling `run()` directly.
 
 ### 189. HOW DO YOU RUN A THREAD IN JAVA?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Call `start()` on a `Thread` instance to schedule the new thread; don't call `run()` directly. Or use `executor.submit()` / `execute()` for managed execution.
 
 **Key Theoretical Concepts:**
@@ -78,7 +78,7 @@ Should know correct usage.
 
 ### 190. WHAT ARE THE DIFFERENT STATES OF A THREAD?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED. (Java thread state enum)
 
 **Key Theoretical Concepts:**
@@ -93,7 +93,7 @@ Should identify states and typical transitions.
 
 ### 191. WHAT IS PRIORITY OF A THREAD? HOW DO YOU CHANGE THE PRIORITY OF A THREAD?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Thread priority (1-10) hints scheduler about importance; use `thread.setPriority(Thread.MAX_PRIORITY)` etc. But priority behavior is platform dependent and not a reliable scheduling mechanism.
 
 **Key Theoretical Concepts:**
@@ -108,7 +108,7 @@ Should know API but caution about portability.
 
 ### 192. WHAT IS EXECUTORSERVICE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `ExecutorService` manages a pool of threads and executes submitted tasks (`Runnable`/`Callable`) with lifecycle management, queuing, and shutdown facilities.
 
 **Key Theoretical Concepts:**
@@ -123,7 +123,7 @@ Should know why to use `ExecutorService` instead of raw threads.
 
 ### 193. CAN YOU GIVE AN EXAMPLE FOR EXECUTORSERVICE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 ```java
 ExecutorService es = Executors.newFixedThreadPool(4);
 es.submit(() -> doWork());
@@ -142,7 +142,7 @@ Should show basic usage and proper shutdown.
 
 ### 194. EXPLAIN DIFFERENT WAYS OF CREATING EXECUTOR SERVICES.
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Factory methods: `Executors.newFixedThreadPool`, `newCachedThreadPool`, `newSingleThreadExecutor`, `newScheduledThreadPool`. Since Java 8+, use `ThreadPoolExecutor` constructor directly for custom tuning.
 
 **Key Theoretical Concepts:**
@@ -157,7 +157,7 @@ Should discuss which pool suits which workload.
 
 ### 195. HOW DO YOU CHECK WHETHER AN EXECUTIONSERVICE TASK EXECUTED SUCCESSFULLY?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Use `Future<?>` returned by `submit()`. Call `future.get()` to wait for completion and check for thrown exceptions (ExecutionException). For Runnable, use `submit` that returns Future to detect completion.
 
 **Key Theoretical Concepts:**
@@ -172,7 +172,7 @@ Should give example and explain blocking nature of `get()`.
 
 ### 196. WHAT IS CALLABLE? HOW DO YOU EXECUTE A CALLABLE FROM EXECUTIONSERVICE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Callable<V>` is like `Runnable` but returns a value and may throw checked exceptions. Submit to executor: `Future<String> f = executor.submit(callable);` then `f.get()`.
 
 **Key Theoretical Concepts:**
@@ -187,7 +187,7 @@ Should show syntax and behavior.
 
 ### 197. WHAT IS SYNCHRONIZATION OF THREADS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Synchronization coordinates access to shared mutable state to prevent data races using `synchronized` blocks/methods or explicit locks. It enforces mutual exclusion and memory visibility.
 
 **Key Theoretical Concepts:**
@@ -202,7 +202,7 @@ Should explain both safety and liveness considerations.
 
 ### 198. CAN YOU GIVE AN EXAMPLE OF A SYNCHRONIZED BLOCK?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 ```java
 synchronized (lock) {
     // critical section
@@ -225,7 +225,7 @@ Should show correct usage and unlocking semantics.
 
 ### 199. CAN A STATIC METHOD BE SYNCHRONIZED?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Yes; `synchronized static` locks on the `Class` object, providing mutual exclusion across all instances.
 
 **Key Theoretical Concepts:**
@@ -240,7 +240,7 @@ Should caution about coarse-grained locking and contention.
 
 ### 200. WHAT IS THE USE OF JOIN METHOD IN THREADS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `thread.join()` waits for the target thread to finish. Useful to block the current thread until others complete.
 
 **Key Theoretical Concepts:**
@@ -255,7 +255,7 @@ Should show example and mention `join(long millis)` overload.
 
 ### 201. DESCRIBE A FEW OTHER IMPORTANT METHODS IN THREADS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `start()`, `run()`, `interrupt()`, `isInterrupted()`, `yield()`, `sleep()`, `setDaemon()`, `isDaemon()` — each affects lifecycle and scheduling. Use `interrupt()` to request cooperative cancellation.
 
 **Key Theoretical Concepts:**
@@ -270,7 +270,7 @@ Should know how to write interruptible code.
 
 ### 202. WHAT IS A DEADLOCK?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Deadlock occurs when two or more threads wait endlessly for locks held by each other. It requires mutual exclusion, hold-and-wait, no-preemption, and circular wait.
 
 **Key Theoretical Concepts:**
@@ -285,7 +285,7 @@ Should explain prevention strategies.
 
 ### 203. WHAT ARE THE IMPORTANT METHODS IN JAVA FOR INTER-THREAD COMMUNICATION?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `wait()`, `notify()`, and `notifyAll()` (object monitor methods) and higher-level constructs: `BlockingQueue`, `CountDownLatch`, `CyclicBarrier`, `Semaphore`, `Exchanger`.
 
 **Key Theoretical Concepts:**
@@ -300,7 +300,7 @@ Should prefer java.util.concurrent utilities for clarity and safety.
 
 ### 204. WHAT IS THE USE OF WAIT METHOD?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `wait()` releases the monitor and suspends the thread until `notify()`/`notifyAll()` is called on the same object or it is interrupted. It must be called while holding the monitor (`synchronized`).
 
 **Key Theoretical Concepts:**
@@ -315,7 +315,7 @@ Should show correct usage pattern in a loop.
 
 ### 205. WHAT IS THE USE OF NOTIFY METHOD?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `notify()` wakes one thread waiting on the object's monitor. The awakened thread will reacquire the monitor and resume. Prefer `notifyAll()` when multiple threads may be waiting.
 
 **Key Theoretical Concepts:**
@@ -330,7 +330,7 @@ Should caution about lost notifications and spurious wakeups.
 
 ### 206. WHAT IS THE USE OF NOTIFYALL METHOD?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `notifyAll()` wakes all threads waiting on the object's monitor; each will compete for the monitor. Useful to avoid missed signals when multiple conditions are involved.
 
 **Key Theoretical Concepts:**
@@ -345,7 +345,7 @@ Should explain when to use notifyAll over notify.
 
 ### 207. CAN YOU WRITE A SYNCHRONIZED PROGRAM WITH WAIT AND NOTIFY METHODS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Yes — classic producer-consumer using a shared buffer:
 ```java
 class Buffer {

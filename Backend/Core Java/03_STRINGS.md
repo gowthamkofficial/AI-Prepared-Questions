@@ -1,12 +1,12 @@
-# Java Interview Questions & Answers Guide
+
 ## Topic: STRINGS (Questions 16-22)
-### For 2-Year Experienced Java Backend Developers
+
 
 ---
 
 ### 16. Are all Strings Immutable?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Yes, all Strings in Java are immutable. Once a String object is created, its value cannot be changed. If you perform operations on a string, a new String object is created rather than modifying the existing one.
 
 **Example:**
@@ -48,7 +48,7 @@ A 2-year developer should definitively know Strings are immutable and understand
 
 ### 17. Where are string values stored in memory?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 String values are stored in a special region called the **String Pool** (also called String Literal Pool or String Intern Pool), which is located in the **Heap memory**.
 
 **Details:**
@@ -95,7 +95,7 @@ A 2-year developer should understand String Pool and the difference between lite
 
 ### 18. Why should you be careful about String Concatenation(+) operators in loops?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 String concatenation with the `+` operator in loops is inefficient because:
 
 1. **Strings are immutable**: Each `+` operation creates a new String object
@@ -141,7 +141,7 @@ A 2-year developer should be aware of this performance issue and be able to expl
 
 ### 19. How do you solve the above problem?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Use **StringBuilder** (if single-threaded) or **StringBuffer** (if multi-threaded) instead of string concatenation in loops.
 
 **Solution:**
@@ -196,7 +196,7 @@ A 2-year developer should know to use StringBuilder/StringBuffer in loops. Knowi
 
 ### 20. What are differences between String and StringBuffer?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 
 | Feature | String | StringBuffer |
 |---------|--------|--------------|
@@ -254,7 +254,7 @@ A 2-year developer should clearly distinguish between them and know when to use 
 
 ### 21. What are differences between StringBuilder and StringBuffer?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Both are mutable string classes with nearly identical APIs, but:
 
 | Feature | StringBuilder | StringBuffer |
@@ -308,7 +308,7 @@ A 2-year developer should know the main difference (synchronization) and when to
 
 ### 22. Can you give examples of different utility methods in String class?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 The String class provides many useful methods:
 
 ```java

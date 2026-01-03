@@ -1,12 +1,12 @@
-# Java Interview Questions & Answers Guide
+
 ## Topic: FUNCTIONAL PROGRAMMING - LAMBDA EXPRESSIONS AND STREAMS (Questions 208-220)
-### For 2-Year Experienced Java Backend Developers
+
 
 ---
 
 ### 208. WHAT IS FUNCTIONAL PROGRAMMING?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Functional programming emphasizes functions as first-class values, immutability, and side-effect-free operations. In Java, this is supported via lambdas, method references, and streams for declarative data processing.
 
 **Key Theoretical Concepts:**
@@ -21,7 +21,7 @@ Should explain basic FP principles and how Java adopts some of them.
 
 ### 209. CAN YOU GIVE AN EXAMPLE OF FUNCTIONAL PROGRAMMING?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Using streams to transform and collect:
 ```java
 List<String> names = people.stream()
@@ -42,7 +42,7 @@ Should provide concise example using lambdas/streams.
 
 ### 210. WHAT IS A STREAM?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 A `Stream` is a sequence of elements supporting functional-style operations (map, filter, reduce). Streams are lazy, can be parallelized, and do not modify the underlying data source.
 
 **Key Theoretical Concepts:**
@@ -57,7 +57,7 @@ Should know stream lifecycle and basic operations.
 
 ### 211. EXPLAIN ABOUT STREAMS WITH AN EXAMPLE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Example pipeline:
 ```java
 int sum = list.stream()
@@ -79,7 +79,7 @@ Should show awareness of side-effects and ordering.
 
 ### 212. WHAT ARE TERMINAL OPERATIONS IN STREAMS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Terminal operations produce a result or side-effect and trigger pipeline evaluation: `collect`, `forEach`, `reduce`, `count`, `sum`, `findFirst`.
 
 **Key Theoretical Concepts:**
@@ -94,7 +94,7 @@ Should list common terminal ops and differences.
 
 ### 213. WHAT ARE METHOD REFERENCES?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Method references are shorthand lambda expressions referencing existing methods: `Class::staticMethod`, `instance::instanceMethod`, `Class::instanceMethod`, `Class::new` (constructor references).
 
 **Key Theoretical Concepts:**
@@ -109,7 +109,7 @@ Should show examples and when they simplify lambdas.
 
 ### 214. WHAT ARE LAMBDA EXPRESSIONS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Lambdas are anonymous functions introduced in Java 8 with syntax `(params) -> expression` or block body. They implement functional interfaces (single abstract method).
 
 **Key Theoretical Concepts:**
@@ -124,7 +124,7 @@ Should write a simple lambda and explain captured variable rules.
 
 ### 215. CAN YOU GIVE AN EXAMPLE OF LAMBDA EXPRESSION?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Comparator<String> cmp = (a, b) -> a.length() - b.length();` or `Runnable r = () -> System.out.println("hi");`
 
 **Key Theoretical Concepts:**
@@ -139,7 +139,7 @@ Should provide concise examples.
 
 ### 216. CAN YOU EXPLAIN THE RELATIONSHIP BETWEEN LAMBDA EXPRESSION AND FUNCTIONAL INTERFACES?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Lambdas implement functional interfaces (interfaces with a single abstract method). The compiler infers the target type, enabling concise lambda syntax where a functional interface is expected.
 
 **Key Theoretical Concepts:**
@@ -154,7 +154,7 @@ Should explain mapping and give examples like `Predicate`, `Function`, `Consumer
 
 ### 217. WHAT IS A PREDICATE?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Predicate<T>` is a functional interface representing a boolean-valued function `T -> boolean`. Commonly used in `filter` operations: `Predicate<String> p = s -> s.isEmpty();`.
 
 **Key Theoretical Concepts:**
@@ -169,7 +169,7 @@ Should know usage and combinators.
 
 ### 218. WHAT IS THE FUNCTIONAL INTERFACE - FUNCTION?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Function<T,R>` represents a function that accepts `T` and returns `R`. Useful in `map` operations: `Function<Person,String> f = Person::getName;`.
 
 **Key Theoretical Concepts:**
@@ -184,7 +184,7 @@ Should show basic example and composition.
 
 ### 219. WHAT IS A CONSUMER?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `Consumer<T>` represents an operation that accepts a single argument and returns no result (side-effect). Example: `Consumer<String> c = System.out::println;` used in `forEach`.
 
 **Key Theoretical Concepts:**
@@ -199,7 +199,7 @@ Should understand typical use for side-effectful operations.
 
 ### 220. CAN YOU GIVE EXAMPLES OF FUNCTIONAL INTERFACES WITH MULTIPLE ARGUMENTS?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 `BiFunction<T,U,R>`, `BiConsumer<T,U>`, `BiPredicate<T,U>` are common multi-arg functional interfaces. Example: `BiFunction<Integer,Integer,Integer> add = (a,b) -> a+b;`.
 
 **Key Theoretical Concepts:**

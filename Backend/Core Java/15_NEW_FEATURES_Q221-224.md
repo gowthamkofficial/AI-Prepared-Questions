@@ -1,12 +1,12 @@
-# Java Interview Questions & Answers Guide
+
 ## Topic: NEW FEATURES (Questions 221-224)
-### For 2-Year Experienced Java Backend Developers
+
 
 ---
 
 ### 221. WHAT ARE THE NEW FEATURES IN JAVA 5?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Java 5 (1.5) introduced generics, enhanced for-loop, autoboxing/unboxing, typesafe enums, varargs, annotations, static import, and concurrency utilities (`java.util.concurrent`).
 
 **Key Theoretical Concepts:**
@@ -21,7 +21,7 @@ Should list main features and their impact on code clarity and safety.
 
 ### 222. WHAT ARE THE NEW FEATURES IN JAVA 6?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Java 6 focused on JVM and library improvements rather than language changes: scripting support (JSR 223), improvements to JDBC, compiler API, and performance enhancements.
 
 **Key Theoretical Concepts:**
@@ -36,7 +36,7 @@ Should know Java 6 had smaller language changes but ecosystem improvements.
 
 ### 223. WHAT ARE THE NEW FEATURES IN JAVA 7?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Java 7 added try-with-resources, diamond operator `<>`, multi-catch, strings in switch, `NIO.2` (Path API), and `ForkJoinPool`.
 
 **Key Theoretical Concepts:**
@@ -51,7 +51,7 @@ Should mention try-with-resources and multi-catch as important ergonomics.
 
 ### 224. WHAT ARE THE NEW FEATURES IN JAVA 8?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Java 8 brought lambda expressions, method references, streams API, `Optional`, new date/time API (`java.time`), default and static methods in interfaces, and `CompletableFuture`.
 
 **Key Theoretical Concepts:**

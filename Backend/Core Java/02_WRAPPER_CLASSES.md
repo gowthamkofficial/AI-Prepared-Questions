@@ -1,12 +1,12 @@
-# Java Interview Questions & Answers Guide
+
 ## Topic: WRAPPER CLASSES (Questions 7-15)
-### For 2-Year Experienced Java Backend Developers
+
 
 ---
 
 ### 7. What are Wrapper Classes?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Wrapper Classes are classes that wrap primitive data types and provide object representations for them. Every primitive type has a corresponding wrapper class:
 - int → Integer
 - double → Double
@@ -39,7 +39,7 @@ Should know the basic wrapper types and why they exist. Understanding their use 
 
 ### 8. Why do we need Wrapper Classes in Java?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Wrapper classes are needed because:
 1. **Collections require objects**: Collections like ArrayList can only store objects, not primitives. Wrapper classes allow primitives to be stored.
 2. **Method arguments**: Some methods require object types. Wrappers allow primitives to be passed where objects are expected.
@@ -77,7 +77,7 @@ Should understand the practical reasons, especially collections and generics. Me
 
 ### 9. What are the different ways of creating Wrapper Class Instances?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 There are two main ways to create wrapper class instances:
 
 **1. Using Constructor:**
@@ -120,7 +120,7 @@ A 2-year developer should know constructors and valueOf(). Knowledge of autoboxi
 
 ### 10. What are differences in the two ways of creating Wrapper Classes?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 The main differences between constructor and valueOf():
 
 **Constructor:**
@@ -164,7 +164,7 @@ A 2-year developer should understand that valueOf() is preferred. Knowing about 
 
 ### 11. What is Auto Boxing?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Autoboxing is the automatic conversion of a primitive type to its corresponding wrapper class object. It was introduced in Java 5 and eliminates the need to manually call valueOf() or constructors.
 
 **Example:**
@@ -203,7 +203,7 @@ A 2-year developer should know what autoboxing is and how to use it. Understandi
 
 ### 12. What are the Advantages of Auto Boxing?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Autoboxing provides several advantages:
 
 1. **Cleaner code**: No need for explicit valueOf() calls
@@ -245,7 +245,7 @@ Should mention at least 2-3 advantages, particularly code cleanliness and conven
 
 ### 13. What is Casting?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Casting is the conversion of one data type to another. In Java, there are two types:
 
 **1. Implicit Casting (Widening):**
@@ -285,7 +285,7 @@ A 2-year developer should understand basic type casting. Knowledge of widening a
 
 ### 14. What is Implicit Casting?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Implicit casting (also called widening conversion) is automatic type conversion that happens without explicit syntax. Java performs implicit casting when:
 - Converting from a "smaller" type to a "larger" type
 - No data loss occurs
@@ -325,7 +325,7 @@ Should understand the concept and know that it happens automatically. Knowing th
 
 ### 15. What is Explicit Casting?
 
-**Expected Answer (2-Year Level):**
+**Expected Answer :**
 Explicit casting (also called narrowing conversion) requires manual syntax using parentheses. It's needed when converting from a "larger" type to a "smaller" type, where data loss might occur.
 
 **Example:**

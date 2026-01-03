@@ -1,35 +1,4 @@
-# Spring Boot Interview Questions 
 
-## BEGINNER LEVEL (0–2 Years)
-
-### Spring Basics
-
-1. What is Spring Framework?
-2. Why do we use Spring?
-3. What problems does Spring solve?
-4. What is IoC (Inversion of Control)?
-5. What is Dependency Injection?
-6. Types of Dependency Injection
-7. Difference between tight coupling and loose coupling
-8. What is a Spring Bean?
-9. What is ApplicationContext?
-10. Difference between BeanFactory and ApplicationContext
-
----
-
-### Spring Boot Basics
-
-11. What is Spring Boot?
-12. Why Spring Boot is preferred over Spring?
-13. What are Spring Boot starters?
-14. What is auto-configuration?
-15. What is `@SpringBootApplication`?
-
-
-### Exception Handling
-79. How role-based authorization works?
-83. Explain auto-configuration flow
-```markdown
 # Spring Boot Interview Questions 
 
 ## BEGINNER LEVEL (0–2 Years)

@@ -1,7 +1,4 @@
-TYPESCRIPT INTERVIEW QUESTIONS
 
-
-BEGINNER LEVEL (0–2 Years)
 ## **TypeScript Interview Questions**
 
 ### **Beginner Level (0–2 Years)**

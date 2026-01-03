@@ -1,7 +1,4 @@
-JAVASCRIPT INTERVIEW QUESTIONS
 
-
-BEGINNER LEVEL (0–2 Years)
 ## **JavaScript Interview Questions**
 
 ### **Beginner Level (0–2 Years)**

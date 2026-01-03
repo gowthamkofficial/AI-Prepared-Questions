@@ -1,29 +1,4 @@
-JAVA PLATFORM
-1. Why is Java so Popular?
-2. What is Platform Independence?
-3. What is ByteCode?
-4. Compare JDK vs JVM VS JRE
-5. What are the Important Differences between C++ and Java?
-6. What is the Role for a ClassLoader in Java?
 
-WRAPPER CLASSES
-7. What are Wrapper Classes?
-8. Why do we need Wrapper Classes in Java?
-9. What are the different ways of creating Wrapper Class Instances?
-10. What are differences in the two ways of creating Wrapper Classes?
-11. What is Auto Boxing?
-12. What are the Advantages of Auto Boxing?
-13. What is Casting?
-14. What is Implicit Casting?
-15. What is Explicit Casting?
-
-STRINGS
-16. Are all String’s Immutable?
-17. Where are string values stored in memory?
-18. Why should you be careful about String Concatenation(+) operators in loops?
-19. How do you solve above problem?
-20. What are differences between String and StringBuffer?
-21. What are differences between StringBuilder and StringBuffer?
 ## **Java Platform**
 
 1. Why is Java so popular?

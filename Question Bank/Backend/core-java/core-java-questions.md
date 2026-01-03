@@ -24,99 +24,146 @@ STRINGS
 19. How do you solve above problem?
 20. What are differences between String and StringBuffer?
 21. What are differences between StringBuilder and StringBuffer?
-22. Can you give examples of different utility methods in String class?
+## **Java Platform**
 
-OBJECT ORIENTED PROGRAMMING BASICS
-23. What is a Class?
-24. What is an Object?
-25. What is state of an Object?
-26. What is behavior of an Object?
-27. What is the super class of every class in Java?
-28. Explain about toString method?
-29. What is the use of equals method in Java?
-30. What are the important things to consider when implementing equals method?
-31. What is the hashCode method used for in Java?
-32. Explain inheritance with Examples.
+1. Why is Java so popular?
+2. What is platform independence?
+3. What is bytecode?
+4. Compare JDK vs JVM vs JRE
+5. What are the important differences between C++ and Java?
+6. What is the role of a class loader in Java?
 
-33. WHAT IS METHOD OVERLOADING?
-34. WHAT IS METHOD OVERRIDING?
-35. CAN SUPER CLASS REFERENCE VARIABLE CAN HOLD AN OBJECT OF SUB CLASS?
-36. IS MULTIPLE INHERITANCE ALLOWED IN JAVA?
-37. WHAT IS AN INTERFACE?
-38. HOW DO YOU DEFINE AN INTERFACE?
-39. HOW DO YOU IMPLEMENT AN INTERFACE?
-40. CAN YOU EXPLAIN A FEW TRICKY THINGS ABOUT INTERFACES?
-41. CAN YOU EXTEND AN INTERFACE?
-42. CAN A CLASS EXTEND MULTIPLE INTERFACES?
-43. WHAT IS AN ABSTRACT CLASS?
-44. WHEN DO YOU USE AN ABSTRACT CLASS?
-45. HOW DO YOU DEFINE AN ABSTRACT METHOD?
-46. COMPARE ABSTRACT CLASS VS INTERFACE?
-47. WHAT IS A CONSTRUCTOR?
-48. WHAT IS A DEFAULT CONSTRUCTOR?
-49. WILL THIS CODE COMPILE?
-50. HOW DO YOU CALL A SUPER CLASS CONSTRUCTOR FROM A CONSTRUCTOR?
-51. WILL THIS CODE COMPILE?
-52. WHAT IS THE USE OF THIS(I)?
-53. CAN A CONSTRUCTOR BE CALLED DIRECTLY FROM A METHOD?
-54. IS A SUPER CLASS CONSTRUCTOR CALLED EVEN WHEN THERE IS NO EXPLICIT CALL FROM A SUB CLASS CONSTRUCTOR?
+## **Wrapper Classes**
 
-ADVANCED OBJECT ORIENTED CONCEPTS
-55. WHAT IS POLYMORPHISM?
-56. WHAT IS THE USE OF INSTANCEOF OPERATOR IN JAVA?
-57. WHAT IS COUPLING?
-58. WHAT IS COHESION?
-59. WHAT IS ENCAPSULATION?
-60. WHAT IS AN INNER CLASS?
-61. WHAT IS A STATIC INNER CLASS?
-62. CAN YOU CREATE AN INNER CLASS INSIDE A METHOD?
-63. WHAT IS AN ANONYMOUS CLASS?
+7. What are wrapper classes?
+8. Why do we need wrapper classes in Java?
+9. What are the different ways of creating wrapper class instances?
+10. What are differences in the two ways of creating wrapper classes?
+11. What is autoboxing?
+12. What are the advantages of autoboxing?
+13. What is casting?
+14. What is implicit casting?
+15. What is explicit casting?
 
-MODIFIERS
-64. WHAT IS DEFAULT CLASS MODIFIER?
-65. WHAT IS PRIVATE ACCESS MODIFIER?
-66. WHAT IS DEFAULT OR PACKAGE ACCESS MODIFIER?
-67. WHAT IS PROTECTED ACCESS MODIFIER?
-68. WHAT IS PUBLIC ACCESS MODIFIER?
-69. What access types of variables can be accessed from a Class in Same Package?
-70. What access types of variables can be accessed from a Class in Different Package?
-71. What access types of variables can be accessed from a Sub Class in Same Package?
-72. What access types of variables can be accessed from a Sub Class in Different Package?
-73. What is the use of a final modifier on a Class?
-74. What is the use of a final modifier on a method?
+## **Strings**
+
+16. Are all strings immutable?
+17. Where are string values stored in memory?
+18. Why should you be careful about string concatenation (+) in loops?
+19. How do you solve the above problem?
+20. What are differences between String and StringBuffer?
+21. What are differences between StringBuilder and StringBuffer?
+22. Can you give examples of different utility methods in the String class?
+
+## **Object Oriented Programming Basics**
+
+23. What is a class?
+24. What is an object?
+25. What is the state of an object?
+26. What is the behavior of an object?
+27. What is the superclass of every class in Java?
+28. Explain the `toString()` method.
+29. What is the use of the `equals()` method in Java?
+30. What are the important things to consider when implementing `equals()`?
+31. What is the `hashCode()` method used for in Java?
+32. Explain inheritance with examples.
+
+33. What is method overloading?
+34. What is method overriding?
+35. Can a superclass reference variable hold an object of a subclass?
+36. Is multiple inheritance allowed in Java?
+37. What is an interface?
+38. How do you define an interface?
+39. How do you implement an interface?
+40. Can you explain a few tricky things about interfaces?
+41. Can you extend an interface?
+42. Can a class implement multiple interfaces?
+43. What is an abstract class?
+44. When do you use an abstract class?
+45. How do you define an abstract method?
+46. Compare abstract class vs interface.
+47. What is a constructor?
+48. What is a default constructor?
+49. Will this code compile?
+50. How do you call a superclass constructor from a constructor?
+51. Will this code compile?
+52. What is the use of `this`?
+53. Can a constructor be called directly from a method?
+54. Is a superclass constructor called even when there is no explicit call from a subclass constructor?
+
+## **Advanced Object Oriented Concepts**
+
+55. What is polymorphism?
+56. What is the use of the `instanceof` operator in Java?
+57. What is coupling?
+58. What is cohesion?
+59. What is encapsulation?
+60. What is an inner class?
+61. What is a static inner class?
+62. Can you create an inner class inside a method?
+63. What is an anonymous class?
+
+## **Modifiers**
+
+64. What is default (package) class modifier?
+65. What is private access modifier?
+66. What is default or package access modifier?
+67. What is protected access modifier?
+68. What is public access modifier?
+69. What access types of variables can be accessed from a class in the same package?
+70. What access types of variables can be accessed from a class in a different package?
+71. What access types of variables can be accessed from a subclass in the same package?
+72. What access types of variables can be accessed from a subclass in a different package?
+73. What is the use of a `final` modifier on a class?
+74. What is the use of a `final` modifier on a method?
 75. What is a final variable?
 76. What is a final argument?
-77. What happens when a variable is marked as volatile?
-78. What is a State Variable?
+77. What happens when a variable is marked as `volatile`?
+78. What is a state variable?
 
-CONDITIONS & LOOPS — QUESTIONS 
+## **Conditions & Loops — Questions**
 
-79. Why should you always use blocks around an if statement?
+79. Why should you always use blocks around an `if` statement?
+
 Code:
+
+```
 if (x > 5)
     System.out.println("Hello");
     System.out.println("World");
+```
 
 80. Guess the output
+
 Code:
+
+```
 int x = 5;
 if (x = 5) {
     System.out.println("A");
 } else {
     System.out.println("B");
 }
+```
 
 81. Guess the output
+
 Code:
+
+```
 boolean flag = false;
 if (flag = true) {
     System.out.println("YES");
 } else {
     System.out.println("NO");
 }
+```
 
 82. Guess the output of this switch block
+
 Code:
+
+```
 int x = 2;
 switch (x) {
     case 1:
@@ -128,9 +175,13 @@ switch (x) {
     default:
         System.out.println("Default");
 }
+```
 
 83. Guess the output of this switch block
+
 Code:
+
+```
 String day = "MON";
 switch (day) {
     case "MON":
@@ -142,187 +193,212 @@ switch (day) {
     default:
         System.out.println("Unknown");
 }
+```
 
-84. Should default be the last case in a switch statement?
+84. Should `default` be the last case in a switch statement?
 
-85. Can a Switch statement be used around a String?
+85. Can a switch statement be used around a `String`?
 
 86. Guess the output of this for loop
+
 Code:
+
+```
 for (int i = 0; i < 5; i++) {
     System.out.print(i + " ");
 }
+```
 
-87. What is an Enhanced For Loop?
+87. What is an enhanced for loop?
 
 88. What is the output of the for loop below?
+
 Code:
+
+```
 int[] nums = {10, 20, 30};
 for (int x : nums) {
     System.out.print(x + " ");
 }
+```
 
 89. What is the output of the program below?
+
 Code:
+
+```
 int[] arr = {1, 2, 3};
 for (int x : arr) {
     x = x * 10;
 }
 System.out.println(arr[0]);
+```
 
 90. What is the output of the program below?
+
 Code:
+
+```
 int i = 0;
 for (System.out.println("Start"); i < 3; i++) {
     System.out.println(i);
 }
+```
 
-EXCEPTION HANDLING
-91. Why is Exception Handling Important?
-92. What design pattern is used to implement Exception handling Features in most languages?
-93. What is the need for finally block?
-94. In what scenarios is code in finally not executed?
-95. Will finally be executed in the program below?
-96. Is try without a catch is allowed?
-97. Is try without catch and finally allowed?
-98. Can you explain the hierarchy of Exception Handling Classes?
+## **Exception Handling**
+
+91. Why is exception handling important?
+92. What design pattern is used to implement exception handling features in most languages?
+93. What is the need for a `finally` block?
+94. In what scenarios is code in `finally` not executed?
+95. Will `finally` be executed in the program below?
+96. Is `try` without a `catch` allowed?
+97. Is `try` without `catch` and `finally` allowed?
+98. Can you explain the hierarchy of exception handling classes?
 99. What is the difference between Error and Exception?
-100. What is the difference between Checked Exceptions and Unchecked Exceptions?
+100. What is the difference between checked and unchecked exceptions?
 101. How do you throw an exception from a method?
-102. What happens when you throw a Checked Exception from a method?
-103. WHAT ARE THE OPTIONS YOU HAVE TO ELIMINATE COMPILATION ERRORS WHEN HANDLING CHECKED EXCEPTIONS?
-104. HOW DO YOU CREATE A CUSTOM EXCEPTION?
-105. HOW DO YOU HANDLE MULTIPLE EXCEPTION TYPES WITH SAME EXCEPTION HANDLING BLOCK?
-106. CAN YOU EXPLAIN ABOUT TRY WITH RESOURCES?
-107. HOW DOES TRY WITH RESOURCES WORK?
-108. CAN YOU EXPLAIN A FEW EXCEPTION HANDLING BEST PRACTICES?
+102. What happens when you throw a checked exception from a method?
+103. What are the options you have to eliminate compilation errors when handling checked exceptions?
+104. How do you create a custom exception?
+105. How do you handle multiple exception types with the same exception handling block?
+106. Can you explain try-with-resources?
+107. How does try-with-resources work?
+108. Can you explain a few exception handling best practices?
 
-MISCELLANEOUS TOPICS
-109. WHAT ARE THE DEFAULT VALUES IN AN ARRAY?
-110. HOW DO YOU LOOP AROUND AN ARRAY USING ENHANCED FOR LOOP?
-111. HOW DO YOU PRINT THE CONTENT OF AN ARRAY?
-112. HOW DO YOU COMPARE TWO ARRAYS?
-113. WHAT IS AN ENUM?
-114. CAN YOU USE A SWITCH STATEMENT AROUND AN ENUM?
-115. WHAT ARE VARIABLE ARGUMENTS OR VARARGS?
-116. WHAT ARE ASSERTS USED FOR?
-117. WHEN SHOULD ASSERTS BE USED?
-118. WHAT IS GARBAGE COLLECTION?
-119. CAN YOU EXPLAIN GARBAGE COLLECTION WITH AN EXAMPLE?
-120. WHEN IS GARBAGE COLLECTION RUN?
-121. WHAT ARE BEST PRACTICES ON GARBAGE COLLECTION?
-122. WHAT ARE INITIALIZATION BLOCKS?
-123. WHAT IS A STATIC INITIALIZER?
-124. WHAT IS AN INSTANCE INITIALIZER BLOCK?
-125. WHAT IS TOKENIZING?
-126. CAN YOU GIVE AN EXAMPLE OF TOKENIZING?
-127. WHAT IS SERIALIZATION?
-128. HOW DO YOU SERIALIZE AN OBJECT USING SERIALIZABLE INTERFACE?
-129. HOW DO YOU DE-SERIALIZE IN JAVA?
-130. WHAT DO YOU DO IF ONLY PARTS OF THE OBJECT HAVE TO BE SERIALIZED?
-131. HOW DO YOU SERIALIZE A HIERARCHY OF OBJECTS?
-132. ARE THE CONSTRUCTORS IN AN OBJECT INVOKED WHEN IT IS DE-SERIALIZED?
-133. ARE THE VALUES OF STATIC VARIABLES STORED WHEN AN OBJECT IS SERIALIZED?
+## **Miscellaneous Topics**
 
-COLLECTIONS
-134. WHY DO WE NEED COLLECTIONS IN JAVA?
-135. WHAT ARE THE IMPORTANT INTERFACES IN THE COLLECTION HIERARCHY?
-136. WHAT ARE THE IMPORTANT METHODS THAT ARE DECLARED IN THE COLLECTION INTERFACE?
-137. CAN YOU EXPLAIN BRIEFLY ABOUT THE LIST INTERFACE?
-138. EXPLAIN ABOUT ARRAYLIST WITH AN EXAMPLE?
-139. CAN AN ARRAYLIST HAVE DUPLICATE ELEMENTS?
-140. HOW DO YOU ITERATE AROUND AN ARRAYLIST USING ITERATOR?
-141. HOW DO YOU SORT AN ARRAYLIST?
-142. HOW DO YOU SORT ELEMENTS IN AN ARRAYLIST USING COMPARABLE INTERFACE?
-143. HOW DO YOU SORT ELEMENTS IN AN ARRAYLIST USING COMPARATOR INTERFACE?
-144. WHAT IS VECTOR CLASS? HOW IS IT DIFFERENT FROM AN ARRAYLIST?
-145. WHAT IS LINKEDLIST? WHAT INTERFACES DOES IT IMPLEMENT? HOW IS IT DIFFERENT FROM AN ARRAYLIST?
-146. CAN YOU BRIEFLY EXPLAIN ABOUT THE SET INTERFACE?
-147. WHAT ARE THE IMPORTANT INTERFACES RELATED TO THE SET INTERFACE?
-148. WHAT IS THE DIFFERENCE BETWEEN SET AND SORTEDSET INTERFACES?
-149. CAN YOU GIVE EXAMPLE OF CLASSES THAT IMPLEMENT THE SET INTERFACE?
-150. WHAT IS A HASHSET?
-151. WHAT IS A LINKEDHASHSET? HOW IS DIFFERENT FROM A HASHSET?
-152. WHAT IS A TREESET? HOW IS DIFFERENT FROM A HASHSET?
-153. CAN YOU GIVE EXAMPLE OF IMPLEMENTATIONS OF NAVIGABLESET?
-154. EXPLAIN BRIEFLY ABOUT QUEUE INTERFACE?
-155. WHAT ARE THE IMPORTANT INTERFACES RELATED TO THE QUEUE INTERFACE?
-156. EXPLAIN ABOUT THE DEQUE INTERFACE?
-157. EXPLAIN THE BLOCKINGQUEUE INTERFACE?
-158. WHAT IS A PRIORITYQUEUE?
-159. CAN YOU GIVE EXAMPLE IMPLEMENTATIONS OF THE BLOCKINGQUEUE INTERFACE?
-160. CAN YOU BRIEFLY EXPLAIN ABOUT THE MAP INTERFACE?
-161. WHAT IS DIFFERENCE BETWEEN MAP AND SORTEDMAP?
-162. WHAT IS A HASHMAP?
-163. WHAT ARE THE DIFFERENT METHODS IN A HASH MAP?
-164. WHAT IS A TREEMAP? HOW IS DIFFERENT FROM A HASHMAP?
-165. CAN YOU GIVE AN EXAMPLE OF IMPLEMENTATION OF NAVIGABLEMAP INTERFACE?
-166. WHAT ARE THE STATIC METHODS PRESENT IN THE COLLECTIONS CLASS?
+109. What are the default values in an array?
+110. How do you loop around an array using enhanced for loop?
+111. How do you print the content of an array?
+112. How do you compare two arrays?
+113. What is an enum?
+114. Can you use a switch statement around an enum?
+115. What are variable arguments or varargs?
+116. What are asserts used for?
+117. When should asserts be used?
+118. What is garbage collection?
+119. Can you explain garbage collection with an example?
+120. When is garbage collection run?
+121. What are best practices on garbage collection?
+122. What are initialization blocks?
+123. What is a static initializer?
+124. What is an instance initializer block?
+125. What is tokenizing?
+126. Can you give an example of tokenizing?
+127. What is serialization?
+128. How do you serialize an object using the `Serializable` interface?
+129. How do you de-serialize in Java?
+130. What do you do if only parts of the object have to be serialized?
+131. How do you serialize a hierarchy of objects?
+132. Are the constructors in an object invoked when it is de-serialized?
+133. Are the values of static variables stored when an object is serialized?
 
-ADVANCED COLLECTIONS
-167. WHAT IS THE DIFFERENCE BETWEEN SYNCHRONIZED AND CONCURRENT COLLECTIONS IN JAVA?
-168. EXPLAIN ABOUT THE NEW CONCURRENT COLLECTIONS IN JAVA?
-169. EXPLAIN ABOUT COPYONWRITE CONCURRENT COLLECTIONS APPROACH?
-170. WHAT IS COMPAREANDSWAP APPROACH?
-171. WHAT IS A LOCK? HOW IS IT DIFFERENT FROM USING SYNCHRONIZED APPROACH?
-172. WHAT IS INITIAL CAPACITY OF A JAVA COLLECTION?
-173. WHAT IS LOAD FACTOR?
-174. WHEN DOES A JAVA COLLECTION THROW UNSUPPORTEDOPERATIONEXCEPTION?
-175. WHAT IS DIFFERENCE BETWEEN FAIL-SAFE AND FAIL-FAST ITERATORS?
-176. WHAT ARE ATOMIC OPERATIONS IN JAVA?
-177. WHAT IS BLOCKINGQUEUE IN JAVA?
+## **Collections**
 
-GENERICS
-178. WHAT ARE GENERICS?
-179. WHY DO WE NEED GENERICS? CAN YOU GIVE AN EXAMPLE OF HOW GENERICS MAKE A PROGRAM MORE FLEXIBLE?
-180. HOW DO YOU DECLARE A GENERIC CLASS?
-181. WHAT ARE THE RESTRICTIONS IN USING GENERIC TYPE THAT IS DECLARED IN A CLASS DECLARATION?
-182. HOW CAN WE RESTRICT GENERICS TO A SUBCLASS OF PARTICULAR CLASS?
-183. HOW CAN WE RESTRICT GENERICS TO A SUPER CLASS OF PARTICULAR CLASS?
-184. CAN YOU GIVE AN EXAMPLE OF A GENERIC METHOD?
+134. Why do we need collections in Java?
+135. What are the important interfaces in the collection hierarchy?
+136. What are the important methods that are declared in the `Collection` interface?
+137. Can you explain briefly about the `List` interface?
+138. Explain about `ArrayList` with an example.
+139. Can an `ArrayList` have duplicate elements?
+140. How do you iterate an `ArrayList` using an `Iterator`?
+141. How do you sort an `ArrayList`?
+142. How do you sort elements in an `ArrayList` using `Comparable`?
+143. How do you sort elements in an `ArrayList` using `Comparator`?
+144. What is `Vector` class? How is it different from an `ArrayList`?
+145. What is `LinkedList`? What interfaces does it implement? How is it different from an `ArrayList`?
+146. Can you briefly explain about the `Set` interface?
+147. What are the important interfaces related to the `Set` interface?
+148. What is the difference between `Set` and `SortedSet` interfaces?
+149. Can you give examples of classes that implement the `Set` interface?
+150. What is a `HashSet`?
+151. What is a `LinkedHashSet`? How is it different from a `HashSet`?
+152. What is a `TreeSet`? How is it different from a `HashSet`?
+153. Can you give examples of implementations of `NavigableSet`?
+154. Explain briefly about the `Queue` interface.
+155. What are the important interfaces related to the `Queue` interface?
+156. Explain the `Deque` interface.
+157. Explain the `BlockingQueue` interface.
+158. What is a `PriorityQueue`?
+159. Can you give example implementations of the `BlockingQueue` interface?
+160. Can you briefly explain about the `Map` interface?
+161. What is the difference between `Map` and `SortedMap`?
+162. What is a `HashMap`?
+163. What are the different methods in a `HashMap`?
+164. What is a `TreeMap`? How is it different from a `HashMap`?
+165. Can you give an example of implementation of `NavigableMap` interface?
+166. What are the static methods present in the `Collections` class?
 
-MULTI THREADING
-185. WHAT IS THE NEED FOR THREADS IN JAVA?
-186. HOW DO YOU CREATE A THREAD?
-187. HOW DO YOU CREATE A THREAD BY EXTENDING THREAD CLASS?
-188. HOW DO YOU CREATE A THREAD BY IMPLEMENTING RUNNABLE INTERFACE?
-189. HOW DO YOU RUN A THREAD IN JAVA?
-190. WHAT ARE THE DIFFERENT STATES OF A THREAD?
-191. WHAT IS PRIORITY OF A THREAD? HOW DO YOU CHANGE THE PRIORITY OF A THREAD?
-192. WHAT IS EXECUTORSERVICE?
-193. CAN YOU GIVE AN EXAMPLE FOR EXECUTORSERVICE?
-194. EXPLAIN DIFFERENT WAYS OF CREATING EXECUTOR SERVICES.
-195. HOW DO YOU CHECK WHETHER AN EXECUTIONSERVICE TASK EXECUTED SUCCESSFULLY?
-196. WHAT IS CALLABLE? HOW DO YOU EXECUTE A CALLABLE FROM EXECUTIONSERVICE?
-197. WHAT IS SYNCHRONIZATION OF THREADS?
-198. CAN YOU GIVE AN EXAMPLE OF A SYNCHRONIZED BLOCK?
-199. CAN A STATIC METHOD BE SYNCHRONIZED?
-200. WHAT IS THE USE OF JOIN METHOD IN THREADS?
-201. DESCRIBE A FEW OTHER IMPORTANT METHODS IN THREADS?
-202. WHAT IS A DEADLOCK?
-203. WHAT ARE THE IMPORTANT METHODS IN JAVA FOR INTER-THREAD COMMUNICATION?
-204. WHAT IS THE USE OF WAIT METHOD?
-205. WHAT IS THE USE OF NOTIFY METHOD?
-206. WHAT IS THE USE OF NOTIFYALL METHOD?
-207. CAN YOU WRITE A SYNCHRONIZED PROGRAM WITH WAIT AND NOTIFY METHODS?
+## **Advanced Collections**
 
-FUNCTIONAL PROGRAMMING - LAMBDA EXPRESSIONS AND STREAMS
-208. WHAT IS FUNCTIONAL PROGRAMMING?
-209. CAN YOU GIVE AN EXAMPLE OF FUNCTIONAL PROGRAMMING?
-210. WHAT IS A STREAM?
-211. EXPLAIN ABOUT STREAMS WITH AN EXAMPLE?
-212. WHAT ARE TERMINAL OPERATIONS IN STREAMS?
-213. WHAT ARE METHOD REFERENCES?
-214. WHAT ARE LAMBDA EXPRESSIONS?
-215. CAN YOU GIVE AN EXAMPLE OF LAMBDA EXPRESSION?
-216. CAN YOU EXPLAIN THE RELATIONSHIP BETWEEN LAMBDA EXPRESSION AND FUNCTIONAL INTERFACES?
-217. WHAT IS A PREDICATE?
-218. WHAT IS THE FUNCTIONAL INTERFACE - FUNCTION?
-219. WHAT IS A CONSUMER?
-220. CAN YOU GIVE EXAMPLES OF FUNCTIONAL INTERFACES WITH MULTIPLE ARGUMENTS?
+167. What is the difference between synchronized and concurrent collections in Java?
+168. Explain the new concurrent collections in Java.
+169. Explain the copy-on-write concurrent collections approach.
+170. What is compare-and-swap approach?
+171. What is a lock? How is it different from using `synchronized`?
+172. What is initial capacity of a Java collection?
+173. What is load factor?
+174. When does a Java collection throw `UnsupportedOperationException`?
+175. What is the difference between fail-safe and fail-fast iterators?
+176. What are atomic operations in Java?
+177. What is `BlockingQueue` in Java?
 
-NEW FEATURES
-221. WHAT ARE THE NEW FEATURES IN JAVA 5?
-222. WHAT ARE THE NEW FEATURES IN JAVA 6?
-223. WHAT ARE THE NEW FEATURES IN JAVA 7?
-224. WHAT ARE THE NEW FEATURES IN JAVA 8?
+## **Generics**
+
+178. What are generics?
+179. Why do we need generics? Can you give an example of how generics make a program more flexible?
+180. How do you declare a generic class?
+181. What are the restrictions in using a generic type that is declared in a class declaration?
+182. How can we restrict generics to a subclass of a particular class?
+183. How can we restrict generics to a super class of a particular class?
+184. Can you give an example of a generic method?
+
+## **Multi Threading**
+
+185. What is the need for threads in Java?
+186. How do you create a thread?
+187. How do you create a thread by extending `Thread` class?
+188. How do you create a thread by implementing `Runnable` interface?
+189. How do you run a thread in Java?
+190. What are the different states of a thread?
+191. What is priority of a thread? How do you change the priority of a thread?
+192. What is `ExecutorService`?
+193. Can you give an example for `ExecutorService`?
+194. Explain different ways of creating executor services.
+195. How do you check whether an `ExecutorService` task executed successfully?
+196. What is `Callable`? How do you execute a `Callable` from `ExecutorService`?
+197. What is synchronization of threads?
+198. Can you give an example of a synchronized block?
+199. Can a static method be synchronized?
+200. What is the use of `join()` method in threads?
+201. Describe a few other important methods in threads.
+202. What is a deadlock?
+203. What are the important methods in Java for inter-thread communication?
+204. What is the use of `wait()` method?
+205. What is the use of `notify()` method?
+206. What is the use of `notifyAll()` method?
+207. Can you write a synchronized program with `wait()` and `notify()` methods?
+
+## **Functional Programming - Lambda Expressions and Streams**
+
+208. What is functional programming?
+209. Can you give an example of functional programming?
+210. What is a stream?
+211. Explain streams with an example.
+212. What are terminal operations in streams?
+213. What are method references?
+214. What are lambda expressions?
+215. Can you give an example of a lambda expression?
+216. Can you explain the relationship between lambda expressions and functional interfaces?
+217. What is a predicate?
+218. What is the functional interface `Function`?
+219. What is a `Consumer`?
+220. Can you give examples of functional interfaces with multiple arguments?
+
+## **New Features**
+
+221. What are the new features in Java 5?
+222. What are the new features in Java 6?
+223. What are the new features in Java 7?
+224. What are the new features in Java 8?

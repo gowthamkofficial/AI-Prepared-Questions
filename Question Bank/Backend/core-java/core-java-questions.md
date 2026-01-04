@@ -5,7 +5,7 @@
 2. What is platform independence?
 3. What is bytecode?
 4. Compare JDK vs JVM vs JRE
-5. What are the important differences between C++ and Java?
+<!-- 5. What are the important differences between C++ and Java? -->
 6. What is the role of a class loader in Java?
 
 ## **Wrapper Classes**

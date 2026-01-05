@@ -45,7 +45,6 @@
 34. Difference between WHERE and HAVING
 35. What is DISTINCT?
 
-### **Intermediate Level (2–4 Years)**
 
 #### **Joins (Very Important)**
 
@@ -84,7 +83,6 @@
 62. Can we use aggregate functions without `GROUP BY`?
 63. How does `GROUP BY` work internally?
 
-### **Advanced Level (4+ Years)**
 
 #### **Indexes and Performance**
 

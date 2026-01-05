@@ -3,7 +3,7 @@
 ## **Functional Programming (Questions 208-220)**
 
 ### **208. What is functional programming?**
-**Interviewer Answer:**
+** Answer:**
 - **Paradigm**: Programming style that treats computation as evaluation of mathematical functions
 - **Core Principles**:
   1. **Immutability**: Data doesn't change, new data is created
@@ -37,7 +37,7 @@ List<Integer> squares = numbers.stream()
 Immutability, Pure functions, First-class functions, Higher-order functions, Declarative programming, Side-effect free
 
 ### **209. Can you give an example of functional programming?**
-**Interviewer Answer:**
+** Answer:**
 **Example 1: Filtering and Transforming Data**
 ```java
 import java.util.*;
@@ -117,7 +117,7 @@ System.out.println(adultNames);  // [Alice, Charlie]
 Pure functions, Stream pipeline, Filter-map-reduce, Immutable data, Higher-order functions, Declarative syntax
 
 ### **210. What is a stream?**
-**Interviewer Answer:**
+** Answer:**
 - **Stream**: Sequence of elements supporting sequential and parallel aggregate operations
 - **Not a data structure**: Doesn't store elements, but conveys them from a source
 - **Characteristics**:
@@ -169,7 +169,7 @@ List<Integer> result = list.stream()          // Source
 Sequence of elements, Lazy evaluation, Single traversal, Internal iteration, Parallel processing, Pipeline operations
 
 ### **211. Explain streams with an example.**
-**Interviewer Answer:**
+** Answer:**
 **Complete Stream Example**:
 ```java
 import java.util.*;
@@ -268,7 +268,7 @@ High earners: [Charlie (Engineering): $85000.0, Eve (Engineering): $90000.0]
 Stream pipeline, Filter-map-collect pattern, Grouping collectors, Parallel streams, Terminal operations, Lazy evaluation
 
 ### **212. What are terminal operations in streams?**
-**Interviewer Answer:**
+** Answer:**
 - **Terminal operations**: Produce a result or side effect, ending the stream pipeline
 - **Trigger execution**: All intermediate operations are executed when terminal operation is called
 - **Stream is consumed**: After terminal operation, stream cannot be reused
@@ -364,7 +364,7 @@ stream.count();  // ERROR: stream has already been operated upon or closed
 Pipeline termination, Result production, Stream consumption, Reduction operations, Collection operations, Eager execution
 
 ### **213. What are method references?**
-**Interviewer Answer:**
+** Answer:**
 - **Method Reference**: Shorthand syntax for lambda expressions calling existing methods
 - **Syntax**: `ClassName::methodName` or `instance::methodName`
 - **Types of Method References**:
@@ -493,7 +493,7 @@ public class MethodReferenceExample {
 Lambda shorthand, Double colon syntax, Static/instance/constructor references, Readability improvement, Code conciseness
 
 ### **214. What are lambda expressions?**
-**Interviewer Answer:**
+** Answer:**
 - **Lambda Expression**: Anonymous function (function without name) that can be passed as argument
 - **Syntax**: `(parameters) -> expression` or `(parameters) -> { statements; }`
 - **Introduced**: Java 8 to enable functional programming
@@ -556,7 +556,7 @@ Runnable r = () -> {
 Anonymous functions, Arrow operator, Type inference, Functional interface implementation, Concise syntax, Lexical scoping
 
 ### **215. Can you give an example of a lambda expression?**
-**Interviewer Answer:**
+** Answer:**
 **Example 1: Basic Lambda Usage**
 ```java
 import java.util.*;
@@ -713,7 +713,7 @@ public class OrderProcessor {
 Lambda syntax examples, Functional interfaces implementation, Collection processing, Real-world use cases, Multi-statement lambdas
 
 ### **216. Can you explain the relationship between lambda expressions and functional interfaces?**
-**Interviewer Answer:**
+** Answer:**
 - **Functional Interface**: Interface with exactly one abstract method (SAM - Single Abstract Method)
 - **Lambda Expression**: Provides concise implementation of that single abstract method
 - **Relationship**: Lambda expression can be used wherever a functional interface is expected
@@ -834,7 +834,7 @@ interface InvalidFunctional {
 SAM (Single Abstract Method), Type inference, Method signature matching, Built-in functional interfaces, Lambda as argument, @FunctionalInterface annotation
 
 ### **217. What is a predicate?**
-**Interviewer Answer:**
+** Answer:**
 - **Predicate**: Functional interface that represents a boolean-valued function of one argument
 - **Package**: `java.util.function.Predicate`
 - **Method**: `boolean test(T t)`
@@ -1008,7 +1008,7 @@ BiPredicate<Integer, Integer> sumGreaterThan = (a, b) -> (a + b) > 10;
 Boolean-valued function, Filtering operations, Predicate composition (and/or/negate), removeIf(), Specialized predicates (IntPredicate, etc.)
 
 ### **218. What is the functional interface `Function`?**
-**Interviewer Answer:**
+** Answer:**
 - **Function**: Functional interface that accepts one argument and produces a result
 - **Package**: `java.util.function.Function<T, R>`
 - **Method**: `R apply(T t)`
@@ -1182,7 +1182,7 @@ public class ProductTransformer {
 Transformation function, Type conversion, Function composition (andThen/compose), Identity function, Specialized functions (IntFunction, etc.), Stream mapping
 
 ### **219. What is a `Consumer`?**
-**Interviewer Answer:**
+** Answer:**
 - **Consumer**: Functional interface that accepts a single input and returns no result
 - **Package**: `java.util.function.Consumer<T>`
 - **Method**: `void accept(T t)`
@@ -1369,7 +1369,7 @@ printStringWithInt.accept("Count", 10);
 Side-effect operations, Void return type, Consumer composition (andThen), forEach() method, BiConsumer, Primitive specialized consumers
 
 ### **220. Can you give examples of functional interfaces with multiple arguments?**
-**Interviewer Answer:**
+** Answer:**
 **1. BiFunction<T, U, R>** - Two arguments, returns result
 ```java
 import java.util.function.BiFunction;
@@ -1570,4 +1570,4 @@ BiFunction, BiConsumer, BiPredicate, BinaryOperator, Custom multi-arg interfaces
 
 ---
 
-**Excellent! You've now mastered Java Functional Programming concepts including lambdas, streams, and functional interfaces. These are essential for modern Java development and frequently tested in interviews. You're well-prepared to write concise, expressive, and functional Java code!** 🚀🎯
+**Excellent! You've now mastered Java Functional Programming concepts including lambdas, streams, and functional interfaces. These are essential for modern Java development and frequently tested in . You're well-prepared to write concise, expressive, and functional Java code!** 🚀🎯

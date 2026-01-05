@@ -3,7 +3,7 @@
 ## **Generics (Questions 178-184)**
 
 ### **178. What are generics?**
-**Interviewer Answer:**
+** Answer:**
 - Feature introduced in Java 5 that enables types (classes/interfaces) to be parameters when defining classes, interfaces, and methods
 - Provide type safety at compile time by allowing you to specify the type of objects a collection can contain
 - Eliminate the need for explicit casting and reduce runtime errors
@@ -14,7 +14,7 @@
 Type parameters, Compile-time type safety, Java 5 feature, Angle brackets syntax, Generic classes/interfaces/methods
 
 ### **179. Why do we need generics? Can you give an example of how generics make a program more flexible?**
-**Interviewer Answer:**
+** Answer:**
 **Why we need generics:**
 1. **Type Safety**: Catches type mismatches at compile time rather than runtime
 2. **Eliminate Casts**: No need for explicit type casting
@@ -54,7 +54,7 @@ integerBox.setContent(123);
 Type safety, Cast elimination, Reusability, Readability, Runtime error prevention, Polymorphic code
 
 ### **180. How do you declare a generic class?**
-**Interviewer Answer:**
+** Answer:**
 - Declare type parameter(s) in angle brackets after class name
 - Can have multiple type parameters separated by commas
 - Type parameters can be used throughout class as actual types
@@ -100,7 +100,7 @@ Pair<String, Integer> pair = new Pair<>("Age", 25);
 Type parameter declaration, Multiple type parameters, Naming conventions (T, E, K, V), Generic class instantiation, Type inference (diamond operator <>)
 
 ### **181. What are the restrictions in using a generic type that is declared in a class declaration?**
-**Interviewer Answer:**
+** Answer:**
 1. **Cannot Instantiate Generic Types with Primitive Types**:
    ```java
    // Invalid
@@ -153,7 +153,7 @@ Type parameter declaration, Multiple type parameters, Naming conventions (T, E, 
 Type erasure, Primitive type restriction, Static context limitations, Instanceof restriction, Array creation limitation, Exception type restriction
 
 ### **182. How can we restrict generics to a subclass of a particular class?**
-**Interviewer Answer:**
+** Answer:**
 - Use **upper bounded wildcard**: `<? extends T>`
 - Restricts unknown type to be subtype of T (including T itself)
 - Allows reading (covariant) but restricts writing (except null)
@@ -207,7 +207,7 @@ Container<String> stringContainer = new Container<>("hello");  // ERROR
 Upper bounded wildcard, extends keyword, Covariant reading, Write restriction, Type parameter bounds, PECS (Producer Extends)
 
 ### **183. How can we restrict generics to a super class of a particular class?**
-**Interviewer Answer:**
+** Answer:**
 - Use **lower bounded wildcard**: `<? super T>`
 - Restricts unknown type to be supertype of T (including T itself)
 - Allows writing (contravariant) but restricts reading (only as Object)
@@ -257,7 +257,7 @@ sink.fill(objects, 10.5);  // OK - adds Number to Object list
 Lower bounded wildcard, super keyword, Contravariant writing, Read restriction, PECS (Consumer Super), Type hierarchy flexibility
 
 ### **184. Can you give an example of a generic method?**
-**Interviewer Answer:**
+** Answer:**
 - Generic method declares its own type parameters, independent of class
 - Type parameter scope is limited to the method
 - Declared before return type: `<T> returnType methodName(T param)`
@@ -343,4 +343,4 @@ Method type parameters, Type inference, Bounded method type parameters, Generic 
 
 ---
 
-**Excellent! You've now mastered Java Generics, a crucial topic for writing type-safe and reusable code. Generics are fundamental to modern Java development and frequently appear in interviews. You're well-prepared to discuss type parameters, wildcards, and bounded types!** 🎯📚
+**Excellent! You've now mastered Java Generics, a crucial topic for writing type-safe and reusable code. Generics are fundamental to modern Java development and frequently appear in . You're well-prepared to discuss type parameters, wildcards, and bounded types!** 🎯📚

@@ -3,7 +3,7 @@
 ## **SQL Basics (Questions 21-35)**
 
 ### **21. What is SQL?**
-**Interviewer Answer:**
+** Answer:**
 - **SQL (Structured Query Language)**: Standard language for managing and manipulating relational databases
 - **Purpose**: Create, read, update, and delete database records
 - **Characteristics**:
@@ -15,7 +15,7 @@
 **Theoretical Keywords**: Structured Query Language, Relational databases, Declarative language, ANSI standard, CRUD operations
 
 ### **22. Types of SQL commands**
-**Interviewer Answer:**
+** Answer:**
 1. **DDL (Data Definition Language)**: Define database structure
    - CREATE, ALTER, DROP, TRUNCATE, RENAME
 2. **DML (Data Manipulation Language)**: Manipulate data
@@ -37,7 +37,7 @@ SQL Commands
 **Theoretical Keywords**: DDL, DML, DCL, TCL, Command categories, Database operations
 
 ### **23. What is DDL?**
-**Interviewer Answer:**
+** Answer:**
 - **DDL (Data Definition Language)**: Commands that define/modify database structure
 - **Auto-commit**: DDL commands auto-commit (cannot be rolled back)
 - **Commands**:
@@ -69,7 +69,7 @@ SQL Commands
 **Theoretical Keywords**: Schema definition, Auto-commit, Database structure, CREATE/ALTER/DROP
 
 ### **24. What is DML?**
-**Interviewer Answer:**
+** Answer:**
 - **DML (Data Manipulation Language)**: Commands that work with actual data
 - **Not auto-commit**: Changes can be rolled back (unless auto-commit enabled)
 - **Commands**:
@@ -97,7 +97,7 @@ SQL Commands
 **Theoretical Keywords**: Data manipulation, CRUD operations, Transaction control, SELECT/INSERT/UPDATE/DELETE
 
 ### **25. What is DCL?**
-**Interviewer Answer:**
+** Answer:**
 - **DCL (Data Control Language)**: Commands that control access/privileges
 - **Security management**: Grant/revoke permissions
 - **Commands**:
@@ -128,7 +128,7 @@ REVOKE SELECT ON Employees FROM analyst;
 **Theoretical Keywords**: Access control, Security, Privileges, GRANT, REVOKE, User management
 
 ### **26. What is TCL?**
-**Interviewer Answer:**
+** Answer:**
 - **TCL (Transaction Control Language)**: Commands that manage database transactions
 - **Transaction**: Logical unit of work (ACID properties)
 - **Commands**:
@@ -168,7 +168,7 @@ BEGIN TRANSACTION;
 **Theoretical Keywords**: Transaction management, ACID properties, COMMIT, ROLLBACK, SAVEPOINT
 
 ### **27. Difference between DELETE and TRUNCATE**
-**Interviewer Answer:**
+** Answer:**
 | **DELETE** | **TRUNCATE** |
 |------------|--------------|
 | DML command | DDL command |
@@ -197,7 +197,7 @@ TRUNCATE TABLE Employees; -- Cannot rollback
 **Theoretical Keywords**: DML vs DDL, Row removal, Performance, Transaction control, Auto-increment reset
 
 ### **28. Difference between DELETE and DROP**
-**Interviewer Answer:**
+** Answer:**
 | **DELETE** | **DROP** |
 |------------|----------|
 | DML command | DDL command |
@@ -230,7 +230,7 @@ DROP: Table (Structure + Data) → Nothing (table removed from database)
 **Theoretical Keywords**: Data removal vs structure removal, DML vs DDL, Table existence, Cascade constraints
 
 ### **29. What is SELECT statement?**
-**Interviewer Answer:**
+** Answer:**
 - **SELECT**: Retrieves data from one or more tables
 - **Basic syntax**: `SELECT columns FROM table WHERE conditions`
 - **Most commonly used** SQL command
@@ -275,7 +275,7 @@ OFFSET   -- Skip rows
 **Theoretical Keywords**: Data retrieval, Query execution, Result set, SQL clauses, Column projection
 
 ### **30. What is WHERE clause?**
-**Interviewer Answer:**
+** Answer:**
 - **WHERE**: Filters rows based on specified conditions
 - **Applied before** GROUP BY (filters individual rows)
 - **Cannot use** aggregate functions directly
@@ -318,7 +318,7 @@ SELECT * FROM Employees WHERE department NOT IN ('HR');
 **Theoretical Keywords**: Row filtering, Condition evaluation, Predicates, Comparison operators, NULL handling
 
 ### **31. What is ORDER BY?**
-**Interviewer Answer:**
+** Answer:**
 - **ORDER BY**: Sorts result set by specified columns
 - **Default**: ASC (ascending), can specify DESC (descending)
 - **Can sort by** multiple columns
@@ -359,7 +359,7 @@ ORDER BY commission NULLS LAST;
 **Theoretical Keywords**: Result sorting, Ascending/descending, Multiple columns, NULL ordering, Sort precedence
 
 ### **32. What is GROUP BY?**
-**Interviewer Answer:**
+** Answer:**
 - **GROUP BY**: Groups rows that have same values into summary rows
 - **Used with** aggregate functions: COUNT, SUM, AVG, MAX, MIN
 - **Creates** one row per distinct combination of group columns
@@ -403,7 +403,7 @@ GROUP BY EXTRACT(YEAR FROM hire_date);
 **Theoretical Keywords**: Data aggregation, Summary rows, Aggregate functions, Grouping columns, Result reduction
 
 ### **33. What is HAVING clause?**
-**Interviewer Answer:**
+** Answer:**
 - **HAVING**: Filters groups created by GROUP BY
 - **Applied after** GROUP BY (filters aggregated results)
 - **Can use** aggregate functions in conditions
@@ -447,7 +447,7 @@ HAVING COUNT(*) > 100; -- Valid, but unusual
 **Theoretical Keywords**: Group filtering, Aggregate conditions, Post-grouping filter, Group-level predicates
 
 ### **34. Difference between WHERE and HAVING**
-**Interviewer Answer:**
+** Answer:**
 | **WHERE** | **HAVING** |
 |-----------|------------|
 | Filters **rows** before grouping | Filters **groups** after grouping |
@@ -495,7 +495,7 @@ ORDER BY avg_sal DESC;
 **Theoretical Keywords**: Row vs group filtering, Pre-grouping vs post-grouping, Aggregate function usage, Query execution order
 
 ### **35. What is DISTINCT?**
-**Interviewer Answer:**
+** Answer:**
 - **DISTINCT**: Eliminates duplicate rows from result set
 - **Applied to** entire SELECT list (all columns combined)
 - **Can be used** with aggregate functions
@@ -570,4 +570,4 @@ LIMIT 10;
 7. LIMIT 10                   (Limit rows)
 ```
 
-**You now have comprehensive knowledge of SQL Basics!** These concepts form the foundation for all SQL queries and are essential for database-related interviews. 🗄️🚀
+**You now have comprehensive knowledge of SQL Basics!** These concepts form the foundation for all SQL queries and are essential for database-related . 🗄️🚀

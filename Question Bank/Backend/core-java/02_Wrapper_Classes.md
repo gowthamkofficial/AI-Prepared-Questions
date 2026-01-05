@@ -4,7 +4,7 @@
 
 ## 7. What are wrapper classes?
 
-### Interviewer Answer:
+###  Answer:
 - Classes that wrap primitive data types into objects
 - Eight wrapper classes: **Byte, Short, Integer, Long, Float, Double, Character, Boolean**
 - Located in **java.lang** package, automatically imported
@@ -18,7 +18,7 @@
 
 ## 8. Why do we need wrapper classes in Java?
 
-### Interviewer Answer:
+###  Answer:
 - Collections (**ArrayList, HashMap**) only work with objects, not primitives
 - Allow primitives to participate in object-oriented features (**polymorphism**)
 - Provide utility methods for conversion and manipulation (**parseInt, toString**)
@@ -33,7 +33,7 @@
 
 ## 9. What are the different ways of creating wrapper class instances?
 
-### Interviewer Answer:
+###  Answer:
 - Constructor (deprecated since Java 9): `Integer i = new Integer(10);`
 - **valueOf()** method (recommended): `Integer i = Integer.valueOf(10);`
 - **Autoboxing**: `Integer i = 10;` (compiler automatically converts)
@@ -47,7 +47,7 @@
 
 ## 10. What are differences in the two ways of creating wrapper classes?
 
-### Interviewer Answer:
+###  Answer:
 - Constructor: Always creates new object, even for cached values
 - valueOf(): May return cached object for certain ranges (**-128 to 127** for Integer)
 - Performance: valueOf() is more efficient due to caching
@@ -62,7 +62,7 @@
 
 ## 11. What is autoboxing?
 
-### Interviewer Answer:
+###  Answer:
 - Automatic conversion of primitive to corresponding wrapper object
 - Example: `Integer i = 10;` instead of `Integer i = Integer.valueOf(10);`
 - Also works in reverse: `int x = i;` (**unboxing**)
@@ -77,7 +77,7 @@
 
 ## 12. What are the advantages of autoboxing?
 
-### Interviewer Answer:
+###  Answer:
 - Reduces code verbosity and improves readability
 - Eliminates manual conversion between primitives and wrappers
 - Makes working with collections more intuitive
@@ -92,7 +92,7 @@
 
 ## 13. What is casting?
 
-### Interviewer Answer:
+###  Answer:
 - Process of converting one data type to another
 - Two types: implicit (**widening**) and explicit (**narrowing**)
 - Primitive casting: converting between numeric types
@@ -107,7 +107,7 @@
 
 ## 14. What is implicit casting?
 
-### Interviewer Answer:
+###  Answer:
 - Automatic type conversion by compiler
 - Occurs when converting from smaller to larger type (**widening**)
 - No data loss guaranteed
@@ -122,7 +122,7 @@
 
 ## 15. What is explicit casting?
 
-### Interviewer Answer:
+###  Answer:
 - Manual type conversion specified by programmer
 - Required when converting from larger to smaller type (**narrowing**)
 - Potential data loss may occur

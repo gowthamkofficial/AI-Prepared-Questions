@@ -1,4 +1,4 @@
-I will maintain the exact wording and structure of the **Interviewer Answers** and **Theoretical Keywords** as provided in your list.
+I will maintain the exact wording and structure of the ** Answers** and **Theoretical Keywords** as provided in your list.
 
 Here are the **Collections (Questions 134-166)** formatted for clarity:
 
@@ -8,7 +8,7 @@ Here are the **Collections (Questions 134-166)** formatted for clarity:
 
 ## 134. Why do we need collections in Java?
 
-**Interviewer Answer:**
+** Answer:**
 
 * Store and manipulate groups of objects efficiently
 * Overcome limitations of arrays (fixed size, homogeneous types)
@@ -25,7 +25,7 @@ Dynamic storage, Data structures, Algorithms, Code reuse, Type safety, Performan
 
 ## 135. What are the important interfaces in the collection hierarchy?
 
-**Interviewer Answer:**
+** Answer:**
 
 ```text
 Iterable (top-level)
@@ -49,7 +49,7 @@ Collection interface, List/Set/Queue, Map interface, Hierarchy structure, Iterab
 
 ## 136. What are the important methods that are declared in the Collection interface?
 
-**Interviewer Answer:**
+** Answer:**
 
 * **Basic operations:** `add(E e)`, `remove(Object o)`, `contains(Object o)`, `size()`, `isEmpty()`
 * **Bulk operations:** `addAll(Collection c)`, `removeAll(Collection c)`, `retainAll(Collection c)`, `clear()`
@@ -65,7 +65,7 @@ CRUD operations, Bulk operations, Array conversion, Iterator pattern, Stream API
 
 ## 137. Can you explain briefly about the List interface?
 
-**Interviewer Answer:**
+** Answer:**
 
 * Ordered collection (sequence) that maintains insertion order
 * Allows duplicate elements
@@ -82,7 +82,7 @@ Ordered collection, Duplicates allowed, Index access, Position-based operations,
 
 ## 138. Explain about ArrayList with an example.
 
-**Interviewer Answer:**
+** Answer:**
 
 * Resizable array implementation of List interface
 * Fast random access ( for get/set)
@@ -108,7 +108,7 @@ Resizable array, Random access O(1), Amortized growth, Not thread-safe, Index op
 
 ## 139. Can an ArrayList have duplicate elements?
 
-**Interviewer Answer:**
+** Answer:**
 
 * Yes, ArrayList allows duplicate elements
 * List interface specifically allows duplicates
@@ -124,7 +124,7 @@ Duplicates allowed, List contract, Insertion order, Separate elements, Set alter
 
 ## 140. How do you iterate an ArrayList using an Iterator?
 
-**Interviewer Answer:**
+** Answer:**
 
 ```java
 List<String> list = new ArrayList<>();
@@ -157,7 +157,7 @@ Iterator pattern, hasNext()/next(), Safe removal, ConcurrentModificationExceptio
 
 ## 141. How do you sort an ArrayList?
 
-**Interviewer Answer:**
+** Answer:**
 
 ```java
 List<Integer> numbers = new ArrayList<>();
@@ -188,7 +188,7 @@ Collections.sort(), List.sort(), Natural ordering, Comparator, Stream API, In-pl
 
 ## 142. How do you sort elements in an ArrayList using Comparable?
 
-**Interviewer Answer:**
+** Answer:**
 
 * Make element class implement `Comparable<T>` interface
 * Override `compareTo(T o)` method
@@ -220,7 +220,7 @@ Comparable interface, compareTo() method, Natural ordering, Class implementation
 
 ## 143. How do you sort elements in an ArrayList using Comparator?
 
-**Interviewer Answer:**
+** Answer:**
 
 ```java
 class Student {
@@ -258,7 +258,7 @@ Comparator interface, compare() method, Lambda expressions, Method references, M
 
 ## 144. What is Vector class? How is it different from an ArrayList?
 
-**Interviewer Answer:**
+** Answer:**
 
 | Feature | Vector | ArrayList |
 | --- | --- | --- |
@@ -278,7 +278,7 @@ Synchronized, Thread-safe, Legacy class, Enumeration, Performance trade-off
 
 ## 145. What is LinkedList? What interfaces does it implement? How is it different from an ArrayList?
 
-**Interviewer Answer:**
+** Answer:**
 
 * **LinkedList:** Doubly-linked list implementation of List and Deque interfaces
 * **Implements:** `List`, `Deque` (and thus `Queue`)
@@ -299,7 +299,7 @@ Doubly-linked list, List + Deque, Node structure, O(1) insert/delete, Memory ove
 
 ## 146. Can you briefly explain about the Set interface?
 
-**Interviewer Answer:**
+** Answer:**
 
 * Collection that contains no duplicate elements
 * Models mathematical set abstraction
@@ -316,7 +316,7 @@ No duplicates, Mathematical set, No index access, Unique elements, equals()/hash
 
 ## 147. What are the important interfaces related to the Set interface?
 
-**Interviewer Answer:**
+** Answer:**
 
 ```text
 Set (basic set operations)
@@ -336,7 +336,7 @@ SortedSet, NavigableSet, Sorted order, Navigation methods, TreeSet implementatio
 
 ## 148. What is the difference between Set and SortedSet interfaces?
 
-**Interviewer Answer:**
+** Answer:**
 
 | Feature | Set | SortedSet |
 | --- | --- | --- |
@@ -355,7 +355,7 @@ Ordering guarantee, Sorting capability, Comparator/Comparable, Navigation method
 
 ## 149. Can you give examples of classes that implement the Set interface?
 
-**Interviewer Answer:**
+** Answer:**
 
 * **HashSet:** Hash table implementation, fastest, no ordering
 * **LinkedHashSet:** Hash table + linked list, insertion order
@@ -371,7 +371,7 @@ HashSet, LinkedHashSet, TreeSet, EnumSet, Concurrent implementations, Specialize
 
 ## 150. What is a HashSet?
 
-**Interviewer Answer:**
+** Answer:**
 
 * Hash table implementation of Set interface
 * Backed by HashMap instance
@@ -397,7 +397,7 @@ Hash table implementation, No ordering, Constant time O(1), HashMap backing, Loa
 
 ## 151. What is a LinkedHashSet? How is it different from a HashSet?
 
-**Interviewer Answer:**
+** Answer:**
 
 * **LinkedHashSet:** Hash table + linked list implementation
 * Maintains insertion order (doubly-linked list)
@@ -418,7 +418,7 @@ Linked list + hash table, Insertion order, Predictable iteration, Memory overhea
 
 ## 152. What is a TreeSet? How is it different from a HashSet?
 
-**Interviewer Answer:**
+** Answer:**
 
 * **TreeSet:** Red-Black tree implementation of NavigableSet
 * Elements stored in sorted order (natural or Comparator)
@@ -439,7 +439,7 @@ Red-Black tree, Sorted order, O(log n) operations, NavigableSet, No nulls allowe
 
 ## 153. Can you give examples of implementations of NavigableSet?
 
-**Interviewer Answer:**
+** Answer:**
 
 * **TreeSet:** Primary implementation
 * **ConcurrentSkipListSet:** Thread-safe concurrent implementation
@@ -464,7 +464,7 @@ TreeSet, ConcurrentSkipListSet, Navigation methods, Subset operations, Sorted na
 
 ## 154. Explain briefly about the Queue interface.
 
-**Interviewer Answer:**
+** Answer:**
 
 * Designed for holding elements prior to processing
 * Typically FIFO (First-In-First-Out) but not always
@@ -489,7 +489,7 @@ FIFO typically, Element processing, Insert/remove/examine, PriorityQueue, Blocki
 
 ## 155. What are the important interfaces related to the Queue interface?
 
-**Interviewer Answer:**
+** Answer:**
 
 ```text
 Queue (basic queue)
@@ -516,7 +516,7 @@ Deque, BlockingQueue, TransferQueue, Double-ended, Thread-safe, Capacity bounds
 
 ## 156. Explain the Deque interface.
 
-**Interviewer Answer:**
+** Answer:**
 
 * "Double-ended queue" - insert/remove from both ends
 * Can be used as Stack (LIFO) or Queue (FIFO)
@@ -535,7 +535,7 @@ Double-ended queue, Stack/Queue usage, ArrayDeque, LinkedList, LIFO/FIFO
 
 ## 157. Explain the BlockingQueue interface.
 
-**Interviewer Answer:**
+** Answer:**
 
 * Thread-safe Queue with capacity bounds
 * Blocking operations: waits for space/availability
@@ -556,7 +556,7 @@ Thread-safe, Capacity bound, Blocking operations, Producer-consumer, Timed waits
 
 ## 158. What is a PriorityQueue?
 
-**Interviewer Answer:**
+** Answer:**
 
 * Queue where elements are ordered by natural ordering or Comparator
 * Head is least element according to ordering
@@ -583,7 +583,7 @@ Priority ordering, Heap implementation, Natural ordering/Comparator, Not FIFO, T
 
 ## 159. Can you give example implementations of the BlockingQueue interface?
 
-**Interviewer Answer:**
+** Answer:**
 
 * **ArrayBlockingQueue:** Bounded, array-backed, FIFO
 
@@ -617,7 +617,7 @@ ArrayBlockingQueue, LinkedBlockingQueue, PriorityBlockingQueue, DelayQueue, Sync
 
 ## 160. Can you briefly explain about the Map interface?
 
-**Interviewer Answer:**
+** Answer:**
 
 * Object that maps keys to values (key-value pairs)
 * Cannot contain duplicate keys
@@ -633,7 +633,7 @@ Key-value mapping, No duplicate keys, Collection views, HashMap/TreeMap, Cache i
 
 ## 161. What is the difference between Map and SortedMap?
 
-**Interviewer Answer:**
+** Answer:**
 
 | Feature | Map | SortedMap |
 | --- | --- | --- |
@@ -653,7 +653,7 @@ Key ordering, Navigation methods, Comparator/Comparable, TreeMap, Submap operati
 
 ## 162. What is a HashMap?
 
-**Interviewer Answer:**
+** Answer:**
 
 * Hash table implementation of Map interface
 * Allows one `null` key and multiple `null` values
@@ -673,7 +673,7 @@ Hash table, O(1) operations, Bucket array, Load factor, Null key allowed, Java 8
 
 ## 163. What are the different methods in a HashMap?
 
-**Interviewer Answer:**
+** Answer:**
 
 * **Basic operations:** `put(K key, V value)`, `get(Object key)`, `remove(Object key)`, `containsKey(Object key)`, `containsValue(Object value)`
 * **Bulk operations:** `putAll(Map m)`, `clear()`
@@ -688,7 +688,7 @@ CRUD operations, Collection views, Map.Entry, Java 8 methods, Default methods
 
 ## 164. What is a TreeMap? How is it different from a HashMap?
 
-**Interviewer Answer:**
+** Answer:**
 
 * **TreeMap:** Red-Black tree implementation of NavigableMap
 * Keys stored in sorted order (natural or Comparator)
@@ -709,7 +709,7 @@ Red-Black tree, Sorted keys, O(log n) operations, NavigableMap, No null keys
 
 ## 165. Can you give an example of implementation of NavigableMap interface?
 
-**Interviewer Answer:**
+** Answer:**
 
 * **TreeMap** is the primary implementation
 
@@ -739,7 +739,7 @@ TreeMap implementation, Key navigation, Submap operations, Descending view, Sort
 
 ## 166. What are the static methods present in the Collections class?
 
-**Interviewer Answer:**
+** Answer:**
 
 * **Sorting:** `sort(List)`, `sort(List, Comparator)`
 * **Searching:** `binarySearch(List, key)`, `binarySearch(List, key, Comparator)`

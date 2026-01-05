@@ -3,7 +3,7 @@
 ## **Database Basics (Questions 1-20)**
 
 ### **1. What is a database?**
-**Interviewer Answer:**
+** Answer:**
 - A **database** is an organized collection of structured data stored electronically
 - Designed for efficient data storage, retrieval, and management
 - Can be relational (tables with rows/columns) or non-relational
@@ -24,7 +24,7 @@
 **Theoretical Keywords**: Data collection, Organized storage, Electronic storage, Data persistence, Structured information
 
 ### **2. Difference between database and DBMS**
-**Interviewer Answer:**
+** Answer:**
 | **Database** | **DBMS (Database Management System)** |
 |--------------|---------------------------------------|
 | **What it is**: Collection of data | **What it is**: Software to manage databases |
@@ -50,7 +50,7 @@ Tables with data
 **Theoretical Keywords**: Data vs management software, Storage vs management, DBMS functions, Data manipulation tools
 
 ### **3. What is RDBMS?**
-**Interviewer Answer:**
+** Answer:**
 - **RDBMS (Relational Database Management System)**: DBMS based on relational model
 - **Organizes data** into tables (relations) with rows and columns
 - **Follows ACID properties**: Atomicity, Consistency, Isolation, Durability
@@ -85,7 +85,7 @@ CREATE TABLE Orders (
 **Theoretical Keywords**: Relational model, Tables and relationships, ACID properties, SQL, Normalization
 
 ### **4. Difference between SQL and NoSQL**
-**Interviewer Answer:**
+** Answer:**
 | **SQL Databases** | **NoSQL Databases** |
 |-------------------|---------------------|
 | **Structure**: Tabular (rows/columns) | **Structure**: Document, key-value, graph, column-family |
@@ -125,7 +125,7 @@ db.orders.find(
 **Theoretical Keywords**: Relational vs non-relational, Schema rigidity, Scaling approach, ACID vs BASE, Data structure
 
 ### **5. What is a table?**
-**Interviewer Answer:**
+** Answer:**
 - A **table** is a collection of related data organized in rows and columns
 - **Basic building block** of relational databases
 - **Analogous to** spreadsheet sheet or Excel worksheet
@@ -173,7 +173,7 @@ INSERT INTO Employees VALUES
 **Theoretical Keywords**: Relation, Rows and columns, Data organization, Database entity, Tuple collection
 
 ### **6. What is a row and column?**
-**Interviewer Answer:**
+** Answer:**
 | **Column (Attribute/Field)** | **Row (Tuple/Record)** |
 |------------------------------|------------------------|
 | **Definition**: Vertical entity representing a data category | **Definition**: Horizontal entity representing a single data entry |
@@ -215,7 +215,7 @@ INSERT INTO Students VALUES (3, 'Charlie', 19, 'A'); -- Row 3
 **Theoretical Keywords**: Tuple vs attribute, Record vs field, Horizontal vs vertical, Data organization
 
 ### **7. What is a primary key?**
-**Interviewer Answer:**
+** Answer:**
 - A **primary key** is a column (or set of columns) that uniquely identifies each row in a table
 - **Must be unique**: No two rows can have same primary key value
 - **Cannot be NULL**: Primary key columns cannot contain NULL values
@@ -257,7 +257,7 @@ ADD PRIMARY KEY (employee_id);
 **Theoretical Keywords**: Unique identifier, Row identification, NOT NULL constraint, Entity integrity
 
 ### **8. Why is a primary key important?**
-**Interviewer Answer:**
+** Answer:**
 **Primary keys are crucial for**:
 
 1. **Uniquely Identify Rows**: Ensures each row can be specifically referenced
@@ -304,7 +304,7 @@ ADD PRIMARY KEY (employee_id);
 **Theoretical Keywords**: Row identification, Referential integrity, Indexing, Data uniqueness, Relationship establishment
 
 ### **9. Can a table have multiple primary keys?**
-**Interviewer Answer:**
+** Answer:**
 - **NO**, a table can have only **one primary key**
 - **BUT** a primary key can consist of **multiple columns** (composite primary key)
 - This is a common point of confusion
@@ -365,7 +365,7 @@ INSERT INTO Student_Courses VALUES (101, 'CS101', '2024-01-17', 'C');   -- ERROR
 **Theoretical Keywords**: Single PK constraint, Composite keys, Unique constraints, Key cardinality
 
 ### **10. What is a foreign key?**
-**Interviewer Answer:**
+** Answer:**
 - A **foreign key** is a column (or set of columns) in one table that references the primary key in another table
 - **Creates relationship** between two tables (parent-child)
 - **Enforces referential integrity**: Ensures values exist in referenced table
@@ -429,7 +429,7 @@ CREATE TABLE Shipments (
 **Theoretical Keywords**: Referential integrity, Table relationships, Parent-child tables, Cross-table references
 
 ### **11. Why is a foreign key used?**
-**Interviewer Answer:**
+** Answer:**
 **Foreign keys are essential for**:
 
 1. **Maintain Referential Integrity**: Ensures relationships remain valid
@@ -497,7 +497,7 @@ CREATE TABLE Orders (
 **Theoretical Keywords**: Data integrity, Relationship enforcement, Orphan prevention, Cascade operations, Schema documentation
 
 ### **12. Difference between primary key and foreign key**
-**Interviewer Answer:**
+** Answer:**
 | **Primary Key** | **Foreign Key** |
 |-----------------|-----------------|
 | **Purpose**: Uniquely identify each row | **Purpose**: Link to primary key in another table |
@@ -567,7 +567,7 @@ CREATE TABLE Orders (
 **Theoretical Keywords**: Uniqueness constraint, Referential constraint, Parent-child relationship, Index types, NULL allowance
 
 ### **13. What is a candidate key?**
-**Interviewer Answer:**
+** Answer:**
 - A **candidate key** is a column (or set of columns) that could be chosen as the primary key
 - **Properties**: Must be unique, NOT NULL, and minimal (irreducible)
 - **Multiple per table**: A table can have multiple candidate keys
@@ -626,7 +626,7 @@ CREATE TABLE Enrollments (
 **Theoretical Keywords**: Potential primary keys, Alternate keys, Uniqueness constraint, Minimal superkey, Key selection
 
 ### **14. What is a composite key?**
-**Interviewer Answer:**
+** Answer:**
 - A **composite key** is a primary key made up of two or more columns
 - **Also called**: Compound key or concatenated key
 - **Used when**: No single column uniquely identifies rows
@@ -705,7 +705,7 @@ INSERT INTO Enrollments VALUES (101, 'CS101', 'Fall2023', 'C');    -- ERROR: Dup
 **Theoretical Keywords**: Multi-column primary key, Compound key, Combined uniqueness, Bridge table keys
 
 ### **15. What is a unique key?**
-**Interviewer Answer:**
+** Answer:**
 - A **unique key** ensures all values in a column (or set of columns) are different
 - **Similar to primary key** but allows NULL values (unless NOT NULL specified)
 - **Multiple allowed**: Table can have multiple unique keys
@@ -771,7 +771,7 @@ CREATE UNIQUE INDEX idx_email ON Employees(email);
 **Theoretical Keywords**: Uniqueness constraint, Alternate keys, NULL handling, Multiple constraints, Business rules
 
 ### **16. Difference between unique key and primary key**
-**Interviewer Answer:**
+** Answer:**
 | **Unique Key** | **Primary Key** |
 |----------------|-----------------|
 | **Number allowed**: Multiple per table | **Number allowed**: Only one per table |
@@ -835,7 +835,7 @@ INSERT INTO Students VALUES (NULL, 'c@d.com', '222222222', NULL); -- ERROR: PK N
 **Theoretical Keywords**: Uniqueness enforcement, NULL allowance, Index types, Foreign key targets, Constraint multiplicity
 
 ### **17. What is NULL?**
-**Interviewer Answer:**
+** Answer:**
 - **NULL** represents the absence of a value or unknown value in database
 - **Not the same as** zero or empty string
 - **Special marker** indicating "value not known" or "not applicable"
@@ -896,7 +896,7 @@ SELECT ISNULL(bonus, 0) FROM Employees;    -- SQL Server
 **Theoretical Keywords**: Unknown value, Absence of data, Three-valued logic, Special marker, NULL propagation
 
 ### **18. Can a primary key contain NULL?**
-**Interviewer Answer:**
+** Answer:**
 - **NO**, a primary key cannot contain NULL values
 - **Fundamental rule**: Primary keys must have NOT NULL constraint
 - **Violation**: Attempting to insert NULL into primary key causes error
@@ -955,7 +955,7 @@ INSERT INTO Example VALUES (NULL, 'a@b.com');  -- ERROR (id NULL)
 **Theoretical Keywords**: NOT NULL constraint, Entity integrity, Row identification, Index requirement, Database enforcement
 
 ### **19. What is schema?**
-**Interviewer Answer:**
+** Answer:**
 - A **schema** is a logical container/namespace that organizes database objects
 - **Contains**: Tables, views, indexes, procedures, functions
 - **Purpose**: Organize, secure, and manage database objects
@@ -1014,7 +1014,7 @@ SET search_path TO sales;  -- PostgreSQL
 **Theoretical Keywords**: Logical container, Namespace, Object organization, Security boundary, Database structure
 
 ### **20. What is index?**
-**Interviewer Answer:**
+** Answer:**
 - An **index** is a database structure that improves data retrieval speed
 - **Analogy**: Like book index or library catalog
 - **Creates sorted reference** to table data for faster lookups
@@ -1114,4 +1114,4 @@ Foreign Keys (reference primary keys)
 5. **Use appropriate data types**
 6. **Document schema and relationships**
 
-**You now have comprehensive knowledge of Database Basics!** These concepts are fundamental for database design, SQL development, and system architecture interviews. 🗄️🚀
+**You now have comprehensive knowledge of Database Basics!** These concepts are fundamental for database design, SQL development, and system architecture . 🗄️🚀

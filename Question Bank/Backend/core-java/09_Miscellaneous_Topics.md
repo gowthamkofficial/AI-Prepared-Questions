@@ -4,7 +4,7 @@
 
 ## 109. What are the default values in an array?
 
-### Interviewer Answer:
+###  Answer:
 
 * Depends on the array element type:
 * **Numeric types** (byte, short, int, long): `0`
@@ -25,7 +25,7 @@
 
 ## 110. How do you loop around an array using enhanced for loop?
 
-### Interviewer Answer:
+###  Answer:
 
 * Use the **for-each loop** syntax introduced in Java 5
 * **Format:** `for (elementType variable : array)`
@@ -51,7 +51,7 @@ for (String name : names) {
 
 ## 111. How do you print the content of an array?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Arrays.toString():** For 1D arrays—returns a formatted string like `[1, 2, 3]`
 * **Arrays.deepToString():** For multi-dimensional arrays (nested arrays)
@@ -67,7 +67,7 @@ for (String name : names) {
 
 ## 112. How do you compare two arrays?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Arrays.equals():** Compares 1D arrays element by element (checks length and values)
 * **Arrays.deepEquals():** Compares multi-dimensional arrays deeply
@@ -83,7 +83,7 @@ for (String name : names) {
 
 ## 113. What is an enum?
 
-### Interviewer Answer:
+###  Answer:
 
 * A special class representing a **group of constants** (fixed set of values)
 * Introduced in Java 5 to replace integer constants (e.g., `public static final int MONDAY = 1`)
@@ -99,7 +99,7 @@ for (String name : names) {
 
 ## 114. Can you use a switch statement around an enum?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Yes**, and it is highly recommended for readability
 * All enum constants should ideally be handled or covered by a `default` case
@@ -124,7 +124,7 @@ switch (day) {
 
 ## 115. What are variable arguments or varargs?
 
-### Interviewer Answer:
+###  Answer:
 
 * Feature allowing methods to accept **zero or more** arguments of a specified type
 * **Syntax:** `type... variableName` (ellipsis)
@@ -140,7 +140,7 @@ switch (day) {
 
 ## 116. What are asserts used for?
 
-### Interviewer Answer:
+###  Answer:
 
 * Used to verify **assumptions** in code during development
 * **Syntax:** `assert condition;` or `assert condition : message;`
@@ -155,7 +155,7 @@ switch (day) {
 
 ## 117. When should asserts be used?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Internal invariants:** Checking assumptions that should logically always be true
 * **Control flow invariants:** Marking code paths that should be "unreachable"
@@ -170,7 +170,7 @@ switch (day) {
 
 ## 118. What is garbage collection?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Automatic memory management** process in Java
 * The JVM reclaims memory from objects that are no longer **reachable** (no references point to them)
@@ -185,7 +185,7 @@ switch (day) {
 
 ## 119. Can you explain garbage collection with an example?
 
-### Interviewer Answer:
+###  Answer:
 
 ```java
 String s1 = new String("Hello"); // Object A created
@@ -204,7 +204,7 @@ s1 = null; // Object A is now eligible for GC (unreachable)
 
 ## 120. When is garbage collection run?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Heap pressure:** When the heap is nearly full or memory is low
 * **Generational triggers:** Minor GC runs when the "Young Generation" is full
@@ -219,7 +219,7 @@ s1 = null; // Object A is now eligible for GC (unreachable)
 
 ## 121. What are best practices on garbage collection?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Don't over-manage:** Avoid calling `System.gc()` manually
 * **Scope management:** Keep object lifetimes short (local variables)
@@ -235,7 +235,7 @@ s1 = null; // Object A is now eligible for GC (unreachable)
 
 ## 122. What are initialization blocks?
 
-### Interviewer Answer:
+###  Answer:
 
 * Blocks of code that run during class or object initialization
 * **Two types:**
@@ -253,7 +253,7 @@ s1 = null; // Object A is now eligible for GC (unreachable)
 
 ## 123. What is a static initializer?
 
-### Interviewer Answer:
+###  Answer:
 
 * A code block marked `static { ... }` that runs **once** when the class is loaded
 * Used for initializing static variables or one-time setups (like loading native libraries)
@@ -268,7 +268,7 @@ s1 = null; // Object A is now eligible for GC (unreachable)
 
 ## 124. What is an instance initializer block?
 
-### Interviewer Answer:
+###  Answer:
 
 * A code block `{ ... }` that runs **each time** an instance is created
 * Executes **after** the superclass constructor (`super()`) but **before** the current class constructor body
@@ -283,7 +283,7 @@ s1 = null; // Object A is now eligible for GC (unreachable)
 
 ## 125. What is tokenizing?
 
-### Interviewer Answer:
+###  Answer:
 
 * The process of breaking a String into smaller pieces (**tokens**) based on **delimiters** (e.g., space, comma)
 * Essential for parsing data formats like CSV or log files
@@ -297,7 +297,7 @@ s1 = null; // Object A is now eligible for GC (unreachable)
 
 ## 126. Can you give an example of tokenizing?
 
-### Interviewer Answer:
+###  Answer:
 
 ```java
 // String.split()
@@ -318,7 +318,7 @@ while(s.hasNextInt()) { int n = s.nextInt(); }
 
 ## 127. What is serialization?
 
-### Interviewer Answer:
+###  Answer:
 
 * The process of converting an object's state into a **byte stream**
 * Used for **persistence** (saving to disk) or **transmission** (sending across a network)
@@ -333,7 +333,7 @@ while(s.hasNextInt()) { int n = s.nextInt(); }
 
 ## 128. How do you serialize an object using the Serializable interface?
 
-### Interviewer Answer:
+###  Answer:
 
 * Make the class implement `java.io.Serializable`
 * Use `ObjectOutputStream` wrapped around a `FileOutputStream`
@@ -348,7 +348,7 @@ while(s.hasNextInt()) { int n = s.nextInt(); }
 
 ## 129. How do you de-serialize in Java?
 
-### Interviewer Answer:
+###  Answer:
 
 * Use `ObjectInputStream` wrapped around a `FileInputStream`
 * Call `readObject()` and **cast** it to the expected class type
@@ -363,7 +363,7 @@ while(s.hasNextInt()) { int n = s.nextInt(); }
 
 ## 130. What do you do if only parts of the object have to be serialized?
 
-### Interviewer Answer:
+###  Answer:
 
 * Use the **`transient`** keyword: Fields marked `transient` are skipped during serialization
 * **Customization:** Implement `writeObject()` and `readObject()` methods within your class
@@ -377,7 +377,7 @@ while(s.hasNextInt()) { int n = s.nextInt(); }
 
 ## 131. How do you serialize a hierarchy of objects?
 
-### Interviewer Answer:
+###  Answer:
 
 * If a superclass is `Serializable`, all its subclasses are **automatically** serializable
 * If the superclass is **not** serializable but the subclass is:
@@ -394,7 +394,7 @@ while(s.hasNextInt()) { int n = s.nextInt(); }
 
 ## 132. Are the constructors in an object invoked when it is de-serialized?
 
-### Interviewer Answer:
+###  Answer:
 
 * **No**, for the serializable class itself, the constructor is **not called**
 * The object is reconstructed by reading its fields directly from the stream
@@ -408,7 +408,7 @@ while(s.hasNextInt()) { int n = s.nextInt(); }
 
 ## 133. Are the values of static variables stored when an object is serialized?
 
-### Interviewer Answer:
+###  Answer:
 
 * **No**, static variables are **not** serialized
 * Serialization applies to the **state of an instance**

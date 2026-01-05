@@ -5,7 +5,7 @@
 
 ## 23. What is a class?
 
-### Interviewer Answer:
+###  Answer:
 
 * A class is a **blueprint or template** for creating objects
 * Defines the **structure** (state/attributes as fields) and **behavior** (methods)
@@ -20,7 +20,7 @@
 
 ## 24. What is an object?
 
-### Interviewer Answer:
+###  Answer:
 
 * An object is a **specific instance** of a class created at runtime
 * Has **actual values** for the fields defined in the class
@@ -35,7 +35,7 @@
 
 ## 25. What is the state of an object?
 
-### Interviewer Answer:
+###  Answer:
 
 * The state represents the **current data values** stored in an object's fields
 * Also called **attributes** or **properties**
@@ -50,7 +50,7 @@
 
 ## 26. What is the behavior of an object?
 
-### Interviewer Answer:
+###  Answer:
 
 * The behavior defines **what an object can do**, represented by its **methods**
 * Operations that can **read or modify** the object's state
@@ -65,7 +65,7 @@
 
 ## 27. What is the superclass of every class in Java?
 
-### Interviewer Answer:
+###  Answer:
 
 * The **Object class** (`java.lang.Object`) is the superclass of all Java classes
 * Directly or indirectly, every class **extends Object**
@@ -80,7 +80,7 @@
 
 ## 28. Explain the toString() method.
 
-### Interviewer Answer:
+###  Answer:
 
 * Returns a **string representation** of an object
 * Default implementation in `Object` class returns: `ClassName@HexadecimalHashCode`
@@ -96,7 +96,7 @@
 
 ## 29. What is the use of the equals() method in Java?
 
-### Interviewer Answer:
+###  Answer:
 
 * Used to compare two objects for **logical equality** (value-based comparison)
 * Default `Object.equals()` compares **references** (same as `==` operator)
@@ -112,7 +112,7 @@
 
 ## 30. What are the important things to consider when implementing equals()?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Reflexive:** `x.equals(x)` must always return true
 * **Symmetric:** If `x.equals(y)` is true, then `y.equals(x)` must be true
@@ -131,7 +131,7 @@
 
 ## 31. What is the hashCode() method used for in Java?
 
-### Interviewer Answer:
+###  Answer:
 
 * Returns an **integer hash code** value for an object
 * Used by **hash-based collections** (`HashMap`, `HashSet`, `HashTable`) for efficient storage/retrieval
@@ -147,7 +147,7 @@
 
 ## 32. Explain inheritance with examples.
 
-### Interviewer Answer:
+###  Answer:
 
 * Mechanism where a **child class (subclass)** inherits properties and behaviors from **parent class (superclass)**
 * Promotes **code reuse** and establishes **"is-a" relationship**
@@ -171,7 +171,7 @@ class Bike extends Vehicle { } // Bike IS-A Vehicle
 
 ## 33. What is method overloading?
 
-### Interviewer Answer:
+###  Answer:
 
 * Having multiple methods with **same name but different parameters** in same class
 * Also called **compile-time polymorphism**
@@ -194,7 +194,7 @@ void print(int a, String s) { }
 
 ## 34. What is method overriding?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Redefining a method** in subclass that's already defined in superclass
 * Also called **runtime polymorphism**
@@ -220,7 +220,7 @@ class Dog extends Animal {
 
 ## 35. Can a superclass reference variable hold an object of a subclass?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Yes**, this is a fundamental aspect of polymorphism
 * Known as **"upcasting"** - automatic and safe
@@ -243,7 +243,7 @@ myAnimal.sound(); // Calls Dog's overridden sound()
 
 ## 36. Is multiple inheritance allowed in Java?
 
-### Interviewer Answer:
+###  Answer:
 
 * **No**, Java doesn't support multiple inheritance of classes (to avoid **diamond problem**)
 * A class can extend only one superclass
@@ -259,7 +259,7 @@ myAnimal.sound(); // Calls Dog's overridden sound()
 
 ## 37. What is an interface?
 
-### Interviewer Answer:
+###  Answer:
 
 * A **contract** that defines a set of methods that implementing classes must provide
 * Until Java 7: only abstract method declarations (no implementation)
@@ -277,7 +277,7 @@ myAnimal.sound(); // Calls Dog's overridden sound()
 
 ## 38. How do you define an interface?
 
-### Interviewer Answer:
+###  Answer:
 
 * Use **interface** keyword instead of class
 * Can contain: abstract method declarations, default methods, static methods, constant fields
@@ -301,7 +301,7 @@ public interface Drawable {
 
 ## 39. How do you implement an interface?
 
-### Interviewer Answer:
+###  Answer:
 
 * Use **implements** keyword in class definition
 * Class must provide implementation for all **abstract methods** in interface
@@ -326,7 +326,7 @@ class Circle implements Drawable, Resizable {
 
 ## 40. Can you explain a few tricky things about interfaces?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Default method conflicts:** If class implements two interfaces with same default method, must override it
 * **Diamond problem with interfaces:** Resolved by requiring explicit override in implementing class
@@ -344,7 +344,7 @@ class Circle implements Drawable, Resizable {
 
 ## 41. Can you extend an interface?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Yes**, interfaces can extend other interfaces using **extends** keyword
 * Can extend **multiple interfaces** (unlike classes)
@@ -368,7 +368,7 @@ interface C extends A, B { // Multiple inheritance allowed
 
 ## 42. Can a class implement multiple interfaces?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Yes**, a class can implement multiple interfaces
 * Use comma-separated list after **implements** keyword
@@ -390,7 +390,7 @@ class SmartPhone implements Camera, Phone, MusicPlayer {
 
 ## 43. What is an abstract class?
 
-### Interviewer Answer:
+###  Answer:
 
 * A class that **cannot be instantiated** (cannot create objects)
 * Declared with **abstract** keyword
@@ -415,7 +415,7 @@ abstract class Animal {
 
 ## 44. When do you use an abstract class?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Share code among related classes:** When multiple classes share common code
 * **Template Method pattern:** Define skeleton of algorithm in superclass
@@ -432,7 +432,7 @@ abstract class Animal {
 
 ## 45. How do you define an abstract method?
 
-### Interviewer Answer:
+###  Answer:
 
 * Declare with **abstract** keyword
 * **No method body** (end with semicolon)
@@ -459,7 +459,7 @@ class Circle extends Shape {
 
 ## 46. Compare abstract class vs interface.
 
-### Interviewer Answer:
+###  Answer:
 
 | Feature | Abstract Class | Interface |
 | --- | --- | --- |
@@ -477,7 +477,7 @@ class Circle extends Shape {
 
 ## 47. What is a constructor?
 
-### Interviewer Answer:
+###  Answer:
 
 * Special method used to **initialize objects** when they're created
 * Has **same name as class** and **no return type** (not even void)
@@ -493,7 +493,7 @@ class Circle extends Shape {
 
 ## 48. What is a default constructor?
 
-### Interviewer Answer:
+###  Answer:
 
 * A **no-argument constructor** provided by Java compiler if no constructor is explicitly defined
 * Takes no parameters and has **empty body**
@@ -510,7 +510,7 @@ class Circle extends Shape {
 
 Assuming: `class Test { Test(int x) {} }` ... `Test t = new Test();`
 
-### Interviewer Answer:
+###  Answer:
 
 * **No, it won't compile**
 * Once a parameterized constructor is defined, Java **doesn't provide** default constructor
@@ -525,7 +525,7 @@ Assuming: `class Test { Test(int x) {} }` ... `Test t = new Test();`
 
 ## 50. How do you call a superclass constructor from a constructor?
 
-### Interviewer Answer:
+###  Answer:
 
 * Use **super()** as **first statement** in subclass constructor
 * Can pass arguments to call specific superclass constructor
@@ -549,7 +549,7 @@ class Child extends Parent {
 
 Assuming `Parent` has only `Parent(int x)` and `Child` has `Child() { }` without explicit `super`.
 
-### Interviewer Answer:
+###  Answer:
 
 * **No, it won't compile**
 * Parent has no default constructor
@@ -564,7 +564,7 @@ Assuming `Parent` has only `Parent(int x)` and `Child` has `Child() { }` without
 
 ## 52. What is the use of this?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Refer to current instance variables:** Distinguish between instance variables and parameters (`this.name = name`)
 * **Call another constructor of same class:** Must be first statement (`this("Unknown")`)
@@ -579,7 +579,7 @@ Assuming `Parent` has only `Parent(int x)` and `Child` has `Child() { }` without
 
 ## 53. Can a constructor be called directly from a method?
 
-### Interviewer Answer:
+###  Answer:
 
 * **No**, constructors cannot be called directly from regular methods
 * Constructors are only called during **object creation** with `new` keyword
@@ -594,7 +594,7 @@ Assuming `Parent` has only `Parent(int x)` and `Child` has `Child() { }` without
 
 ## 54. Is a superclass constructor called even when there is no explicit call from a subclass constructor?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Yes, always**
 * If no explicit `super()` call, compiler automatically inserts `super()` as **first statement**

@@ -1,6 +1,6 @@
 
 
-## **Database and SQL Interview Questions**
+## **Database and SQL  Questions**
 
 ### **Beginner Level (0–2 Years)**
 
@@ -156,7 +156,7 @@
 119. When will you choose NoSQL over SQL?
 120. How do you handle database migration?
 
-### **Final Interview Focus (Database)**
+### **Final  Focus (Database)**
 
 121. Explain schema design of your project
 122. Explain tables and relationships used

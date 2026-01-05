@@ -3,7 +3,7 @@
 ## **Joins (Questions 36-45)**
 
 ### **36. What is JOIN?**
-**Interviewer Answer:**
+** Answer:**
 - **JOIN** is a SQL operation that combines rows from two or more tables based on a related column
 - **Purpose**: Retrieve data from multiple tables in a single query
 - **Foundation**: Relational database design (normalized tables)
@@ -52,7 +52,7 @@ JOIN Orders o ON c.customer_id = o.customer_id;
 **Theoretical Keywords**: Table combination, Relational algebra, Primary/Foreign key, Result set, Cartesian product
 
 ### **37. Types of JOIN**
-**Interviewer Answer:**
+** Answer:**
 **Main JOIN Types**:
 
 1. **INNER JOIN**: Returns matching rows from both tables
@@ -108,7 +108,7 @@ SELECT * FROM A, B WHERE A.id = B.id;
 **Theoretical Keywords**: INNER, LEFT, RIGHT, FULL, CROSS, SELF, ANSI SQL, Join types
 
 ### **38. What is INNER JOIN?**
-**Interviewer Answer:**
+** Answer:**
 - **INNER JOIN** returns only rows with matching values in both tables
 - **Most common** join type (default JOIN)
 - **Result**: Intersection of two tables
@@ -163,7 +163,7 @@ INNER JOIN Products p ON oi.product_id = p.product_id;
 **Theoretical Keywords**: Intersection, Matching rows, Default join, Relational algebra, Join condition
 
 ### **39. What is LEFT JOIN?**
-**Interviewer Answer:**
+** Answer:**
 - **LEFT JOIN** returns all rows from left table, plus matching rows from right table
 - **Non-matching rows** from right table contain NULL
 - **Also called** LEFT OUTER JOIN
@@ -223,7 +223,7 @@ WHERE o.amount > 100 OR o.amount IS NULL;
 **Theoretical Keywords**: All left rows, NULL padding, Outer join, Missing matches, Preservation join
 
 ### **40. What is RIGHT JOIN?**
-**Interviewer Answer:**
+** Answer:**
 - **RIGHT JOIN** returns all rows from right table, plus matching rows from left table
 - **Non-matching rows** from left table contain NULL
 - **Mirror image** of LEFT JOIN
@@ -288,7 +288,7 @@ SELECT * FROM Orders o LEFT JOIN Customers c ON o.cust_id = c.id;
 **Theoretical Keywords**: All right rows, LEFT JOIN equivalent, Table ordering, Readability preference
 
 ### **41. What is FULL OUTER JOIN?**
-**Interviewer Answer:**
+** Answer:**
 - **FULL OUTER JOIN** returns all rows from both tables
 - **Matches**: Combined where they match
 - **Non-matches**: NULLs for missing side
@@ -361,7 +361,7 @@ FROM A FULL JOIN B ON A.id = B.id;
 **Theoretical Keywords**: Complete union, Both tables preserved, NULL padding, Data reconciliation, Union join
 
 ### **42. Difference between INNER JOIN and LEFT JOIN**
-**Interviewer Answer:**
+** Answer:**
 | **INNER JOIN** | **LEFT JOIN** |
 |----------------|---------------|
 | **Returns**: Only matching rows | **Returns**: All rows from left + matching from right |
@@ -428,7 +428,7 @@ WHERE o.id IS NULL;  -- Customers without orders
 **Theoretical Keywords**: Match-only vs all-left, NULL inclusion, Result size, Use case differentiation
 
 ### **43. Difference between LEFT JOIN and RIGHT JOIN**
-**Interviewer Answer:**
+** Answer:**
 | **LEFT JOIN** | **RIGHT JOIN** |
 |---------------|----------------|
 | **Focus**: All rows from left table | **Focus**: All rows from right table |
@@ -494,7 +494,7 @@ LEFT JOIN Employees e ON d.id = e.dept_id;
 **Theoretical Keywords**: Table focus, NULL placement, Readability, Convertibility, Coding standards
 
 ### **44. What is SELF JOIN?**
-**Interviewer Answer:**
+** Answer:**
 - **SELF JOIN**: Joining a table with itself
 - **Requires**: Table aliases to distinguish instances
 - **Use case**: Hierarchical data, comparing rows within same table
@@ -568,7 +568,7 @@ INNER JOIN Products p2 ON p1.category_id = p2.category_id
 **Theoretical Keywords**: Table aliases, Hierarchical data, Recursive relationships, Intra-table comparison
 
 ### **45. What is CROSS JOIN?**
-**Interviewer Answer:**
+** Answer:**
 - **CROSS JOIN**: Returns Cartesian product of two tables
 - **Every row** from first table combined with every row from second
 - **No join condition** required (or WHERE 1=1)
@@ -689,4 +689,4 @@ LEFT JOIN table2 t2 ON t1.key1 = t2.key
 LEFT JOIN table3 t3 ON t1.key2 = t3.key;
 ```
 
-**You now have comprehensive knowledge of SQL JOINs!** These are critical for database interviews and real-world SQL development. Practice writing JOIN queries with different scenarios to master them! 🗄️🚀
+**You now have comprehensive knowledge of SQL JOINs!** These are critical for database  and real-world SQL development. Practice writing JOIN queries with different scenarios to master them! 🗄️🚀

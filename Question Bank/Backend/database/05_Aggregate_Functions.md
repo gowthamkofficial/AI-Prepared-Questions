@@ -3,7 +3,7 @@
 ## **Aggregate Functions (Questions 57-63)**
 
 ### **57. What are aggregate functions?**
-**Interviewer Answer:**
+** Answer:**
 - **Aggregate functions** perform calculations on a set of rows and return a single value
 - **Operate on**: Multiple rows (groups of data)
 - **Return**: Single summarized value per group
@@ -68,7 +68,7 @@ FROM Employees;
 **Theoretical Keywords**: Summary functions, Group operations, Statistical calculations, Single value return, NULL handling
 
 ### **58. Difference between `COUNT(*)` and `COUNT(column_name)`**
-**Interviewer Answer:**
+** Answer:**
 | **COUNT(*)** | **COUNT(column_name)** |
 |--------------|------------------------|
 | **Counts**: All rows, regardless of NULLs | **Counts**: Non-NULL values in specific column |
@@ -159,7 +159,7 @@ SELECT COUNT(*) FROM (SELECT DISTINCT department FROM Employees) AS depts;
 **Theoretical Keywords**: Row counting, NULL exclusion, Performance difference, Metadata usage, Data validation
 
 ### **59. What is `SUM()`?**
-**Interviewer Answer:**
+** Answer:**
 - **SUM()** calculates the total sum of numeric values in a column
 - **Ignores NULL values** (treats as 0 for calculation)
 - **Returns NULL** if all values are NULL
@@ -262,7 +262,7 @@ SELECT SUM(CAST(float_column AS DECIMAL(10,2))) FROM Table;
 **Theoretical Keywords**: Total calculation, Numeric aggregation, NULL ignoring, Financial operations, Group summation
 
 ### **60. What is `AVG()`?**
-**Interviewer Answer:**
+** Answer:**
 - **AVG()** calculates the arithmetic mean (average) of numeric values
 - **Formula**: `SUM(column) / COUNT(column)`
 - **Ignores NULL values** in calculation
@@ -370,7 +370,7 @@ SELECT AVG(integer_column * 1.0) FROM Table;
 **Theoretical Keywords**: Arithmetic mean, Central tendency, NULL exclusion, Statistical average, Group analysis
 
 ### **61. What is `MIN()` and `MAX()`?**
-**Interviewer Answer:**
+** Answer:**
 - **MIN()**: Returns smallest value in a column
 - **MAX()**: Returns largest value in a column  
 - **Work with**: Numeric, date, string data types
@@ -495,7 +495,7 @@ CREATE INDEX idx_salary ON Employees(salary);
 **Theoretical Keywords**: Extreme values, Range boundaries, Data bounds, Minimum/maximum, Index optimization
 
 ### **62. Can we use aggregate functions without `GROUP BY`?**
-**Interviewer Answer:**
+** Answer:**
 - **YES**, aggregate functions can be used without GROUP BY
 - **Without GROUP BY**: Entire table is treated as single group
 - **Returns**: Single row with aggregated values
@@ -597,7 +597,7 @@ WHERE (SELECT AVG(salary) FROM Employees) > 50000;
 **Theoretical Keywords**: Single group aggregation, Table-wide summary, Implicit grouping, Mixed column restriction
 
 ### **63. How does `GROUP BY` work internally?**
-**Interviewer Answer:**
+** Answer:**
 **GROUP BY Process (Conceptual)**:
 ```
 1. Read data from table
@@ -801,4 +801,4 @@ FROM Employees;
 3. **Use approximate aggregates** for large data (APPROX_COUNT_DISTINCT)
 4. **Consider materialized views** for frequently aggregated data
 
-**You now have comprehensive knowledge of SQL Aggregate Functions!** These are essential for data analysis, reporting, and are heavily tested in interviews. Practice writing complex aggregation queries to master these concepts! 🗄️🚀
+**You now have comprehensive knowledge of SQL Aggregate Functions!** These are essential for data analysis, reporting, and are heavily tested in . Practice writing complex aggregation queries to master these concepts! 🗄️🚀

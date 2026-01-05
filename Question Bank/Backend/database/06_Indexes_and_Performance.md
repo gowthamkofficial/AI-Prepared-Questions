@@ -3,7 +3,7 @@
 ## **Indexes and Performance (Questions 64-73)**
 
 ### **64. What is an index?**
-**Interviewer Answer:**
+** Answer:**
 - **Index**: A database structure that improves data retrieval speed
 - **Analogy**: Like a book's index or library catalog system
 - **Purpose**: Provide quick lookup path to data without scanning entire table
@@ -40,7 +40,7 @@ Index Structure (Fast)
 **Theoretical Keywords**: B-tree structure, Lookup optimization, Data structure, Search performance, Storage trade-off
 
 ### **65. Types of index**
-**Interviewer Answer:**
+** Answer:**
 **Primary Index Types**:
 
 1. **Clustered Index**:
@@ -88,7 +88,7 @@ Index Structure (Fast)
 **Theoretical Keywords**: Clustered/non-clustered, B-tree/hash/bitmap, Single/multi-column, Storage structure, Indexing methods
 
 ### **66. How does an index improve performance?**
-**Interviewer Answer:**
+** Answer:**
 **Performance Improvement Mechanisms**:
 
 1. **Reduced I/O Operations**:
@@ -143,7 +143,7 @@ Typically 3-4 disk reads vs thousands for full scan
 **Theoretical Keywords**: I/O reduction, Logarithmic search, B-tree efficiency, Covering index, Query optimization
 
 ### **67. When should an index not be used?**
-**Interviewer Answer:**
+** Answer:**
 **When Indexes Are Ineffective or Harmful**:
 
 1. **Small Tables**:
@@ -206,7 +206,7 @@ Typically 3-4 disk reads vs thousands for full scan
 **Theoretical Keywords**: Index selectivity, Write overhead, Cardinality, Query patterns, Maintenance cost, Storage overhead
 
 ### **68. Difference between clustered and non-clustered index**
-**Interviewer Answer:**
+** Answer:**
 | **Clustered Index** | **Non-clustered Index** |
 |---------------------|-------------------------|
 | **Physical Order**: Determines physical storage order of table data | **Physical Order**: Does not affect physical storage order |
@@ -265,7 +265,7 @@ Pointers to data   Actual unordered data
 **Theoretical Keywords**: Physical ordering, Leaf node content, Storage structure, Lookup complexity, Range query performance
 
 ### **69. How many clustered indexes can a table have?**
-**Interviewer Answer:**
+** Answer:**
 - **Exactly ONE clustered index per table**
 - **Fundamental limitation**: Data can only be physically sorted in one order
 - **Reason**: Clustered index determines physical storage order of data rows
@@ -312,7 +312,7 @@ Consider columns with:
 **Theoretical Keywords**: Physical storage limitation, Single sort order, Data page organization, Heap tables, Index selection
 
 ### **70. What is a composite index?**
-**Interviewer Answer:**
+** Answer:**
 - **Composite Index**: Index on multiple columns (2+ columns)
 - **Also called**: Multi-column index, concatenated index
 - **Column Order Matters**: Leftmost prefix principle determines usability
@@ -397,7 +397,7 @@ Example Index entries:
 **Theoretical Keywords**: Multi-column indexing, Leftmost prefix, Column ordering, Concatenated keys, Covering indexes
 
 ### **71. How does indexing affect INSERT and UPDATE?**
-**Interviewer Answer:**
+** Answer:**
 **Negative Impact on Write Operations**:
 
 1. **INSERT Operations**:
@@ -469,7 +469,7 @@ Balanced: Selective indexing based on query patterns
 **Theoretical Keywords**: Write amplification, Page splits, Lock contention, Maintenance overhead, I/O operations
 
 ### **72. What is query optimization?**
-**Interviewer Answer:**
+** Answer:**
 - **Query Optimization**: Process where database determines most efficient way to execute SQL query
 - **Performed by**: Query Optimizer component of DBMS
 - **Goal**: Minimize resource usage (CPU, I/O, memory) while returning correct results
@@ -532,7 +532,7 @@ Balanced: Selective indexing based on query patterns
 **Theoretical Keywords**: Cost-based optimization, Execution plan, Join algorithms, Statistics, Heuristics, NP-hard problem
 
 ### **73. What is an execution plan?**
-**Interviewer Answer:**
+** Answer:**
 - **Execution Plan**: Step-by-step instructions database follows to execute query
 - **Visual representation**: Query execution strategy chosen by optimizer
 - **Contains**: Operations, access paths, join methods, cost estimates
@@ -657,4 +657,4 @@ Least Impact:
 4. **Workload Pattern Shifts**
 5. **Regular Maintenance Windows**
 
-**You now have comprehensive theoretical knowledge of Database Indexes and Performance!** This understanding is crucial for database design, query optimization, and system performance tuning in interviews. 📊🚀
+**You now have comprehensive theoretical knowledge of Database Indexes and Performance!** This understanding is crucial for database design, query optimization, and system performance tuning in . 📊🚀

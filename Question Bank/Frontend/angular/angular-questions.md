@@ -1,5 +1,5 @@
 
-## **Angular Interview Questions – Complete Prep**
+## **Angular  Questions – Complete Prep**
 
 ### **Beginner Level (0–2 Years)**
 

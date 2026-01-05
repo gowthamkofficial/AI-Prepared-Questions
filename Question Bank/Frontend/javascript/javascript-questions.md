@@ -1,5 +1,5 @@
 
-## **JavaScript Interview Questions**
+## **JavaScript  Questions**
 
 ### **Beginner Level (0–2 Years)**
 
@@ -122,11 +122,11 @@
 81. What is temporal dead zone?
 82. How does garbage collection work in JavaScript?
 
-### **Final Interview Note**
+### **Final  Note**
 
 Service-based companies focus on conceptual clarity and the ability to explain how JavaScript works internally rather than advanced library knowledge.
 
 You should be able to explain execution flow, scope, async behavior, and real-time usage clearly.
 
-This document can be used as a last-day revision checklist for JavaScript interviews.
+This document can be used as a last-day revision checklist for JavaScript .
 79. What is the difference between map, filter, and reduce?

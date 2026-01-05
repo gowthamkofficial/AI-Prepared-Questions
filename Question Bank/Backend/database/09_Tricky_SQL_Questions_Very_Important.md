@@ -3,7 +3,7 @@
 ## **Tricky SQL Questions (92-114)**
 
 ### **92. Difference between WHERE and HAVING with example**
-**Interviewer Answer:**
+** Answer:**
 | **WHERE** | **HAVING** |
 |-----------|------------|
 | **Filters rows** before grouping | **Filters groups** after grouping |
@@ -40,7 +40,7 @@ ORDER BY avg_sal DESC;
 **Theoretical Keywords**: Row vs group filtering, Pre-grouping vs post-grouping, Aggregate function usage
 
 ### **93. Find second highest salary from employee table**
-**Interviewer Answer:**
+** Answer:**
 **Multiple Approaches**:
 
 1. **Using LIMIT/OFFSET** (MySQL, PostgreSQL):
@@ -81,7 +81,7 @@ ORDER BY avg_sal DESC;
 **Theoretical Keywords**: Ranking functions, Subquery filtering, Limit/offset pagination
 
 ### **94. Find nth highest salary**
-**Interviewer Answer:**
+** Answer:**
 **Generalized Solutions**:
 
 1. **Using LIMIT with OFFSET** (n-1):
@@ -129,7 +129,7 @@ ORDER BY avg_sal DESC;
 **Theoretical Keywords**: Ranking functions, Correlated subqueries, Position-based retrieval
 
 ### **95. Delete duplicate records from a table**
-**Interviewer Answer:**
+** Answer:**
 **Multiple Approaches**:
 
 1. **Using ROW_NUMBER() with CTE** (Most efficient):
@@ -180,7 +180,7 @@ ORDER BY avg_sal DESC;
 **Theoretical Keywords**: Duplicate elimination, Window functions, Self-join deletion, Group by filtering
 
 ### **96. Find duplicate records in a table**
-**Interviewer Answer:**
+** Answer:**
 **Multiple Approaches**:
 
 1. **Using GROUP BY with HAVING**:
@@ -239,7 +239,7 @@ HAVING COUNT(*) > 1;
 **Theoretical Keywords**: Duplicate detection, Group aggregation, Self-join identification
 
 ### **97. Difference between `COUNT(1)` and `COUNT(*)`**
-**Interviewer Answer:**
+** Answer:**
 | **COUNT(1)** | **COUNT(*)** |
 |--------------|--------------|
 | **Counts**: Number 1 for each row | **Counts**: All rows regardless of content |
@@ -282,7 +282,7 @@ SELECT COUNT(*) FROM table;      -- Includes NULL rows
 **Theoretical Keywords**: Row counting semantics, NULL handling, Query optimization
 
 ### **98. Difference between `CHAR` and `VARCHAR`**
-**Interviewer Answer:**
+** Answer:**
 | **CHAR(n)** | **VARCHAR(n)** |
 |-------------|----------------|
 | **Storage**: Fixed-length, pads with spaces | **Storage**: Variable-length, no padding |
@@ -314,7 +314,7 @@ VARCHAR(10) storing 'ABC': 'ABC'        -- no padding
 **Theoretical Keywords**: Fixed vs variable length, Storage efficiency, Padding behavior
 
 ### **99. What happens if WHERE condition is not used in DELETE?**
-**Interviewer Answer:**
+** Answer:**
 - **Deletes ALL rows** from the table
 - **Equivalent to**: `TRUNCATE TABLE` but with important differences
 - **Transaction logged**: Each row deletion is logged (unlike TRUNCATE)
@@ -357,7 +357,7 @@ TRUNCATE TABLE table;
 **Theoretical Keywords**: Mass deletion, Transaction logging, Trigger execution, Safety precautions
 
 ### **100. How to fetch records common in two tables**
-**Interviewer Answer:**
+** Answer:**
 **Multiple Approaches**:
 
 1. **Using INNER JOIN** (Most common):
@@ -428,7 +428,7 @@ INNER JOIN TableB b ON a.col1 = b.col1
 **Theoretical Keywords**: Set intersection, Common records, Join vs intersect, Duplicate handling
 
 ### **101. Difference between EXISTS and IN performance-wise**
-**Interviewer Answer:**
+** Answer:**
 | **EXISTS** | **IN** |
 |------------|--------|
 | **Execution**: Stops at first match (semi-join) | **Execution**: May process entire subquery result |
@@ -490,7 +490,7 @@ WHERE NOT EXISTS (SELECT 1 FROM Table2 t2 WHERE t2.id = t1.id);
 **Theoretical Keywords**: Semi-join optimization, Early termination, NULL semantics, Correlated execution
 
 ### **102. How indexes work internally (B-Tree)**
-**Interviewer Answer:**
+** Answer:**
 **B-Tree Index Structure**:
 
 ```
@@ -569,7 +569,7 @@ Leaf Node (for non-clustered index):
 **Theoretical Keywords**: Balanced tree, Logarithmic search, Node structure, Sequential scanning, Tree operations
 
 ### **103. What happens when primary key is not defined?**
-**Interviewer Answer:**
+** Answer:**
 **Consequences of No Primary Key**:
 
 1. **Heap Organization**: Table stored as heap (unordered collection of rows)
@@ -625,7 +625,7 @@ ALTER TABLE Employees ADD PRIMARY KEY (employee_id);
 **Theoretical Keywords**: Heap tables, Row identifiers, Clustered index absence, Data organization
 
 ### **104. Can foreign key reference non-primary key?**
-**Interviewer Answer:**
+** Answer:**
 - **YES**, foreign key can reference non-primary key columns
 - **Requirement**: Referenced column must have UNIQUE constraint or be part of UNIQUE index
 - **Called**: "Referencing a candidate key" not just primary key
@@ -710,7 +710,7 @@ CREATE TABLE Equipment (
 **Theoretical Keywords**: Candidate key references, Unique constraint requirement, Business key relationships
 
 ### **105. What is deadlock?**
-**Interviewer Answer:**
+** Answer:**
 - **Deadlock**: Situation where two or more transactions are blocked forever, each waiting for a resource held by another
 - **Circular Wait**: Transaction A waits for resource held by B, B waits for resource held by A
 - **Four Necessary Conditions** (Coffman conditions):
@@ -757,7 +757,7 @@ UPDATE TableB SET ...          UPDATE TableA SET ...
 **Theoretical Keywords**: Circular wait, Coffman conditions, Wait-for graph, Resource contention
 
 ### **106. How to handle deadlock?**
-**Interviewer Answer:**
+** Answer:**
 **Database-Level Handling**:
 
 1. **Automatic Deadlock Detection & Resolution**:
@@ -837,7 +837,7 @@ UPDATE TableB SET ...          UPDATE TableA SET ...
 **Theoretical Keywords**: Victim selection, Retry patterns, Lock ordering, Timeout mechanisms
 
 ### **107. Why `SELECT *` is not recommended?**
-**Interviewer Answer:**
+** Answer:**
 **Performance Issues**:
 
 1. **Unnecessary Data Transfer**:
@@ -911,7 +911,7 @@ UPDATE TableB SET ...          UPDATE TableA SET ...
 **Theoretical Keywords**: Data transfer efficiency, Schema coupling, Security exposure, Maintenance complexity
 
 ### **108. Difference between TRUNCATE and DROP in terms of rollback**
-**Interviewer Answer:**
+** Answer:**
 | **TRUNCATE** | **DROP** |
 |--------------|----------|
 | **Operation**: Removes all rows, keeps structure | **Operation**: Removes table completely |
@@ -987,7 +987,7 @@ UPDATE TableB SET ...          UPDATE TableA SET ...
 **Theoretical Keywords**: DDL operations, Transaction logging, Auto-commit behavior, Recovery strategies
 
 ### **109. What is stored procedure?**
-**Interviewer Answer:**
+** Answer:**
 - **Stored Procedure**: Precompiled collection of SQL statements stored in database
 - **Characteristics**:
   1. **Named routine**: Called by name with parameters
@@ -1059,7 +1059,7 @@ END
 **Theoretical Keywords**: Precompiled routines, Database encapsulation, Transaction management, Security abstraction
 
 ### **110. Difference between stored procedure and function**
-**Interviewer Answer:**
+** Answer:**
 | **Stored Procedure** | **Function** |
 |----------------------|--------------|
 | **Return type**: Can return 0, 1, or multiple values | **Return type**: Must return single value (scalar) or table |
@@ -1124,7 +1124,7 @@ END
 **Theoretical Keywords**: Scalar vs Table-valued, Deterministic vs Non-deterministic, SQL embeddability, Side effects
 
 ### **111. What is view?**
-**Interviewer Answer:**
+** Answer:**
 - **View**: Virtual table based on SQL query result set
 - **Characteristics**:
   1. **No physical storage**: Doesn't store data (except materialized views)
@@ -1189,7 +1189,7 @@ WHERE emp_id = 101;
 **Theoretical Keywords**: Virtual table, Dynamic result set, Security abstraction, Query simplification
 
 ### **112. Difference between view and table**
-**Interviewer Answer**:
+** Answer**:
 | **Aspect** | **View** | **Table** |
 |------------|----------|-----------|
 | **Storage** | Virtual, no physical data | Physical, stores actual data |
@@ -1221,7 +1221,7 @@ WHERE emp_id = 101;
 **Theoretical Keywords**: Physical storage, Data persistence, Schema binding, Data abstraction
 
 ### **113. What is materialized view?**
-**Interviewer Answer**:
+** Answer**:
 - **Materialized View**: Physical copy of query result stored as table
 - **Also called**: Indexed view (SQL Server), Snapshot (Oracle)
 - **Characteristics**:
@@ -1282,7 +1282,7 @@ SELECT ...;  -- Same query as above
 **Theoretical Keywords**: Pre-computed results, Query optimization, Data redundancy, Refresh strategies
 
 ### **114. How to improve slow SQL query performance?**
-**Interviewer Answer**:
+** Answer**:
 **Systematic Approach**:
 1. **Diagnose** → 2. **Analyze** → 3. **Optimize** → 4. **Test**
 

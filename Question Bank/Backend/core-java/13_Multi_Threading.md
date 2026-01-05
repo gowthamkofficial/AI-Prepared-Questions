@@ -3,7 +3,7 @@
 ## **Multi-Threading (Questions 185-207)**
 
 ### **185. What is the need for threads in Java?**
-**Interviewer Answer:**
+** Answer:**
 - **Concurrent Execution**: Perform multiple tasks simultaneously
 - **Better CPU Utilization**: Keep CPU busy while waiting for I/O operations
 - **Responsive Applications**: Prevent UI freezing in desktop/mobile apps
@@ -21,7 +21,7 @@
 Concurrency, Parallelism, CPU utilization, Responsiveness, Asynchronous processing, Multi-core advantage
 
 ### **186. How do you create a thread?**
-**Interviewer Answer:**
+** Answer:**
 Two main approaches in Java:
 
 1. **Extend `Thread` class** and override `run()` method
@@ -56,7 +56,7 @@ Thread thread2 = new Thread(new MyRunnable());
 Thread class, Runnable interface, run() method, Thread constructor, Execution approaches
 
 ### **187. How do you create a thread by extending `Thread` class?**
-**Interviewer Answer:**
+** Answer:**
 ```java
 // Step 1: Create class extending Thread
 class CustomThread extends Thread {
@@ -105,7 +105,7 @@ public class Main {
 Thread inheritance, run() override, start() method, Single inheritance limitation, Thread naming
 
 ### **188. How do you create a thread by implementing `Runnable` interface?**
-**Interviewer Answer:**
+** Answer:**
 ```java
 // Step 1: Implement Runnable interface
 class MyRunnable implements Runnable {
@@ -163,7 +163,7 @@ public class Main {
 Runnable implementation, Thread constructor, Lambda expressions, Task separation, Resource sharing
 
 ### **189. How do you run a thread in Java?**
-**Interviewer Answer:**
+** Answer:**
 - Call `start()` method on Thread object
 - **Never call `run()` directly** - that executes in current thread, not new thread
 
@@ -199,7 +199,7 @@ executor.shutdown(); // Important to shutdown
 start() method, run() vs start(), Thread scheduler, Stack allocation, ExecutorService execution
 
 ### **190. What are the different states of a thread?**
-**Interviewer Answer:**
+** Answer:**
 Java threads have 6 states defined in `Thread.State` enum:
 
 1. **NEW**: Created but not yet started (`start()` not called)
@@ -244,7 +244,7 @@ RUNNABLE → waiting for lock → BLOCKED
 Thread lifecycle, Thread.State enum, State transitions, Blocking states, Termination
 
 ### **191. What is priority of a thread? How do you change the priority of a thread?**
-**Interviewer Answer:**
+** Answer:**
 - **Thread Priority**: Hint to scheduler about thread importance (1-10)
 - **Default Priority**: 5 (NORM_PRIORITY)
 - **Constants**: 
@@ -299,7 +299,7 @@ lowPriority.start();
 Priority constants, setPriority(), getPriority(), Scheduler hint, Platform dependence, Priority range 1-10
 
 ### **192. What is `ExecutorService`?**
-**Interviewer Answer:**
+** Answer:**
 - **ExecutorService**: Higher-level replacement for working with threads directly
 - Part of `java.util.concurrent` package (introduced in Java 5)
 - **Manages thread pool** - reuses threads instead of creating new ones
@@ -329,7 +329,7 @@ executor.shutdown(); // Important!
 Thread pool, java.util.concurrent, Task execution framework, Resource management, Future results
 
 ### **193. Can you give an example for `ExecutorService`?**
-**Interviewer Answer:**
+** Answer:**
 ```java
 import java.util.concurrent.*;
 
@@ -390,7 +390,7 @@ All tasks completed
 FixedThreadPool, Task submission, Graceful shutdown, awaitTermination(), Thread reuse
 
 ### **194. Explain different ways of creating executor services.**
-**Interviewer Answer:**
+** Answer:**
 ```java
 import java.util.concurrent.*;
 
@@ -450,7 +450,7 @@ public class ExecutorTypes {
 Fixed/Cached/SingleThread pools, ScheduledExecutorService, WorkStealingPool, ThreadPoolExecutor, Core/max pool sizes
 
 ### **195. How do you check whether an `ExecutorService` task executed successfully?**
-**Interviewer Answer:**
+** Answer:**
 **For Runnable tasks (no result)**:
 ```java
 ExecutorService executor = Executors.newSingleThreadExecutor();
@@ -530,7 +530,7 @@ executor.shutdown();
 Future interface, get() method, ExecutionException, TimeoutException, CompletionService, Task monitoring
 
 ### **196. What is `Callable`? How do you execute a `Callable` from `ExecutorService`?**
-**Interviewer Answer:**
+** Answer:**
 - **Callable**: Similar to Runnable but can return result and throw checked exceptions
 - **Interface**: `Callable<V>` with single method `V call() throws Exception`
 - **Difference from Runnable**:
@@ -628,7 +628,7 @@ for (Future<Integer> future : futures) {
 Callable interface, call() method, Future return type, Checked exceptions, invokeAll(), invokeAny()
 
 ### **197. What is synchronization of threads?**
-**Interviewer Answer:**
+** Answer:**
 - **Synchronization**: Mechanism to control access to shared resources by multiple threads
 - **Prevents**: Race conditions and data inconsistency
 - **Ensures**: Only one thread accesses critical section at a time
@@ -685,7 +685,7 @@ class SafeCounter {
 Race condition, Critical section, Mutual exclusion, Intrinsic lock, Monitor, Thread safety
 
 ### **198. Can you give an example of a synchronized block?**
-**Interviewer Answer:**
+** Answer:**
 ```java
 class SharedResource {
     private int value = 0;
@@ -778,7 +778,7 @@ public class SynchronizedExample {
 synchronized block, Lock object, Fine-grained locking, Static synchronization, Performance optimization
 
 ### **199. Can a static method be synchronized?**
-**Interviewer Answer:**
+** Answer:**
 - **Yes**, static methods can be synchronized
 - **Lock**: On class object (`ClassName.class`), not instance (`this`)
 - **Purpose**: Protect static data from concurrent access
@@ -840,7 +840,7 @@ Thread t2 = new Thread(() -> {
 Static synchronization, Class-level lock, Class object, Instance vs static lock, Singleton pattern
 
 ### **200. What is the use of `join()` method in threads?**
-**Interviewer Answer:**
+** Answer:**
 - **Purpose**: Makes current thread wait until specified thread completes
 - **Use case**: Coordinate thread execution order
 - **Overloaded versions**:
@@ -921,7 +921,7 @@ Main thread completed
 Thread coordination, Waiting mechanism, Timeout support, Thread completion, Sequential execution
 
 ### **201. Describe a few other important methods in threads.**
-**Interviewer Answer:**
+** Answer:**
 ```java
 public class ThreadMethodsExample {
     public static void main(String[] args) {
@@ -1011,7 +1011,7 @@ public class ThreadMethodsExample {
 Thread lifecycle methods, Interruption mechanism, Daemon threads, Thread identification, Priority management
 
 ### **202. What is a deadlock?**
-**Interviewer Answer:**
+** Answer:**
 - **Deadlock**: Situation where two or more threads are blocked forever, each waiting for a resource held by another
 - **Four necessary conditions** (Coffman conditions):
   1. **Mutual Exclusion**: Resources cannot be shared
@@ -1095,7 +1095,7 @@ if (deadlockedThreads != null) {
 Coffman conditions, Circular wait, Resource contention, Lock ordering, Deadlock detection, Prevention strategies
 
 ### **203. What are the important methods in Java for inter-thread communication?**
-**Interviewer Answer:**
+** Answer:**
 Primary methods in `Object` class for inter-thread communication:
 
 1. **`wait()`** - Causes current thread to wait until notified
@@ -1120,7 +1120,7 @@ Primary methods in `Object` class for inter-thread communication:
 wait-notify mechanism, Object monitor, Thread coordination, Synchronization prerequisite, java.util.concurrent helpers
 
 ### **204. What is the use of `wait()` method?**
-**Interviewer Answer:**
+** Answer:**
 - **Purpose**: Makes current thread wait until another thread calls `notify()` or `notifyAll()`
 - **Releases lock**: Unlike `sleep()`, `wait()` releases the object's monitor
 - **Overloaded versions**:
@@ -1189,7 +1189,7 @@ synchronized(lock) {
 Monitor release, Condition waiting, Spurious wakeup, InterruptedException, Condition checking loop
 
 ### **205. What is the use of `notify()` method?**
-**Interviewer Answer:**
+** Answer:**
 - **Purpose**: Wakes up **one** thread that's waiting on same object's monitor
 - **Selection**: If multiple threads waiting, JVM chooses arbitrarily
 - **Requirements**:
@@ -1259,7 +1259,7 @@ public class NotifyExample {
 Single thread wakeup, Arbitrary selection, Condition signaling, Monitor ownership, Producer-consumer pattern
 
 ### **206. What is the use of `notifyAll()` method?**
-**Interviewer Answer:**
+** Answer:**
 - **Purpose**: Wakes up **all** threads waiting on same object's monitor
 - **Use case**: When multiple threads need to re-check condition after change
 - **Behavior**: All waiting threads move to BLOCKED state, compete for lock
@@ -1356,7 +1356,7 @@ synchronized(lock) {
 Multiple thread wakeup, Broadcast notification, Condition re-evaluation, Thread contention, Safety vs performance
 
 ### **207. Can you write a synchronized program with `wait()` and `notify()` methods?**
-**Interviewer Answer:**
+** Answer:**
 **Complete Producer-Consumer Example**:
 ```java
 import java.util.LinkedList;
@@ -1570,4 +1570,4 @@ Producer-consumer pattern, Condition checking loop, Spurious wakeup handling, Th
 
 ---
 
-**Excellent! You've now mastered Java Multi-threading, one of the most complex and important topics in Java interviews. You're well-prepared to discuss thread creation, synchronization, concurrency utilities, and deadlock scenarios. This knowledge is crucial for senior Java roles!** 🚀🎯
+**Excellent! You've now mastered Java Multi-threading, one of the most complex and important topics in Java . You're well-prepared to discuss thread creation, synchronization, concurrency utilities, and deadlock scenarios. This knowledge is crucial for senior Java roles!** 🚀🎯

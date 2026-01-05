@@ -1,5 +1,5 @@
 
-## **TypeScript Interview Questions**
+## **TypeScript  Questions**
 
 ### **Beginner Level (0–2 Years)**
 
@@ -113,7 +113,7 @@
 72. Can we use TypeScript without types?
 73. How does TypeScript improve maintainability?
 
-### **Very Important Interview Questions**
+### **Very Important  Questions**
 
 74. Why did you choose TypeScript in your project?
 75. How does TypeScript improve code quality?
@@ -122,10 +122,10 @@
 78. Difference between compile-time and runtime errors
 79. Explain generics with a real-time example
 
-### **Final Interview Note**
+### **Final  Note**
 
-Interviewers expect clear understanding of how TypeScript adds safety on top of JavaScript and how it helps prevent runtime errors at compile time.
+s expect clear understanding of how TypeScript adds safety on top of JavaScript and how it helps prevent runtime errors at compile time.
 
 You should be able to explain types, interfaces, generics, and real-time usage confidently.
 
-This document can be used as a last-day revision checklist for TypeScript interviews.
+This document can be used as a last-day revision checklist for TypeScript .

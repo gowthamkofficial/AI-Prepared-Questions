@@ -10,7 +10,7 @@ if (x > 5)
 
 ```
 
-### Interviewer Answer:
+###  Answer:
 
 * Without braces, **only the first statement** is part of the `if` block
 * The second `println("World")` always executes regardless of condition
@@ -39,7 +39,7 @@ if (x = 5) {  // COMPILE ERROR
 
 ```
 
-### Interviewer Answer:
+###  Answer:
 
 * **Compile Error:** `if (x = 5)` tries to assign 5 to x
 * In Java, `if` requires a **boolean expression**
@@ -67,7 +67,7 @@ if (flag = true) {
 
 ```
 
-### Interviewer Answer:
+###  Answer:
 
 * **Output:** "YES"
 * `flag = true` assigns true to flag and returns true
@@ -100,7 +100,7 @@ switch (x) {
 
 ```
 
-### Interviewer Answer:
+###  Answer:
 
 * **Output:**
 
@@ -141,7 +141,7 @@ switch (day) {
 
 ```
 
-### Interviewer Answer:
+###  Answer:
 
 * **Output:** "Monday"
 * String switches are allowed (Java 7+)
@@ -157,7 +157,7 @@ switch (day) {
 
 ## 84. Should default be the last case in a switch statement?
 
-### Interviewer Answer:
+###  Answer:
 
 * **No**, `default` can appear anywhere in switch statement
 * However, convention is to put it last for readability
@@ -181,7 +181,7 @@ switch (x) {
 
 ## 85. Can a switch statement be used around a String?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Yes, since Java 7**
 * Uses `String.equals()` for comparison (case-sensitive)
@@ -215,7 +215,7 @@ for (int i = 0; i < 5; i++) {
 
 ```
 
-### Interviewer Answer:
+###  Answer:
 
 * **Output:** "0 1 2 3 4 "
 * Loop executes 5 times with i values: 0, 1, 2, 3, 4
@@ -230,7 +230,7 @@ for (int i = 0; i < 5; i++) {
 
 ## 87. What is an enhanced for loop?
 
-### Interviewer Answer:
+###  Answer:
 
 * Also called **for-each loop** (introduced in Java 5)
 * Simplified syntax for iterating over arrays and Collections
@@ -264,7 +264,7 @@ for (int x : nums) {
 
 ```
 
-### Interviewer Answer:
+###  Answer:
 
 * **Output:** "10 20 30 "
 * Enhanced for loop iterates over array elements
@@ -290,7 +290,7 @@ System.out.println(arr[0]);
 
 ```
 
-### Interviewer Answer:
+###  Answer:
 
 * **Output:** "1"
 * In enhanced for loop, `x` is a **local copy** of array element
@@ -316,7 +316,7 @@ for (System.out.println("Start"); i < 3; i++) {
 
 ```
 
-### Interviewer Answer:
+###  Answer:
 
 * **Output:**
 

@@ -3,7 +3,7 @@
 ## **Subqueries and Clauses (Questions 46-56)**
 
 ### **46. What is a subquery?**
-**Interviewer Answer:**
+** Answer:**
 - A **subquery** is a SQL query nested inside another query
 - **Also called**: Inner query, nested query
 - **Executes first**: Inner query executes before outer query
@@ -52,7 +52,7 @@ FROM Employees;
 **Theoretical Keywords**: Nested query, Inner query, Query within query, Parent-child queries
 
 ### **47. Types of subqueries**
-**Interviewer Answer:**
+** Answer:**
 **Based on Result Type**:
 
 1. **Scalar Subquery**: Returns single value
@@ -133,7 +133,7 @@ FROM Employees;
 **Theoretical Keywords**: Scalar/row/table subqueries, Correlated/non-correlated, Query position, Result type
 
 ### **48. Difference between subquery and join**
-**Interviewer Answer:**
+** Answer:**
 | **Subquery** | **JOIN** |
 |--------------|----------|
 | **Approach**: Nested SELECT statement | **Approach**: Combine tables horizontally |
@@ -193,7 +193,7 @@ JOIN Orders o ON c.id = o.customer_id;
 **Theoretical Keywords**: Nested vs combined, Row-by-row vs set-based, Performance trade-offs, Query optimization
 
 ### **49. What is correlated subquery?**
-**Interviewer Answer:**
+** Answer:**
 - A **correlated subquery** references columns from the outer query
 - **Executes repeatedly**: Once for each row processed by outer query
 - **Dependent**: Cannot execute independently
@@ -287,7 +287,7 @@ WHERE salary > dept_avg;
 **Theoretical Keywords**: Outer query reference, Row-by-row execution, Dependent subquery, Performance consideration
 
 ### **50. Difference between IN and EXISTS**
-**Interviewer Answer:**
+** Answer:**
 | **IN** | **EXISTS** |
 |--------|------------|
 | **Purpose**: Check if value matches any in list | **Purpose**: Check if subquery returns any rows |
@@ -368,7 +368,7 @@ WHERE NOT EXISTS (SELECT 1 FROM Table2 t2 WHERE t2.id = t1.id);
 **Theoretical Keywords**: Set membership, Semi-join, NULL semantics, Early termination, Correlated queries
 
 ### **51. What is BETWEEN?**
-**Interviewer Answer:**
+** Answer:**
 - **BETWEEN** operator checks if a value is within a range (inclusive)
 - **Syntax**: `value BETWEEN low AND high`
 - **Inclusive**: Includes both boundary values
@@ -444,7 +444,7 @@ WHERE salary BETWEEN 40000 AND 70000
 **Theoretical Keywords**: Range operator, Inclusive bounds, Interval checking, SQL predicate
 
 ### **52. What is LIKE?**
-**Interviewer Answer:**
+** Answer:**
 - **LIKE** operator performs pattern matching on strings
 - **Uses wildcards**: `%` (any sequence), `_` (single character)
 - **Case sensitivity**: Depends on database collation
@@ -526,7 +526,7 @@ WHERE name LIKE 'J%'
 **Theoretical Keywords**: Pattern matching, Wildcards, String search, Partial matching, Text queries
 
 ### **53. What is UNION?**
-**Interviewer Answer:**
+** Answer:**
 - **UNION** combines result sets of two or more SELECT statements
 - **Removes duplicates**: Only distinct rows in final result
 - **Requirements**:
@@ -607,7 +607,7 @@ ORDER BY salary DESC;
 **Theoretical Keywords**: Set union, Result combination, Duplicate removal, Column compatibility
 
 ### **54. Difference between UNION and UNION ALL**
-**Interviewer Answer:**
+** Answer:**
 | **UNION** | **UNION ALL** |
 |-----------|---------------|
 | **Duplicates**: Removes duplicate rows | **Duplicates**: Keeps all rows (including duplicates) |
@@ -698,7 +698,7 @@ SELECT DISTINCT * FROM (
 **Theoretical Keywords**: Duplicate handling, Performance difference, Set operations, Result concatenation
 
 ### **55. What is LIMIT?**
-**Interviewer Answer:**
+** Answer:**
 - **LIMIT** restricts number of rows returned by a query
 - **Database specific**: Syntax varies (MySQL, PostgreSQL use LIMIT)
 - **Use cases**: Pagination, top-N queries, sampling
@@ -793,7 +793,7 @@ LIMIT 50;  -- 50 most recent log entries
 **Theoretical Keywords**: Row restriction, Result limiting, Pagination, Top-N queries, Database-specific syntax
 
 ### **56. What is OFFSET?**
-**Interviewer Answer:**
+** Answer:**
 - **OFFSET** skips specified number of rows before returning results
 - **Used with LIMIT** for pagination
 - **Common pattern**: `LIMIT n OFFSET m` returns rows m+1 to m+n
@@ -943,7 +943,7 @@ ORDER BY department, rank;
 4. **Avoid LIKE with leading wildcards** on indexed columns
 5. **Use keyset pagination** instead of OFFSET for large datasets
 
-### **Common Interview Patterns**:
+### **Common  Patterns**:
 ```sql
 -- Pattern 1: Find employees without managers
 SELECT e.name 
@@ -972,4 +972,4 @@ WHERE e1.salary > (
 );
 ```
 
-**You now have comprehensive knowledge of SQL Subqueries and Clauses!** These are essential for writing complex queries and are frequently tested in interviews. Practice combining these concepts to solve real-world problems! 🗄️🚀
+**You now have comprehensive knowledge of SQL Subqueries and Clauses!** These are essential for writing complex queries and are frequently tested in . Practice combining these concepts to solve real-world problems! 🗄️🚀

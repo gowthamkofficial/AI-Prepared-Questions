@@ -4,7 +4,7 @@
 
 ## 91. Why is exception handling important?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Prevents program termination** when unexpected situations occur
 * **Separates error-handling code** from business logic (cleaner code)
@@ -21,7 +21,7 @@
 
 ## 92. What design pattern is used to implement exception handling features in most languages?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Chain of Responsibility** pattern
 * Exceptions **propagate up the call stack** until caught by an appropriate handler
@@ -37,7 +37,7 @@
 
 ## 93. What is the need for a finally block?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Guarantees execution** of cleanup code regardless of whether an exception occurs
 * Used for **resource cleanup** (closing files, database connections, network sockets)
@@ -53,7 +53,7 @@
 
 ## 94. In what scenarios is code in finally not executed?
 
-### Interviewer Answer:
+###  Answer:
 
 * **JVM exits:** `System.exit(0)` in try or catch block
 * **Infinite loop/blocking:** Thread stuck in try/catch
@@ -72,7 +72,7 @@
 
 *(Assuming: `try { return; } finally { System.out.println("finally"); }`)*
 
-### Interviewer Answer:
+###  Answer:
 
 * **Yes**, `finally` executes before the method returns
 * The `finally` block executes even when the `try` block has a `return` statement
@@ -87,7 +87,7 @@
 
 ## 96. Is try without a catch allowed?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Yes**, but only with a **finally** block
 * **Syntax:** `try { ... } finally { ... }`
@@ -103,7 +103,7 @@
 
 ## 97. Is try without catch and finally allowed?
 
-### Interviewer Answer:
+###  Answer:
 
 * **No**, a `try` block must be followed by either `catch`, `finally`, or both
 * `try { }` alone is a **compile-time error**
@@ -118,7 +118,7 @@
 
 ## 98. Can you explain the hierarchy of exception handling classes?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Throwable (root)**
 * **Error (unchecked):** `VirtualMachineError`, `OutOfMemoryError`, `StackOverflowError`
@@ -138,7 +138,7 @@
 
 ## 99. What is the difference between Error and Exception?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Errors:** Serious system-level problems that applications shouldn't try to catch (e.g., `OutOfMemoryError`). Usually **unrecoverable**.
 * **Exceptions:** Conditions that applications should catch and handle (e.g., `IOException`). Can often be **recovered from**.
@@ -152,7 +152,7 @@
 
 ## 100. What is the difference between checked and unchecked exceptions?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Checked Exceptions:** Compiler enforces handling; must be caught or declared with `throws`. Represent **recoverable** conditions (e.g., `FileNotFoundException`).
 * **Unchecked Exceptions:** Subclasses of `RuntimeException` or `Error`. Usually represent **programming errors** or bugs (e.g., `NullPointerException`). No compiler enforcement.
@@ -165,7 +165,7 @@
 
 ## 101. How do you throw an exception from a method?
 
-### Interviewer Answer:
+###  Answer:
 
 * Use the **throw** keyword with an exception instance
 * For checked exceptions, you must declare them in the method signature using **throws**
@@ -186,7 +186,7 @@ public void checkAge(int age) {
 
 ## 102. What happens when you throw a checked exception from a method?
 
-### Interviewer Answer:
+###  Answer:
 
 * You **must declare it** in the method signature with a `throws` clause
 * The **caller** must then either catch it or declare it in their own signature
@@ -200,7 +200,7 @@ public void checkAge(int age) {
 
 ## 103. What are the options you have to eliminate compilation errors when handling checked exceptions?
 
-### Interviewer Answer:
+###  Answer:
 
 1. **Catch the exception:** Handle it locally with a `try-catch` block
 2. **Declare in throws:** Add the exception to the method signature to pass responsibility to the caller
@@ -214,7 +214,7 @@ public void checkAge(int age) {
 
 ## 104. How do you create a custom exception?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Extend Exception** (for checked) or **RuntimeException** (for unchecked)
 * Provide constructors that call `super()` to pass the message and cause
@@ -235,7 +235,7 @@ public class MyException extends Exception {
 
 ## 105. How do you handle multiple exception types with the same exception handling block?
 
-### Interviewer Answer:
+###  Answer:
 
 * Use the **Multi-catch** feature (Java 7+) using the pipe (`|`) operator
 * **Syntax:** `catch (IOException | SQLException e) { ... }`
@@ -249,7 +249,7 @@ public class MyException extends Exception {
 
 ## 106. Can you explain try-with-resources?
 
-### Interviewer Answer:
+###  Answer:
 
 * A Java 7+ feature for **automatic resource management**
 * Resources that implement the **AutoCloseable** interface are automatically closed at the end of the block
@@ -264,7 +264,7 @@ public class MyException extends Exception {
 
 ## 107. How does try-with-resources work?
 
-### Interviewer Answer:
+###  Answer:
 
 * Resources are closed in the **reverse order** of their declaration
 * The `close()` method is called automatically even if an exception occurs
@@ -278,7 +278,7 @@ public class MyException extends Exception {
 
 ## 108. Can you explain a few exception handling best practices?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Catch specific exceptions first**, general ones last
 * **Don't swallow exceptions** (never leave a catch block empty)

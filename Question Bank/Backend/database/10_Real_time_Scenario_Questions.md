@@ -1,7 +1,7 @@
 ### **Real-time Scenario Questions**
 
 #### **115. Table has millions of records, query is slow – what will you do?**
-**Interviewer Answer:**
+** Answer:**
 **Systematic Approach to Query Optimization**:
 
 **Step 1: Immediate Diagnosis**
@@ -120,7 +120,7 @@ WHERE pd.rn BETWEEN 1000 AND 1100;
 ---
 
 #### **116. API is slow due to DB – how will you debug?**
-**Interviewer Answer:**
+** Answer:**
 **Systematic Debugging Approach**:
 
 **Step 1: Isolate the Problem**
@@ -260,7 +260,7 @@ WHERE user_id = $1 AND created_date > NOW() - INTERVAL '30 days';
 ---
 
 #### **117. Data inconsistency issue – how will you fix?**
-**Interviewer Answer:**
+** Answer:**
 **Systematic Approach to Data Consistency**:
 
 **Step 1: Identify Inconsistency Type**
@@ -428,7 +428,7 @@ $$ LANGUAGE plpgsql;
 ---
 
 #### **118. How to design database for large-scale application?**
-**Interviewer Answer:**
+** Answer:**
 **Database Design Principles for Scale**:
 
 **Phase 1: Requirements Analysis**
@@ -612,7 +612,7 @@ WHERE datname = current_database();
 ---
 
 #### **119. When will you choose NoSQL over SQL?**
-**Interviewer Answer:**
+** Answer:**
 **Decision Framework: SQL vs NoSQL**
 
 **Use Case Analysis Matrix**:
@@ -800,7 +800,7 @@ class HybridDataLayer:
 ---
 
 #### **120. How do you handle database migration?**
-**Interviewer Answer:**
+** Answer:**
 **Comprehensive Database Migration Strategy**:
 
 **Phase 1: Pre-Migration Planning**

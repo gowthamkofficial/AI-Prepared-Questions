@@ -1,7 +1,7 @@
 # **COMPREHENSIVE JAVA VERSION FEATURES (5 TO CURRENT)**
 
 ## **Java 5 (JDK 1.5) - September 2004**
-**Interviewer Answer:**
+** Answer:**
 1. **Generics** - Type-safe collections
 2. **Enhanced for-loop** - For-each syntax
 3. **Autoboxing/Unboxing** - Automatic primitive-wrapper conversion
@@ -43,7 +43,7 @@ double r = cos(PI * theta);
 ---
 
 ## **Java 6 (JDK 1.6) - December 2006**
-**Interviewer Answer:**
+** Answer:**
 1. **Scripting Support** - JSR-223 (JavaScript, Ruby, etc.)
 2. **Compiler API** - JSR-199 (javax.tools)
 3. **Pluggable Annotation Processing** - JSR-269
@@ -69,7 +69,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 7 (JDK 1.7) - July 2011**
-**Interviewer Answer:**
+** Answer:**
 1. **Diamond Operator** - Type inference for generics
    ```java
    Map<String, List<String>> map = new HashMap<>();
@@ -106,7 +106,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 8 (JDK 1.8) - March 2014**
-**Interviewer Answer:**
+** Answer:**
 1. **Lambda Expressions**
    ```java
    (a, b) -> a + b
@@ -142,7 +142,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 9 (JDK 9) - September 2017**
-**Interviewer Answer:**
+** Answer:**
 1. **Module System (Project Jigsaw)**
    ```java
    module com.example {
@@ -173,7 +173,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 10 (JDK 10) - March 2018**
-**Interviewer Answer:**
+** Answer:**
 1. **Local Variable Type Inference (var)**
    ```java
    var list = new ArrayList<String>();
@@ -193,7 +193,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 11 (LTS) - September 2018**
-**Interviewer Answer:**
+** Answer:**
 1. **Local Variable Syntax for Lambda Parameters**
    ```java
    (var x, var y) -> x.process(y)
@@ -228,7 +228,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 12 (JDK 12) - March 2019**
-**Interviewer Answer:**
+** Answer:**
 1. **Switch Expressions (Preview)**
    ```java
    int numLetters = switch (day) {
@@ -251,7 +251,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 13 (JDK 13) - September 2019**
-**Interviewer Answer:**
+** Answer:**
 1. **Text Blocks (Preview)**
    ```java
    String html = """
@@ -272,7 +272,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 14 (JDK 14) - March 2020**
-**Interviewer Answer:**
+** Answer:**
 1. **Switch Expressions (Standard)**
 2. **Pattern Matching for instanceof (Preview)**
    ```java
@@ -297,7 +297,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 15 (JDK 15) - September 2020**
-**Interviewer Answer:**
+** Answer:**
 1. **Sealed Classes (Preview)**
    ```java
    public sealed class Shape 
@@ -316,7 +316,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 16 (JDK 16) - March 2021**
-**Interviewer Answer:**
+** Answer:**
 1. **Records (Standard)**
 2. **Pattern Matching for instanceof (Standard)**
 3. **Sealed Classes (Second Preview)**
@@ -337,7 +337,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 17 (LTS) - September 2021**
-**Interviewer Answer:**
+** Answer:**
 1. **Sealed Classes (Standard)**
    ```java
    public sealed interface Expr 
@@ -365,7 +365,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 18 (JDK 18) - March 2022**
-**Interviewer Answer:**
+** Answer:**
 1. **UTF-8 by Default** - Standard charset
 2. **Simple Web Server** - jwebserver command
 3. **Code Snippets in JavaDoc** - @snippet tag
@@ -380,7 +380,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 19 (JDK 19) - September 2022**
-**Interviewer Answer:**
+** Answer:**
 1. **Virtual Threads (Preview)** - Project Loom
    ```java
    Thread.startVirtualThread(() -> {
@@ -411,7 +411,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 20 (JDK 20) - March 2023**
-**Interviewer Answer:**
+** Answer:**
 1. **Virtual Threads (Second Preview)**
 2. **Scoped Values (Preview)** - Replace ThreadLocal
 3. **Record Patterns (Second Preview)**
@@ -425,7 +425,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 21 (LTS) - September 2023**
-**Interviewer Answer:**
+** Answer:**
 1. **Virtual Threads (Standard)** - Production ready
 2. **Sequenced Collections** - New interfaces
    ```java
@@ -460,7 +460,7 @@ engine.eval("print('Hello')");
 ---
 
 ## **Java 22 (JDK 22) - March 2024**
-**Interviewer Answer:**
+** Answer:**
 1. **Statements before super(...) (Preview)**
    ```java
    public class Sub extends Super {
@@ -503,11 +503,11 @@ engine.eval("print('Hello')");
 | **Java 17** | 2021 | **Sealed classes**, Pattern matching switch, **LTS** |
 | **Java 21** | 2023 | **Virtual threads**, String templates, **LTS** |
 
-**Interview Tips**:
+** Tips**:
 1. **Know Java 8, 11, 17, 21 thoroughly** - These are LTS versions
 2. **Be able to compare features** across versions
 3. **Understand the evolution** - Why features were added
 4. **Practice coding examples** for each major feature
 5. **Know which features are preview/incubator vs standard**
 
-**You now have comprehensive knowledge of Java 5 through current versions!** This is invaluable for interviews, especially when discussing modern Java development and migration strategies. 🚀
+**You now have comprehensive knowledge of Java 5 through current versions!** This is invaluable for , especially when discussing modern Java development and migration strategies. 🚀

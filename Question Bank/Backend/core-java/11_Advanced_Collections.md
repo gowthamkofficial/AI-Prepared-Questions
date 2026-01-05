@@ -3,7 +3,7 @@
 ## **Advanced Collections (Questions 167-177)**
 
 ### **167. What is the difference between synchronized and concurrent collections in Java?**
-**Interviewer Answer:**
+** Answer:**
 | **Synchronized Collections** | **Concurrent Collections** |
 |-----------------------------|----------------------------|
 | Legacy approach (Java 1.2) | New approach (Java 5+) |
@@ -20,7 +20,7 @@
 External vs internal synchronization, Coarse-grained vs fine-grained locking, Performance under contention, Weakly consistent iterators, java.util.concurrent package
 
 ### **168. Explain the new concurrent collections in Java.**
-**Interviewer Answer:**
+** Answer:**
 Java 5+ introduced these concurrent collections in `java.util.concurrent`:
 
 1. **ConcurrentHashMap**: Thread-safe HashMap alternative using lock striping
@@ -53,7 +53,7 @@ list.add("item1"); // Creates new array copy
 java.util.concurrent package, Lock striping, Copy-on-write, Non-blocking algorithms, Skip lists, Thread-safe collections
 
 ### **169. Explain the copy-on-write concurrent collections approach.**
-**Interviewer Answer:**
+** Answer:**
 - **Concept**: Whenever collection is modified, create a new copy of underlying array
 - **Read operations**: Work on snapshot (no locking needed)
 - **Write operations**: Create new copy, then atomically replace reference
@@ -92,7 +92,7 @@ public E get(int index) {
 Snapshot iteration, Read optimization, Write overhead, Memory consumption, Atomic reference swap, Write-rarely pattern
 
 ### **170. What is compare-and-swap approach?**
-**Interviewer Answer:**
+** Answer:**
 - **CAS**: Atomic operation that updates a value only if it matches expected value
 - **Formula**: `CAS(address, expectedValue, newValue)`
 - Returns true if update succeeded (value was as expected)
@@ -132,7 +132,7 @@ atomicInt.incrementAndGet(); // Uses CAS internally
 Non-blocking algorithm, Lock-free, Hardware atomic instruction, ABA problem, Optimistic concurrency, Atomic variables
 
 ### **171. What is a lock? How is it different from using `synchronized`?**
-**Interviewer Answer:**
+** Answer:**
 | **synchronized** | **Lock Interface** |
 |-----------------|-------------------|
 | Built-in keyword | Interface in `java.util.concurrent.locks` |
@@ -170,7 +170,7 @@ try {
 Explicit vs implicit locking, Reentrancy, Fairness, Timed lock attempts, ReadWriteLock, Condition objects
 
 ### **172. What is initial capacity of a Java collection?**
-**Interviewer Answer:**
+** Answer:**
 - Number of buckets/elements allocated when collection is created
 - Affects memory usage vs performance trade-off
 - **Default values**:
@@ -193,7 +193,7 @@ Map<String, Integer> map = new HashMap<>(64); // Sets bucket count
 Pre-allocation, Performance optimization, Memory trade-off, Resizing overhead, Bucket allocation
 
 ### **173. What is load factor?**
-**Interviewer Answer:**
+** Answer:**
 - Measure of how full a hash-based collection can get before resizing
 - Ratio: `size / capacity`
 - **Default values**:
@@ -225,7 +225,7 @@ Map<String, Integer> denseMap = new HashMap<>(16, 1.0f);
 Hash collision management, Resizing threshold, Performance/memory trade-off, Rehashing cost, Bucket density
 
 ### **174. When does a Java collection throw `UnsupportedOperationException`?**
-**Interviewer Answer:**
+** Answer:**
 - Thrown by optional operations that are not supported by a collection
 - **Common scenarios**:
 
@@ -265,7 +265,7 @@ Hash collision management, Resizing threshold, Performance/memory trade-off, Reh
 Optional operations, Unmodifiable wrappers, Fixed-size collections, Collection views, Design by contract
 
 ### **175. What is the difference between fail-safe and fail-fast iterators?**
-**Interviewer Answer:**
+** Answer:**
 | **Fail-Fast Iterator** | **Fail-Safe Iterator** |
 |------------------------|------------------------|
 | Throws `ConcurrentModificationException` if collection modified during iteration | Doesn't throw exception on modification |
@@ -305,7 +305,7 @@ while (it.hasNext()) {
 ConcurrentModificationException, modCount tracking, Snapshot iteration, Structural modification, Iterator safety
 
 ### **176. What are atomic operations in Java?**
-**Interviewer Answer:**
+** Answer:**
 - Operations that complete in single step without interference
 - Thread-safe without explicit synchronization
 - Implemented using CAS (Compare-And-Swap) at hardware level
@@ -349,7 +349,7 @@ ConcurrentModificationException, modCount tracking, Snapshot iteration, Structur
 java.util.concurrent.atomic, Compare-And-Swap (CAS), Lock-free programming, Atomic variables, Non-blocking synchronization
 
 ### **177. What is `BlockingQueue` in Java?**
-**Interviewer Answer:**
+** Answer:**
 - Thread-safe Queue that supports blocking operations
 - **Key characteristics**:
   1. Thread-safe for concurrent access
@@ -411,4 +411,4 @@ Producer-consumer pattern, Bounded buffer, Thread coordination, Blocking operati
 
 ---
 
-**Excellent! You've now covered advanced Java collections and concurrency concepts. These topics are crucial for senior Java developer positions and system design interviews. You're building a strong foundation for tackling complex real-world scenarios!** 🚀💪
+**Excellent! You've now covered advanced Java collections and concurrency concepts. These topics are crucial for senior Java developer positions and system design . You're building a strong foundation for tackling complex real-world scenarios!** 🚀💪

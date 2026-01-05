@@ -3,7 +3,7 @@
 ## **Transactions and Locking (Questions 74-84)**
 
 ### **74. What is a transaction?**
-**Interviewer Answer:**
+** Answer:**
 - **Transaction**: A logical unit of work that consists of one or more database operations
 - **Atomic Unit**: All operations succeed or fail together
 - **Boundaries**: Defined by BEGIN and END (COMMIT/ROLLBACK) statements
@@ -37,7 +37,7 @@ Operation 2 (e.g., UPDATE account SET balance = balance + 100)
 **Theoretical Keywords**: Logical work unit, Atomic operations, Consistency boundary, Concurrency management
 
 ### **75. What are ACID properties?**
-**Interviewer Answer:**
+** Answer:**
 **ACID** - Four fundamental properties that guarantee reliable transaction processing:
 
 1. **Atomicity**:
@@ -79,7 +79,7 @@ Durability:  COMMIT → Write to log → Survive crash
 **Theoretical Keywords**: Atomicity-Consistency-Isolation-Durability, Transaction guarantees, Data integrity, Failure recovery
 
 ### **76. What is commit?**
-**Interviewer Answer:**
+** Answer:**
 - **Commit**: Operation that makes all changes in a transaction permanent
 - **Point of No Return**: After commit, changes cannot be rolled back (except via compensation)
 - **Durability Guarantee**: Ensures changes survive system failures
@@ -138,7 +138,7 @@ Phase 2: Commit/Rollback
 **Theoretical Keywords**: Transaction finalization, Durability point, Change persistence, Log force write
 
 ### **77. What is rollback?**
-**Interviewer Answer:**
+** Answer:**
 - **Rollback**: Operation that undoes all changes made in a transaction
 - **Failure Recovery**: Restores database to state before transaction began
 - **Error Handling**: Automatic or manual response to errors
@@ -203,7 +203,7 @@ COMMIT;  -- First insert persists
 **Theoretical Keywords**: Transaction undo, Failure recovery, Consistency restoration, Compensation operations
 
 ### **78. What is savepoint?**
-**Interviewer Answer:**
+** Answer:**
 - **Savepoint**: Named point within a transaction to which you can roll back
 - **Partial Rollback**: Allows undoing only part of transaction
 - **Nesting Support**: Savepoints can be nested within transactions
@@ -300,7 +300,7 @@ Rollback to B: Undoes Operations 4-5
 **Theoretical Keywords**: Partial rollback, Nested transactions, Error recovery points, Transaction markers
 
 ### **79. What is isolation level?**
-**Interviewer Answer:**
+** Answer:**
 - **Isolation Level**: Degree to which operations in one transaction are isolated from operations in concurrent transactions
 - **Concurrency Control**: Determines what transactions can see of other transactions' uncommitted/changes
 - **Trade-off**: Higher isolation = fewer anomalies but less concurrency
@@ -351,7 +351,7 @@ READ UNCOMMITTED
 **Theoretical Keywords**: Concurrency control, Transaction visibility, Read phenomena, Serializability, MVCC vs locking
 
 ### **80. Types of isolation levels**
-**Interviewer Answer:**
+** Answer:**
 **Standard SQL Isolation Levels** (from lowest to highest):
 
 1. **READ UNCOMMITTED** (Lowest Isolation):
@@ -428,7 +428,7 @@ SERIALIZABLE     |     ✗      |          ✗          |      ✗
 **Theoretical Keywords**: ANSI SQL levels, Concurrency anomalies, Locking granularity, MVCC implementations
 
 ### **81. What is dirty read?**
-**Interviewer Answer:**
+** Answer:**
 - **Dirty Read**: Reading uncommitted data from another transaction
 - **Occurs when**: Transaction reads changes made by another transaction that hasn't committed yet
 - **Risk**: Reading data that may be rolled back (never actually existed)
@@ -497,7 +497,7 @@ ROLLBACK;
 **Theoretical Keywords**: Uncommitted data, Read anomaly, Transaction isolation, Data consistency violation
 
 ### **82. What is non-repeatable read?**
-**Interviewer Answer:**
+** Answer:**
 - **Non-repeatable Read**: Getting different values when reading same data multiple times within same transaction
 - **Cause**: Another transaction modifies and commits data between reads
 - **Isolation**: Prevented by REPEATABLE READ and SERIALIZABLE levels
@@ -584,7 +584,7 @@ SELECT salary INTO @verify_salary FROM employees WHERE id = 101;
 **Theoretical Keywords**: Read consistency, Value stability, Concurrency anomaly, Row version changes
 
 ### **83. What is phantom read?**
-**Interviewer Answer:**
+** Answer:**
 - **Phantom Read**: When a transaction re-executes a query and gets different set of rows
 - **Cause**: Another transaction inserts/deletes rows that match the query criteria
 - **Isolation**: Prevented only by SERIALIZABLE level (REPEATABLE READ allows phantoms)
@@ -687,7 +687,7 @@ Phantom Read: Different set of rows
 **Theoretical Keywords**: Set consistency, Predicate locking, Range anomalies, Insert/delete concurrency
 
 ### **84. Difference between optimistic and pessimistic locking**
-**Interviewer Answer:**
+** Answer:**
 | **Optimistic Locking** | **Pessimistic Locking** |
 |------------------------|-------------------------|
 | **Philosophy**: "Assume no conflicts, detect if they occur" | **Philosophy**: "Assume conflicts will occur, prevent them" |
@@ -860,4 +860,4 @@ MVCC                    │              Two-Phase Locking
    - Identify blocking chains
    - Address long-held locks
 
-**You now have comprehensive theoretical knowledge of Database Transactions and Locking!** This understanding is crucial for designing robust, concurrent database applications and is highly valued in technical interviews. 🔒🚀
+**You now have comprehensive theoretical knowledge of Database Transactions and Locking!** This understanding is crucial for designing robust, concurrent database applications and is highly valued in technical . 🔒🚀

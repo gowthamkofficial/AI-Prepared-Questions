@@ -5,7 +5,7 @@
 
 ## 16. Are all strings immutable?
 
-### Interviewer Answer:
+###  Answer:
 - Yes, String objects in Java are immutable
 - Once created, their value cannot be changed
 - Operations like `concat()`, `toUpperCase()` return **NEW** String objects
@@ -20,7 +20,7 @@
 
 ## 17. Where are string values stored in memory?
 
-### Interviewer Answer:
+###  Answer:
 - String Literals: Stored in **String Pool** (special area in Heap)
 - String Objects created with **new**: Stored in regular Heap memory
 - String Pool helps memory optimization by reusing identical literals
@@ -35,7 +35,7 @@
 
 ## 18. Why should you be careful about string concatenation (+) in loops?
 
-### Interviewer Answer:
+###  Answer:
 - Strings are immutable, so each concatenation creates a new String object
 - This leads to excessive object creation and garbage collection overhead
 - Memory and performance inefficient for large loops
@@ -50,7 +50,7 @@
 
 ## 19. How do you solve the above problem?
 
-### Interviewer Answer:
+###  Answer:
 - Use **StringBuilder** for single-threaded scenarios
 - Use **StringBuffer** for multi-threaded scenarios
 - Pre-allocate capacity if final size is known
@@ -65,7 +65,7 @@
 
 ## 20. What are differences between String and StringBuffer?
 
-### Interviewer Answer:
+###  Answer:
 - Mutability: String immutable, StringBuffer mutable
 - Performance: StringBuffer faster for multiple modifications
 - Thread Safety: StringBuffer is synchronized (thread-safe)
@@ -80,7 +80,7 @@
 
 ## 21. What are differences between StringBuilder and StringBuffer?
 
-### Interviewer Answer:
+###  Answer:
 - Thread Safety: StringBuffer synchronized, StringBuilder not synchronized
 - Performance: StringBuilder faster in single-threaded environments
 - API: Both have same methods
@@ -95,7 +95,7 @@
 
 ## 22. Can you give examples of different utility methods in the String class?
 
-### Interviewer Answer:
+###  Answer:
 - Length/Check: `length()`, `isEmpty()`, `isBlank()` (Java 11+)
 - Search: `indexOf()`, `lastIndexOf()`, `contains()`, `startsWith()`, `endsWith()`
 - Substring: `substring()`, `split()`, `join()` (Java 8+)

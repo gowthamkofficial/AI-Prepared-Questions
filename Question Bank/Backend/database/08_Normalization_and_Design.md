@@ -3,7 +3,7 @@
 ## **Normalization and Design (Questions 85-91)**
 
 ### **85. What is normalization?**
-**Interviewer Answer:**
+** Answer:**
 - **Normalization**: Systematic process of organizing data in a database to reduce redundancy and improve data integrity
 - **Goal**: Eliminate data anomalies (insertion, update, deletion anomalies) and minimize data duplication
 - **Method**: Decompose tables into smaller, related tables while preserving relationships
@@ -38,7 +38,7 @@ Higher Normal Forms (BCNF, 4NF, 5NF)
 **Theoretical Keywords**: Data organization, Redundancy elimination, Anomaly prevention, Functional dependencies, Normal forms
 
 ### **86. Types of normalization**
-**Interviewer Answer:**
+** Answer:**
 **Normal Forms Hierarchy** (from lowest to highest):
 
 1. **First Normal Form (1NF)**:
@@ -94,7 +94,7 @@ Optimal: 3NF with selective denormalization
 **Theoretical Keywords**: Normal form hierarchy, Functional dependencies, Multi-valued dependencies, Join dependencies, Progressive refinement
 
 ### **87. What is 1NF?**
-**Interviewer Answer:**
+** Answer:**
 - **First Normal Form (1NF)**: Fundamental structural requirement for relational tables
 - **Requirements**:
   1. **Atomic Values**: Each column contains only atomic (indivisible) values
@@ -176,7 +176,7 @@ UNF (Unnormalized):
 **Theoretical Keywords**: Atomic values, Repeating groups elimination, Flat table structure, Primary key requirement
 
 ### **88. What is 2NF?**
-**Interviewer Answer:**
+** Answer:**
 - **Second Normal Form (2NF)**: Builds on 1NF by eliminating partial dependencies
 - **Requirements**:
   1. **Must be in 1NF**
@@ -256,7 +256,7 @@ OrderItems Table:
 **Theoretical Keywords**: Partial dependency elimination, Full functional dependency, Composite key handling, Non-prime attributes
 
 ### **89. What is 3NF?**
-**Interviewer Answer:**
+** Answer:**
 - **Third Normal Form (3NF)**: Builds on 2NF by eliminating transitive dependencies
 - **Requirements**:
   1. **Must be in 2NF**
@@ -336,7 +336,7 @@ Employees Table:              Departments Table:
 **Theoretical Keywords**: Transitive dependency elimination, Non-key attribute independence, Boyce-Codd refinement, Fact about the key
 
 ### **90. What is denormalization?**
-**Interviewer Answer:**
+** Answer:**
 - **Denormalization**: Intentional introduction of redundancy into a normalized database for performance optimization
 - **Purpose**: Improve read performance at the cost of write performance and data integrity
 - **Controlled Redundancy**: Strategic duplication of data to reduce joins
@@ -416,7 +416,7 @@ Order_Report: OrderID, CustomerName, ProductName, Quantity, Price, Total
 **Theoretical Keywords**: Controlled redundancy, Performance optimization, Read vs write trade-off, Strategic duplication, Schema denormalization
 
 ### **91. When to use denormalization?**
-**Interviewer Answer:**
+** Answer:**
 **Strategic Denormalization Decision Points**:
 
 1. **Performance Bottlenecks**:
@@ -580,4 +580,4 @@ Caching Layer: Highly denormalized for performance
 5. Implement synchronization
 6. Continuously monitor and adjust
 
-**You now have comprehensive theoretical knowledge of Database Normalization and Design!** This understanding is crucial for designing efficient, maintainable database schemas and is frequently tested in system design interviews. 📐🚀
+**You now have comprehensive theoretical knowledge of Database Normalization and Design!** This understanding is crucial for designing efficient, maintainable database schemas and is frequently tested in system design . 📐🚀

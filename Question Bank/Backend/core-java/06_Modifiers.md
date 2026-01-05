@@ -6,7 +6,7 @@
 
 ## 64. What is default (package) class modifier?
 
-### Interviewer Answer:
+###  Answer:
 
 * When no access modifier is specified for a class, it gets **package-private/default access**
 * Class is accessible **only within its own package**
@@ -22,7 +22,7 @@
 
 ## 65. What is private access modifier?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Most restrictive** access level
 * Accessible **only within the declared class**
@@ -38,7 +38,7 @@
 
 ## 66. What is default or package access modifier?
 
-### Interviewer Answer:
+###  Answer:
 
 * Applied when **no access modifier is specified**
 * Accessible **only within same package**
@@ -54,7 +54,7 @@
 
 ## 67. What is protected access modifier?
 
-### Interviewer Answer:
+###  Answer:
 
 * Accessible within **same package AND by subclasses** (even in different packages)
 * Broader than default, but more restrictive than public
@@ -70,7 +70,7 @@
 
 ## 68. What is public access modifier?
 
-### Interviewer Answer:
+###  Answer:
 
 * **Least restrictive** access level
 * Accessible from anywhere: same class, same package, different package, subclasses
@@ -86,7 +86,7 @@
 
 ## 69. What access types of variables can be accessed from a class in the same package?
 
-### Interviewer Answer:
+###  Answer:
 
 * **public:** Yes
 * **protected:** Yes
@@ -102,7 +102,7 @@
 
 ## 70. What access types of variables can be accessed from a class in a different package?
 
-### Interviewer Answer:
+###  Answer:
 
 * **public:** Yes
 * **protected:** No (unless through inheritance)
@@ -118,7 +118,7 @@
 
 ## 71. What access types of variables can be accessed from a subclass in the same package?
 
-### Interviewer Answer:
+###  Answer:
 
 * **public:** Yes
 * **protected:** Yes
@@ -134,7 +134,7 @@
 
 ## 72. What access types of variables can be accessed from a subclass in a different package?
 
-### Interviewer Answer:
+###  Answer:
 
 * **public:** Yes
 * **protected:** Yes (through inheritance only)
@@ -150,7 +150,7 @@
 
 ## 73. What is the use of a final modifier on a class?
 
-### Interviewer Answer:
+###  Answer:
 
 * Prevents the class from being **extended** (cannot have subclasses)
 * Makes the class immutable in terms of inheritance
@@ -166,7 +166,7 @@
 
 ## 74. What is the use of a final modifier on a method?
 
-### Interviewer Answer:
+###  Answer:
 
 * Prevents the method from being **overridden** in subclasses
 * Used when method implementation should not be changed
@@ -182,7 +182,7 @@
 
 ## 75. What is a final variable?
 
-### Interviewer Answer:
+###  Answer:
 
 * A variable whose value **cannot be changed** once initialized
 * Must be initialized either at declaration or in constructor
@@ -199,7 +199,7 @@
 
 ## 76. What is a final argument?
 
-### Interviewer Answer:
+###  Answer:
 
 * A method parameter declared as **final**
 * Cannot be reassigned within the method
@@ -223,7 +223,7 @@ void process(final List<String> items) {
 
 ## 77. What happens when a variable is marked as volatile?
 
-### Interviewer Answer:
+###  Answer:
 
 * Ensures variable reads/writes go **directly to main memory** (not CPU cache)
 * Guarantees **visibility** of changes across threads
@@ -240,7 +240,7 @@ void process(final List<String> items) {
 
 ## 78. What is a state variable?
 
-### Interviewer Answer:
+###  Answer:
 
 * A variable that represents the **state/condition** of an object or system
 * Typically an instance variable that affects object behavior

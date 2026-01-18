@@ -28,6 +28,11 @@
 - **V8 engine** (Chrome/Node.js) compiles directly to machine code
 - Technically now a **"JIT-compiled" or "hybrid"** language
 
+
+## 2.1  What is JIT compilation?
+### Answer:
+JIT (Just-In-Time) compilation in JavaScript is a runtime optimization technique where the JavaScript engine compiles frequently executed code into optimized machine code during execution, improving performance while still supporting JavaScript’s dynamic nature.
+
 ### Theoretical Keywords:
 **JIT compilation**, **V8 engine**, **SpiderMonkey (Firefox)**,  
 **Bytecode**, **Runtime optimization**, **Abstract Syntax Tree (AST)**,  

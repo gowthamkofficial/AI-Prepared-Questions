@@ -83,6 +83,8 @@
 51. What is the `this` keyword?
 52. How does `this` behave in different scenarios?
 53. `this` in arrow functions vs normal functions
+54. What is currying?
+55. Difference between currying and partial application
 
 #### **Browser and Web Concepts**
 

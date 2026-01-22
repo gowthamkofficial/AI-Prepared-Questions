@@ -65,6 +65,9 @@ const calc: Calculator = {
 
 ### Answer:
 
+- Both define **object shapes**, but have key differences
+- Interface is mainly for object structures and supports declaration merging, while type is more flexible and can define unions,          primitives, and tuples.
+
 | Feature | Interface | Type |
 |---------|-----------|------|
 | **Declaration** | `interface Name {}` | `type Name = {}` |

@@ -1030,6 +1030,15 @@ const routes: Routes = [
 
 Types: `canActivate`, `canDeactivate`, `canActivateChild`, `canMatch`, `resolve`
 
+- **canActivate**: Check before activating route
+- **canDeactivate**: Check before leaving route
+- **canActivateChild**: Check before activating child routes
+- **canMatch**: Check if route can be matched
+- **resolve**: Pre-fetch data before route activation
+
+### Theoretical Keywords:
+**Navigation Protection**, **Authorization**, **canActivate**, **canDeactivate**, **Route Redirection**, **Resolvers**    
+
 ---
 
 ## 54. What is lazy loading?
@@ -1301,6 +1310,7 @@ export class LifecycleComponent implements OnInit, OnDestroy {
 // Transformation
 map(), switchMap(), mergeMap(), concatMap()
 
+
 // Filtering
 filter(), take(), takeUntil(), distinct()
 
@@ -1489,26 +1499,4 @@ Coverage includes:
 - Security best practices
 
 ---
-
-# END OF ANGULAR COMPLETE INTERVIEW GUIDE - 144 COMPREHENSIVE QUESTIONS
-
-**Total Coverage**:
-- 11 Angular Basics questions
-- 6 Components & Templates questions
-- 15 Project Configuration questions  
-- 6 Directives & Pipes questions
-- 5 Services & DI questions
-- 5 Routing questions
-- 5 Forms questions
-- 5 State Management questions
-- 4 Lifecycle Hooks questions
-- 4 Change Detection questions
-- 8 RxJS & Observables questions
-- 5 Modules & Architecture questions
-- 12 Frequently Asked questions
-- 10 Micro Frontend questions
-- 28 Advanced/Missed questions
-- 10 Scenario questions
-
-**Format:** Detailed answers with theoretical keywords, code examples, comparison tables, real-world scenarios, and best practices throughout.
 

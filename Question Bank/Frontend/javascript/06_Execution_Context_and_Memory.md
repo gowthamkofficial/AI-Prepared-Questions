@@ -2,6 +2,32 @@
 
 ---
 
+## ⚡ QUICK 30-SECOND EXPLANATION: Execution Context
+
+**Execution Context is the environment in which JavaScript code runs.**
+
+- When JavaScript starts, it creates a **Global Execution Context**
+- For every function call, a new **Function Execution Context** is created and pushed to the **Call Stack**
+
+**Two phases of Execution Context:**
+
+1. **Creation phase** – memory is allocated, variables are hoisted, functions are stored, and `this` is set
+2. **Execution phase** – code is executed line by line and values are assigned
+
+**Example:**
+```javascript
+var a = 10;
+
+function test() {
+  var b = 20;
+  console.log(a + b);  // Output: 30
+}
+
+test();
+```
+
+---
+
 ## 36. What is execution context?
 
 ### Answer:

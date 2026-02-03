@@ -26,6 +26,11 @@ function test() {
 test();
 ```
 
+**Explanation:**
+- Global execution context created → `a` hoisted
+- `test()` called → new function execution context
+- After function finishes → context removed from call stack
+
 ---
 
 ## 36. What is execution context?
